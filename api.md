@@ -1,0 +1,40 @@
+注册账号
+	api[./sign.php]
+  参数[
+  	user=账号
+  	pass=密码
+  ]
+登录账号
+	api[./login.php]
+	参数[
+  	user=账号
+  	pass=密码
+  ]
+创建卡密
+	api[./addKey.php]
+	参数[
+		user=账号
+		pass=密码
+		num=数量
+		second=有效时长
+	]
+设备绑定
+	api[./binding.php]
+	参数[
+		user=账号
+		imei=设备码
+		km=卡密
+	]
+设备解绑
+	api[./ubding.php]
+	参数[
+		user=账号
+		imei=设备码
+	]
+删除卡密
+	api[./delete.php]
+	参数[
+		user=账号
+		pass=密码
+		km=卡密
+	]

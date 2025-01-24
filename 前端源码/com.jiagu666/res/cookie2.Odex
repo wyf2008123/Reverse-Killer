@@ -1,0 +1,371 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=white
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=280dp
+height=400dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="ImageView">
+<ppt>width=-1
+height=-1
+src=@login_bg.png
+scaleType=fitxy</ppt>
+<event></event>
+</View>
+<View id="5" did="3" type="CardView">
+<ppt>width=64dp
+height=64dp
+app_CardcornerRadius=32dp
+ut_centerHorizontal=true
+layout_marginTop=48dp
+app_CardElevation=16dp
+app_CardmaxElevation=16dp</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="ImageView">
+<ppt>width=-1
+height=-1
+src=
+scaleType=fitxy</ppt>
+<event></event>
+</View>
+<View id="7" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="9" did="7" type="EditText">
+<ppt>width=-1
+height=48dp
+hint=卡密
+textColorHint=#ffffff
+text=
+textColor=#ffffff
+layout_marginLeft=32dp
+layout_marginRight=32dp
+singleLine=true
+ps=这个控件可以做登录</ppt>
+<event></event>
+</View>
+<View id="11" did="7" type="EditText">
+<ppt>width=-1
+height=48dp
+text=
+hint=暂时关闭
+layout_marginLeft=32dp
+layout_marginRight=32dp
+singleLine=true
+textColor=#ffffff
+ps=这个控件可以做登录
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="12" did="3" type="Button">
+<ppt>width=80dp
+height=40dp
+text=Login
+ut_alignParentRight=true
+ut_alignParentBottom=true
+layout_marginRight=40dp
+layout_marginBottom=64dp</ppt>
+<event><eventItme type="clicki">ug(9,"text",km)
+//--------------------------------
+s admin=
+sss appkey=""
+//请在这里输入你之前注册的账号的用户名和 创建的APPKEY
+//APPKEY就是你应用的包名!!!
+//--------------------------------
+
+fe("@.appkey",jc)
+f(jc==false)
+{
+  end()
+}
+fe("$cookie",sh)
+simsi(sbm)
+t()
+{
+  ufnsui()
+  {
+    fn 环境检测.a()
+    fn 环境检测.b()
+    fn 环境检测.root()
+    fn 环境检测.c()
+    fn 环境检测.d()
+    fn 环境检测.e()
+    fn 环境检测.gj()
+    fn 环境检测.g()
+    fn 环境检测.j()
+  }
+  fe("$鸡你太美",wg)
+  f(sss.hook==true)
+  {
+    ufnsui()
+    {
+      tw("滚你妈的臭傻逼")
+      end()
+    }
+  }
+  else f(wg==true)
+  {
+    ufnsui()
+    {
+      tw("滚你妈的臭傻逼")
+      end()
+    }
+  }
+  else f(sh==true)
+  {
+    hs("http://81.71.140.161/api/query.php?user="+admin+"&imei="+sbm+"&app="+sss.appkey,dl)
+    f(dl=="不能留空")
+    {
+      ufnsui()
+      {
+        tw("请检查网络配置")
+      }
+    }
+    else f(dl=="账号不存在")
+    {
+      ufnsui()
+      {
+        tw("账号不存在，请联系开发者处理")
+      }
+    }
+    else f(dl=="该设备未绑定")
+    {
+      ufnsui()
+      {
+        tw("请勿非法添加数据,小心被格机")
+        sss hook==true
+        fw("$鸡你太美","鸡你太美")
+        end()
+      }
+    }
+    else f(dl=="卡密已过期")
+    {
+      ufnsui()
+      {
+        tw("卡密已过期")
+      }
+    }
+    else f(dl=="登录成功")
+    {
+      ufnsui()
+      {
+        tw("登录成功")
+        uigo("原mian界面.iyu")
+        end()
+      }
+    }
+  }
+  else
+  {
+    hs("http://81.71.140.161/api/binding.php?user="+admin+"&imei="+sbm+"&km="+km+"&app="+sss.appkey,sj)
+    syso(sj)
+    f(sj=="不能留空")
+    {
+      ufnsui()
+      {
+        tw("卡密输入不能为空!")
+      }
+    }
+    else f(sj=="卡密不存在")
+    {
+      ufnsui()
+      {
+        tw("卡密不存在")
+      }
+    }
+    else f(sj=="账号不存在")
+    {
+      ufnsui()
+      {
+        tw("请正确填写用户名")
+      }
+    }
+    else f(sj==null)
+    {
+      ufnsui()
+      {
+        tw("服务器连接异常，请检查网络")
+      }
+    }
+    else f(sj=="卡密已过期")
+    {
+      ufnsui()
+      {
+        tw("卡密已过期")
+      }
+    }
+    else f(sj=="该设备被绑定过了")
+    {
+      ufnsui()
+      {
+        tw("你已经绑定过了")
+      }
+    }
+    else f(sj=="卡密已被使用")
+    {
+      ufnsui()
+      {
+        tw("卡密已被绑定")
+      }
+    }
+    else f(sj=="绑定成功")
+    {
+      ufnsui()
+      {
+        tw("卡密绑定成功")
+        uigo("原mian界面.iyu")
+        fw("$cookie","cookie")
+        end()
+      }
+    }
+    else
+    {
+      ufnsui()
+      {
+        tw("appkey填写错误")
+      }
+    }
+  }
+}</eventItme></event>
+</View>
+<View id="13" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+gravity=center_vertical
+text=Weed.
+typeface=monospace
+textSize=13sp
+textColor=#80000000
+layout_marginTop=32dp
+shadowRadius=10
+shadowColor=#50000000
+shadowDx=5
+shadowDy=5</ppt>
+<event></event>
+</View>
+<View id="14" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+gravity=center_vertical
+text=Version 1.3 By.Jmr
+typeface=monospace
+textSize=10sp
+textColor=#80000000
+layout_marginTop=2dp
+shadowRadius=10
+shadowColor=#50000000
+shadowDx=5
+shadowDy=5</ppt>
+<event></event>
+</View>
+<View id="15" did="0" type="ImageView">
+<ppt>width=-2
+height=-2
+src=17301567
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">sss ver="2.1"
+//版本号
+ss("Version "+sss.ver+" By.Jmr",vers)
+us(14,"text",vers)
+//主页text
+ss h=11
+//无用   
+uycl(true) 
+//辣鸡沉浸          
+
+//动画效果
+dha(dh, false, true)
+dh(dh, "duration", 1000)
+dht(dhh, 0,0,900,0)
+dh(dhh, "duration", 1000)
+dht(hh, 0,0,900,0)
+dh(hh, "duration", 1200)
+s color="#2196F3"
+//斜切图片背景颜色
+slg(color, long)
+f(color != "" && color ?* "#" && long == 7 || long == 9)
+{
+s id = 4
+call(null, "mlua", "c.main", id, color)
+}
+us(2, "dh", dh)
+us(13,"dh",dhh)
+us(14,"dh",hh)
+//设置背景
+
+
+//版权 易游
+/.
+底下有代码就是病毒了</eventItme><eventItme type="loadingComplete">cls("android.app.WallpaperManager",class)
+javax(wm,null,class,"getInstance","Context",activity)
+javax(drawable,wm,class,"getDrawable")
+us(15,"src",drawable)
+tot(15,hhhh)
+bfs(hhhh,"$壁纸.jpg")
+s 路径="$壁纸.jpg"
+s 半径="10"
+s 模糊度 ="30"
+
+cls("android.graphics.Bitmap",图像类)
+cls("android.renderscript.RenderScript",高斯类)
+cls("android.renderscript.Element",指针类)
+cls("android.renderscript.ScriptIntrinsicBlur",模糊类)
+cls("android.renderscript.Allocation",计算类)
+
+sbp(路径,img)
+javax(bmpw, img, 图像类,"getWidth")
+s(bmpw/半径,bmpw)
+javax(bmph, img, 图像类,"getHeight")
+s(bmph/半径,bmph)
+
+javax(img,null,图像类,"createScaledBitmap",图像类,img,"int",bmpw,"int",bmph,"boolean",false)
+javax(rs,null,高斯类,"create","android.content.Context",activity)
+javax(eme,null,指针类,"U8_4",高斯类,rs)
+javax(sb,null,模糊类,"create",高斯类,rs,指针类,eme)
+
+javax(inp,null,计算类,"createFromBitmap",高斯类,rs,图像类,img)
+javax(inpget,inp,计算类,"getType")
+javax(otp,null,计算类,"createTyped",高斯类,rs,"android.renderscript.Type",inpget)
+
+javax(null,sb,模糊类,"setRadius","float",模糊度)
+javax(null,sb,模糊类,"setInput",计算类,inp)
+javax(null,sb,模糊类,"forEach",计算类,otp)
+javax(null,otp,计算类,"copyTo",图像类,img)
+
+javax(null,rs,高斯类,"destroy")
+java(null,sb,"android.renderscript.BaseObj.destroy")
+//图片高斯模糊
+us(1,"background",img)
+
+//主页under
+tws(null,"没有卡密？",0,"购买")
+{
+  hws("")
+  //这里填写你自己的网址
+}
+s color="#ffffff"
+sss w=1
+fn 着色.控件着色(9,color)
+fn 着色.控件着色(11,color)
+fn 着色.控件着色(12,color)
+//着色用的
+fn java.png()</eventItme></UIEventset>

@@ -1,0 +1,618 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="5" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+layout_marginTop=50dp</ppt>
+<event></event>
+</View>
+<View id="4" did="5" type="CardView">
+<ppt>width=-1
+height=500dp
+layout_margin=20dp
+app_CardcornerRadius=10dp
+elevation=0dp</ppt>
+<event></event>
+</View>
+<View id="6" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="LinearLayout">
+<ppt>width=-1
+height=200dp
+orientation=vertical
+background=@580f39bd307.png</ppt>
+<event></event>
+</View>
+<View id="15" did="6" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="16" did="15" type="LinearLayout">
+<ppt>width=-1
+height=20dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="17" did="15" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="18" did="17" type="LinearLayout">
+<ppt>width=50dp
+height=-1
+orientation=vertical
+gravity=center
+visibility=0</ppt>
+<event></event>
+</View>
+<View id="22" did="18" type="ImageView">
+<ppt>width=27dp
+height=27dp
+src=@icon_396398.png</ppt>
+<event></event>
+</View>
+<View id="19" did="17" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="21" did="19" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+hint=请输入卡密
+textStyle=bold
+textColor=#ff828282
+textSize=14sp
+background=#ffeee4e9
+textCursorDrawable=#faff0080
+singleLine=true
+typeface=@zt/edit.ttf</ppt>
+<event></event>
+</View>
+<View id="36" did="19" type="ImageView">
+<ppt>width=-2
+height=-2
+src=17301567</ppt>
+<event></event>
+</View>
+<View id="20" did="17" type="LinearLayout">
+<ppt>width=50dp
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="25" did="15" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=horizontal
+layout_marginTop=20dp</ppt>
+<event></event>
+</View>
+<View id="26" did="25" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="28" did="26" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_marginLeft=10dp
+layout_marginRight=10dp
+layout_marginTop=5dp
+layout_marginBottom=5dp
+gravity=center</ppt>
+<event><eventItme type="clicki">ug(9,"text",km)
+//--------------------------------
+s admin=
+sss appkey=""
+//请在这里输入你之前注册的账号的用户名和 创建的APPKEY
+//APPKEY就是你应用的包名!!!
+//--------------------------------
+
+fe("@.appkey",jc)
+f(jc==false)
+{
+  end()
+}
+fe("$cookie",sh)
+simsi(sbm)
+t()
+{
+  ufnsui()
+  {
+    fn 环境检测.a()
+    fn 环境检测.b()
+    fn 环境检测.root()
+    fn 环境检测.c()
+    fn 环境检测.d()
+    fn 环境检测.e()
+    fn 环境检测.gj()
+    fn 环境检测.g()
+    fn 环境检测.j()
+  }
+  fe("$鸡你太美",wg)
+  f(sss.hook==true)
+  {
+    ufnsui()
+    {
+      tw("滚你妈的臭傻逼")
+      end()
+    }
+  }
+  else f(wg==true)
+  {
+    ufnsui()
+    {
+      tw("滚你妈的臭傻逼")
+      end()
+    }
+  }
+  else f(sh==true)
+  {
+    hs("http://81.71.140.161/api/query.php?user="+admin+"&imei="+sbm+"&app="+sss.appkey,dl)
+    f(dl=="不能留空")
+    {
+      ufnsui()
+      {
+        tw("请检查网络配置")
+      }
+    }
+    else f(dl=="账号不存在")
+    {
+      ufnsui()
+      {
+        tw("账号不存在，请联系开发者处理")
+      }
+    }
+    else f(dl=="该设备未绑定")
+    {
+      ufnsui()
+      {
+        tw("请勿非法添加数据,小心被格机")
+        sss hook==true
+        fw("$鸡你太美","鸡你太美")
+        end()
+      }
+    }
+    else f(dl=="卡密已过期")
+    {
+      ufnsui()
+      {
+        tw("卡密已过期")
+      }
+    }
+    else f(dl=="登录成功")
+    {
+      ufnsui()
+      {
+        tw("登录成功")
+        uigo("原mian界面.iyu")
+        end()
+      }
+    }
+  }
+  else
+  {
+    hs("http://81.71.140.161/api/binding.php?user="+admin+"&imei="+sbm+"&km="+km+"&app="+sss.appkey,sj)
+    syso(sj)
+    f(sj=="不能留空")
+    {
+      ufnsui()
+      {
+        tw("卡密输入不能为空!")
+      }
+    }
+    else f(sj=="卡密不存在")
+    {
+      ufnsui()
+      {
+        tw("卡密不存在")
+      }
+    }
+    else f(sj=="账号不存在")
+    {
+      ufnsui()
+      {
+        tw("请正确填写用户名")
+      }
+    }
+    else f(sj==null)
+    {
+      ufnsui()
+      {
+        tw("服务器连接异常，请检查网络")
+      }
+    }
+    else f(sj=="卡密已过期")
+    {
+      ufnsui()
+      {
+        tw("卡密已过期")
+      }
+    }
+    else f(sj=="该设备被绑定过了")
+    {
+      ufnsui()
+      {
+        tw("你已经绑定过了")
+      }
+    }
+    else f(sj=="卡密已被使用")
+    {
+      ufnsui()
+      {
+        tw("卡密已被绑定")
+      }
+    }
+    else f(sj=="绑定成功")
+    {
+      ufnsui()
+      {
+        tw("卡密绑定成功")
+        uigo("原mian界面.iyu")
+        fw("$cookie","cookie")
+        end()
+      }
+    }
+    else
+    {
+      ufnsui()
+      {
+        tw("appkey填写错误")
+      }
+    }
+  }
+}</eventItme></event>
+</View>
+<View id="30" did="28" type="TextView">
+<ppt>width=-2
+height=-2
+text=登   录
+typeface=@zt/obj.ttf
+textSize=20dp
+textColor=#ffffffff</ppt>
+<event></event>
+</View>
+<View id="27" did="25" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center</ppt>
+<event><eventItme type="clicki">, </eventItme></event>
+</View>
+<View id="29" did="27" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_marginLeft=10dp
+layout_marginRight=10dp
+layout_marginTop=5dp
+layout_marginBottom=5dp
+gravity=center</ppt>
+<event><eventItme type="clicki">//--------------------------------
+s admin=
+//请在这里输入你之前注册的账号的用户名
+s pass=
+//请在这里输入你之前注册账号的密码
+//注意登录那也要填写哦~
+//--------------------------------
+simsi(sbm)
+t()
+{
+  hs("http://81.71.140.161/api/unbind.php?imei="+sbm+"&user="+admin+"&pass="+pass+"&app="+sss.appkey,sjj)
+  syso(sjj)
+  ufnsui()
+  {
+    f(sjj=="不能留空")
+    {
+      tw("服务器连接异常,请检查网络")
+    }
+    else f(sjj=="账号不存在")
+    {
+      tw("请注入者确认账号填写正确")
+    }
+    else f(sjj=="密码错误")
+    {
+      tw("请注入者确认密码填写正确")
+    }
+    else f(sjj=="该设备未绑定卡密")
+    {
+      tw("该设备未绑定卡密")
+    }
+    else f(sjj=="解绑成功")
+    {
+      tw("解绑成功")
+      fd("$cookie",1)
+    }
+    else
+    {
+      tw("appkey填写错误")
+    }
+  }
+}</eventItme></event>
+</View>
+<View id="31" did="29" type="TextView">
+<ppt>width=-2
+height=-2
+text=解   绑
+typeface=@zt/obj.ttf
+textSize=20dp
+textColor=#ffffffff</ppt>
+<event></event>
+</View>
+<View id="39" did="15" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal
+layout_marginTop=20dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="32" did="39" type="LinearLayout">
+<ppt>width=-2
+height=30dp
+orientation=horizontal
+gravity=center_vertical</ppt>
+<event></event>
+</View>
+<View id="33" did="32" type="LinearLayout">
+<ppt>width=30dp
+height=-1
+orientation=vertical
+layout_marginLeft=10dp</ppt>
+<event></event>
+</View>
+<View id="34" did="33" type="ImageView">
+<ppt>width=-1
+height=-1
+src=@abc_btn_check_to_on_mtrl_000.png</ppt>
+<event></event>
+</View>
+<View id="35" did="32" type="TextView">
+<ppt>width=-2
+height=-2
+text=自动登录
+textSize=14sp
+typeface=@zt/obj.ttf
+textColor=#faff0080
+layout_marginRight=10dp</ppt>
+<event></event>
+</View>
+<View id="37" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=bottom</ppt>
+<event></event>
+</View>
+<View id="38" did="37" type="TextView">
+<ppt>width=-1
+height=-2
+text=copyright  ®中国🇨🇳“会点联盟”  2019 -2022
+textColor=#ffa7a7a7
+textSize=9sp
+layout_gravity=center
+gravity=center
+textcolor=#ffcdcdcd
+shadowradius=4
+shadowcolor=#000000
+shadowdx=0.5
+shadowdy=-5
+layout_marginBottom=10dp
+visibility=8</ppt>
+<event></event>
+</View>
+<View id="40" did="37" type="LinearLayout">
+<ppt>width=-1
+height=30dp
+orientation=horizontal
+gravity=center
+layout_marginTop=20dp</ppt>
+<event></event>
+</View>
+<View id="45" did="40" type="ImageView">
+<ppt>width=27dp
+height=27dp
+src=@abc_btn_check_to_on_mtrl_000.png</ppt>
+<event><eventItme type="clicki">fr("$zdll.txt",ss.zddl)
+f(ss.zddl==true)
+{
+    fw("$zdll.txt","false")
+    us(45,"src","@abc_btn_check_to_on_mtrl_000.png")
+}
+else
+{
+  fw("$zdll.txt","true")
+  us(45,"src","@abc_btn_check_to_on_mtrl_015.png")
+}
+syso(ss.zddl)</eventItme></event>
+</View>
+<View id="41" did="40" type="TextView">
+<ppt>width=-2
+height=-2
+text=登录即代表同意
+textColor=#000000
+textSize=13sp
+typeface=@zt/edit.ttf</ppt>
+<event></event>
+</View>
+<View id="42" did="40" type="TextView">
+<ppt>width=-2
+height=-2
+text=《用户协议》
+textColor=#ffff4d7b
+textSize=13sp
+typeface=@zt/edit.ttf
+</ppt>
+<event></event>
+</View>
+<View id="43" did="40" type="TextView">
+<ppt>width=-2
+height=-2
+text=和
+textColor=#000000
+textSize=13sp
+typeface=@zt/edit.ttf
+</ppt>
+<event></event>
+</View>
+<View id="44" did="40" type="TextView">
+<ppt>width=-2
+height=-2
+text=《隐私协议》
+textColor=#ffff4d7b
+textSize=13sp
+typeface=@zt/edit.ttf
+</ppt>
+<event></event>
+</View>
+<View id="8" did="1" type="LinearLayout">
+<ppt>width=-1
+height=100dp
+orientation=vertical
+gravity=center_vertical</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="LinearLayout">
+<ppt>width=-2
+height=-2
+orientation=vertical
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="12" did="8" type="LinearLayout">
+<ppt>width=-2
+height=-2
+orientation=vertical
+gravity=center
+layout_marginLeft=20dp</ppt>
+<event></event>
+</View>
+<View id="24" did="12" type="TextView">
+<ppt>width=-2
+height=-2
+text=卡密登录
+textSize=20sp
+textColor=#faff0080
+typeface=@zt/1cbb2510bad.ttf</ppt>
+<event></event>
+</View>
+<View id="14" did="12" type="LinearLayout">
+<ppt>width=70dp
+height=4dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">sjxx(a) 
+sgsz(a,2,d) 
+sl(d,"\n",uu)
+sgsz(uu,2,iiu)
+strim(iiu,iiu)
+f(iiu&gt;=23)
+{
+//syso("你是安卓6.0或者6.0以上的系统支持白底黑字")
+uycl("#ffffff",true)
+java(cs, activity, "android.app.Activity.getWindow")
+java(cs2, cs, "android.view.Window.getDecorView")
+java(null, cs2, "android.view.View.setSystemUiVisibility", "int", "8192")
+}
+else f(iiu&gt;=19)
+{
+  uycl("#9a9a9a9a",true)
+  syso("你的安卓系统低于6.0不能使用白底黑字只能给你用种了")
+}
+else
+{
+  syso("你的系统低于4.4不支持任何状态栏修改")
+}
+
+ngde(25,"#faff0080",bj)
+us(14,"background",bj)
+//图片
+fn 着色.控件着色(22,"#faff0080")
+fn 着色.控件着色(23,"#faff0080")
+fn 着色.控件着色(34,"#faff0080")
+fn 着色.控件着色(45,"#ffff4d7b")
+//编辑框
+ngde(25,"#ffeee4e9",bj)
+us(17,"background",bj)
+//fn 着色.控件着色(21,"#faff0080")
+
+
+//登录按钮
+ngde(25,"#ffff0867",bj)
+us(28,"background",bj)
+
+//卡密解绑按钮
+ngde(25,"#ffc91298",bj)
+us(29,"background",bj)
+
+
+t()
+{
+     fn 环境检测.a()
+     fn 环境检测.b()
+     fn 环境检测.root()
+     fn 环境检测.c()
+     fn 环境检测.d()
+     fn 环境检测.e()
+     fn 环境检测.gj()
+     fn 环境检测.g()
+     fn 环境检测.j()
+}
+
+/.
+底下有代码就是病毒</eventItme><eventItme type="loadingComplete">fe("$zdll.txt",nr)
+f(nr == false)
+{
+fw("$zdll.txt","false")
+fr("$zdll.txt",ss.zddl)
+}
+else
+{
+  fr("$zdll.txt",ss.zddl)
+}
+f(ss.zddl==true)
+{
+  us(45,"src","@abc_btn_check_to_on_mtrl_015.png")
+}
+else
+{
+  us(45,"src","@abc_btn_check_to_on_mtrl_000.png")
+}</eventItme></UIEventset>

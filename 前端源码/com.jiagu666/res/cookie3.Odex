@@ -1,0 +1,448 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="6" did="1" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=horizontal
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+layout_marginLeft=10dp
+layout_marginRight=10dp</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=195dp
+gravity=center
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="2" type="CardView">
+<ppt>width=340dp
+height=175dp
+app_CardcornerRadius=10dp
+app_CardElevation=5dp
+layout_margin=10dp
+</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=@tp.png
+</ppt>
+<event></event>
+</View>
+<View id="3" did="1" type="LinearLayout">
+<ppt>width=-2
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="13" did="1" type="LinearLayout">
+<ppt>width=-1
+height=110dp
+orientation=vertical
+gravity=center
+layout_marginTop=20dp</ppt>
+<event></event>
+</View>
+<View id="14" did="13" type="CardView">
+<ppt>width=340dp
+height=105dp
+app_CardcornerRadius=10dp
+app_CardElevation=2dp</ppt>
+<event></event>
+</View>
+<View id="15" did="14" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="17" did="15" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="18" did="17" type="LinearLayout">
+<ppt>width=90dp
+height=90dp
+gravity=center
+orientation=vertical
+</ppt>
+<event><eventItme type="clicki">s qun=""
+//以上为你的群号
+ss("mqqapi://card/show_pslcard?src_type=internal&version=1&uin="+qun+"&card_type=group&source=qrcode",joinqq)
+sit(a,"action", "android.intent.action.VIEW")
+sit(a,"data",joinqq)
+uit(a, "chooser", "QQ群窗口")</eventItme></event>
+</View>
+<View id="22" did="18" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="30" did="22" type="ImageView">
+<ppt>width=40dp
+height=45dp
+src=@mail.png</ppt>
+<event></event>
+</View>
+<View id="26" did="18" type="LinearLayout">
+<ppt>width=-1
+height=30dp
+gravity=center
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="34" did="26" type="TextView">
+<ppt>width=-2
+height=-2
+text=官方群聊
+textColor=#9E9E9E
+textSize=12sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="19" did="17" type="LinearLayout">
+<ppt>width=90dp
+height=90dp
+gravity=center
+orientation=vertical
+</ppt>
+<event><eventItme type="clicki">ug(38,"visibility",a)
+f(a==8)
+{
+us(38,"visibility","visible")
+}
+else
+{
+us(38,"visibility","gone")
+//底下随便写,自由发挥(*｀へ´*)</eventItme></event>
+</View>
+<View id="23" did="19" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="31" did="23" type="ImageView">
+<ppt>width=40dp
+height=45dp
+src=@bobdzt.png</ppt>
+<event></event>
+</View>
+<View id="27" did="19" type="LinearLayout">
+<ppt>width=-1
+height=30dp
+gravity=center
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="35" did="27" type="TextView">
+<ppt>width=-2
+height=-2
+text=充值会员
+textColor=#9E9E9E
+textSize=12sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="21" did="17" type="LinearLayout">
+<ppt>width=90dp
+height=90dp
+gravity=center
+orientation=vertical
+</ppt>
+<event><eventItme type="clicki">s qq =""
+//以上为你的QQ号
+s url = "mqqapi://card/show_pslcard?src_type=internal&source=sharecard&version=1&uin="
+ss(url+qq,url)
+sit(a, "action", "android.intent.action.VIEW")
+sit(a, "data", url)
+uit(a, "chooser", "跳转到加好友")</eventItme></event>
+</View>
+<View id="25" did="21" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="33" did="25" type="ImageView">
+<ppt>width=40dp
+height=45dp
+src=@shuibiao.png</ppt>
+<event></event>
+</View>
+<View id="29" did="21" type="LinearLayout">
+<ppt>width=-1
+height=30dp
+gravity=center
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="37" did="29" type="TextView">
+<ppt>width=-2
+height=-2
+text=联系客服
+textColor=#9E9E9E
+textSize=12sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="38" did="1" type="LinearLayout">
+<ppt>width=-1
+height=80dp
+orientation=vertical
+layout_margin=10dp
+layout_marginTop=20dp
+visibility=visible</ppt>
+<event></event>
+</View>
+<View id="39" did="38" type="CardView">
+<ppt>width=-1
+height=-1
+layout_margin=10dp
+app_CardcornerRadius=10dp</ppt>
+<event></event>
+</View>
+<View id="40" did="39" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="43" did="40" type="TextView">
+<ppt>width=-2
+height=-2
+text=输入卡密:
+textColor=#9E9E9E</ppt>
+<event></event>
+</View>
+<View id="41" did="40" type="EditText">
+<ppt>width=140dp
+height=50dp
+text=
+textSize=12
+background=white
+BackgroundColor=#ffffffff
+textCursorDrawable=#9E9E9E
+singleLine=true
+</ppt>
+<event></event>
+</View>
+<View id="46" did="40" type="CardView">
+<ppt>width=100dp
+height=50dp
+layout_margin=5dp
+app_CardcornerRadius=10dp</ppt>
+<event></event>
+</View>
+<View id="47" did="46" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_marginLeft=30dp
+gravity=center</ppt>
+<event><eventItme type="clicki">ug(41,"text",km)
+//--------------------------------
+s admin=
+sss appkey=""
+//请在这里输入你之前注册的账号的用户名和 创建的APPKEY
+//APPKEY就是你应用的包名!!!
+//--------------------------------
+
+fe("@.appkey",jc)
+f(jc==false)
+{
+  end()
+}
+fe("$cookie",sh)
+simsi(sbm)
+t()
+{
+  ufnsui()
+  {
+    fn 环境检测.a()
+    fn 环境检测.b()
+    fn 环境检测.root()
+    fn 环境检测.c()
+    fn 环境检测.d()
+    fn 环境检测.e()
+    fn 环境检测.gj()
+    fn 环境检测.g()
+    fn 环境检测.j()
+  }
+  fe("$鸡你太美",wg)
+  f(sss.hook==true)
+  {
+    ufnsui()
+    {
+      tw("滚你妈的臭傻逼")
+      end()
+    }
+  }
+  else f(wg==true)
+  {
+    ufnsui()
+    {
+      tw("滚你妈的臭傻逼")
+      end()
+    }
+  }
+  else f(sh==true)
+  {
+    hs("http://81.71.140.161/api/query.php?user="+admin+"&imei="+sbm+"&app="+sss.appkey,dl)
+    f(dl=="不能留空")
+    {
+      ufnsui()
+      {
+        tw("请检查网络配置")
+      }
+    }
+    else f(dl=="账号不存在")
+    {
+      ufnsui()
+      {
+        tw("账号不存在，请联系开发者处理")
+      }
+    }
+    else f(dl=="该设备未绑定")
+    {
+      ufnsui()
+      {
+        tw("请勿非法添加数据,小心被格机")
+        sss hook==true
+        fw("$鸡你太美","鸡你太美")
+        end()
+      }
+    }
+    else f(dl=="卡密已过期")
+    {
+      ufnsui()
+      {
+        tw("卡密已过期")
+      }
+    }
+    else f(dl=="登录成功")
+    {
+      ufnsui()
+      {
+        tw("登录成功")
+        uigo("原mian界面.iyu")
+        end()
+      }
+    }
+  }
+  else
+  {
+    hs("http://81.71.140.161/api/binding.php?user="+admin+"&imei="+sbm+"&km="+km+"&app="+sss.appkey,sj)
+    syso(sj)
+    f(sj=="不能留空")
+    {
+      ufnsui()
+      {
+        tw("卡密输入不能为空!")
+      }
+    }
+    else f(sj=="卡密不存在")
+    {
+      ufnsui()
+      {
+        tw("卡密不存在")
+      }
+    }
+    else f(sj=="账号不存在")
+    {
+      ufnsui()
+      {
+        tw("请正确填写用户名")
+      }
+    }
+    else f(sj==null)
+    {
+      ufnsui()
+      {
+        tw("服务器连接异常，请检查网络")
+      }
+    }
+    else f(sj=="卡密已过期")
+    {
+      ufnsui()
+      {
+        tw("卡密已过期")
+      }
+    }
+    else f(sj=="该设备被绑定过了")
+    {
+      ufnsui()
+      {
+        tw("你已经绑定过了")
+      }
+    }
+    else f(sj=="卡密已被使用")
+    {
+      ufnsui()
+      {
+        tw("卡密已被绑定")
+      }
+    }
+    else f(sj=="绑定成功")
+    {
+      ufnsui()
+      {
+        tw("卡密绑定成功")
+        uigo("原mian界面.iyu")
+        fw("$cookie","cookie")
+        end()
+      }
+    }
+    else
+    {
+      ufnsui()
+      {
+        tw("appkey填写错误")
+      }
+    }
+  }
+}</eventItme></event>
+</View>
+<View id="48" did="47" type="TextView">
+<ppt>width=-2
+height=-2
+text=绑定
+textColor=#ff000000
+textStyle=bold
+typeface=</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">uycl("#ffb8b8b8",true)
+t()
+{
+  fn 环境检测.a()
+  fn 环境检测.b()
+  fn 环境检测.c()
+  fn 环境检测.d()
+  fn 环境检测.e()
+  fn 环境检测.gj()
+  fn 环境检测.g()
+  fn 环境检测.j()
+}</eventItme></UIEventset>

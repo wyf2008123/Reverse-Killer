@@ -1,0 +1,432 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+gravity=center_horizontal
+background=@mmexport1654181696372.jpg
+</ppt>
+<event>
+</event>
+</View>
+<View id="3" did="1" type="LinearLayout">
+<ppt>
+width=-1
+height=-2
+orientation=vertical
+</ppt>
+<event>
+</event>
+</View>
+<View id="4" did="3" type="TextView">
+<ppt>
+width=-2
+height=-2
+text=
+textColor=#ffffff
+textStyle=bold
+textSize=35sp
+layout_marginTop=90dp
+layout_marginLeft=40dp
+</ppt>
+<event>
+</event>
+</View>
+<View id="5" did="3" type="LinearLayout">
+<ppt>
+width=-1
+height=50dp
+gravity=center_vertical
+layout_marginTop=30dp
+layout_marginBottom=20dp
+</ppt>
+<event>
+</event>
+</View>
+<View id="7" did="5" type="ImageView">
+<ppt>
+width=25dp
+height=25dp
+src=@d4.png
+layout_marginLeft=15dp
+</ppt>
+<event>
+</event>
+</View>
+<View id="8" did="5" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+gravity=center_vertical
+layout_marginLeft=10dp
+</ppt>
+<event>
+</event>
+</View>
+<View id="9" did="8" type="TextView">
+<ppt>width=-2
+height=-2
+text=应用版本：1.0正式版
+textColor=#ffffff
+textSize=14sp
+</ppt>
+<event>
+</event>
+</View>
+<View id="10" did="8" type="TextView">
+<ppt>width=-2
+height=-2
+text=YUJIAN·逆向杀手
+textColor=#ffffff
+textSize=12sp
+layout_marginTop=5dp
+</ppt>
+<event>
+</event>
+</View>
+<View id="11" did="1" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+gravity=center_horizontal
+</ppt>
+<event>
+</event>
+</View>
+<View id="15" did="11" type="EditText">
+<ppt>
+width=-1
+height=45dp
+text=
+textSize=14sp
+textColor=#000000
+hint=请输入登录卡密
+layout_marginLeft=50dp
+layout_marginRight=50dp
+gravity=center
+layout_marginTop=50dp
+textColorHint=#000000
+</ppt>
+<event>
+</event>
+</View>
+<View id="16" did="11" type="CardView">
+<ppt>
+width=-1
+height=40dp
+layout_marginLeft=80dp
+layout_marginRight=80dp
+app_CardBackgroundColor=#ffffff
+app_CardcornerRadius=8dp
+layout_marginTop=24dp
+BackgroundRipple=#333333
+</ppt>
+<event>
+<eventItme type="clicki">ug(15,"text",km)</eventItme>
+</event>
+</View>
+<View id="18" did="16" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+</ppt>
+<event>
+<eventItme type="clicki">ug(15,"text",km)
+//--------------------------------
+s admin=
+sss appkey=""
+//请在这里输入你之前注册的账号的用户名和 使用的APPKEY
+//APPKEY就是你应用的包名!!!
+//--------------------------------
+fe("@.appkey",jc)
+f(jc==false)
+{
+  end()
+}
+fe("$cookie",sh)
+simsi(sbm)
+t()
+{
+  ufnsui()
+  {
+    fn 环境检测.a()
+    fn 环境检测.b()
+    fn 环境检测.root()
+    fn 环境检测.c()
+    fn 环境检测.d()
+    fn 环境检测.e()
+    fn 环境检测.gj()
+    fn 环境检测.g()
+    fn 环境检测.j()
+  }
+  fe("$鸡你太美",wg)
+  f(sss.hook==true)
+  {
+    ufnsui()
+    {
+      tw("滚你妈的臭傻逼")
+      end()
+    }
+  }
+  else f(wg==true)
+  {
+    ufnsui()
+    {
+      tw("滚你妈的臭傻逼")
+      end()
+    }
+  }
+  else f(sh==true)
+  {
+    hs("http://81.71.140.161/api/query.php?user="+admin+"&imei="+sbm+"&app="+sss.appkey,dl)
+    f(dl=="不能留空")
+    {
+      ufnsui()
+      {
+        tw("请检查网络配置")
+      }
+    }
+    else f(dl=="账号不存在")
+    {
+      ufnsui()
+      {
+        tw("账号不存在，请联系开发者处理")
+      }
+    }
+    else f(dl=="该设备未绑定")
+    {
+      ufnsui()
+      {
+        tw("请勿非法添加数据,小心被格机")
+        sss hook==true
+        fw("$鸡你太美","鸡你太美")
+        end()
+      }
+    }
+    else f(dl=="卡密已过期")
+    {
+      ufnsui()
+      {
+        tw("卡密已过期")
+      }
+    }
+    else f(dl=="登录成功")
+    {
+      ufnsui()
+      {
+        tw("登录成功")
+        uigo("原mian界面.iyu")
+        end()
+      }
+    }
+  }
+  else
+  {
+    hs("http://81.71.140.161/api/binding.php?user="+admin+"&imei="+sbm+"&km="+km+"&app="+sss.appkey,sj)
+    syso(sj)
+    f(sj=="不能留空")
+    {
+      ufnsui()
+      {
+        tw("卡密输入不能为空!")
+      }
+    }
+    else f(sj=="卡密不存在")
+    {
+      ufnsui()
+      {
+        tw("卡密不存在")
+      }
+    }
+    else f(sj=="账号不存在")
+    {
+      ufnsui()
+      {
+        tw("请正确填写用户名")
+      }
+    }
+    else f(sj==null)
+    {
+      ufnsui()
+      {
+        tw("服务器连接异常，请检查网络")
+      }
+    }
+    else f(sj=="卡密已过期")
+    {
+      ufnsui()
+      {
+        tw("卡密已过期")
+      }
+    }
+    else f(sj=="该设备被绑定过了")
+    {
+      ufnsui()
+      {
+        tw("你已经绑定过了")
+      }
+    }
+    else f(sj=="卡密已被使用")
+    {
+      ufnsui()
+      {
+        tw("卡密已被绑定")
+      }
+    }
+    else f(sj=="绑定成功")
+    {
+      ufnsui()
+      {
+        tw("卡密绑定成功")
+        uigo("原mian界面.iyu")
+        fw("$cookie","cookie")
+        end()
+      }
+    }
+    else
+    {
+      ufnsui()
+      {
+        tw("appkey填写错误")
+      }
+    }
+  }
+}</eventItme></event>
+</View>
+<View id="19" did="18" type="TextView">
+<ppt>
+width=-2
+height=-2
+text=登录
+textColor=#333333
+textStyle=bold
+textSize=14sp
+</ppt>
+<event>
+</event>
+</View>
+<View id="20" did="11" type="CardView">
+<ppt>
+width=-1
+height=40dp
+layout_marginLeft=80dp
+layout_marginRight=80dp
+app_CardBackgroundColor=#ffffff
+app_CardcornerRadius=8dp
+layout_marginTop=15dp
+BackgroundRipple=#333333
+</ppt>
+<event>
+<eventItme type="clicki">
+ug(15,"text",km)
+call(data, "mlua", "t3.jban", km)
+t()
+{
+w(true)
+{
+f(sss.message!=null)
+{
+ufnsui()
+{
+tw(sss.message)
+sss message = null
+}
+break
+}
+stop(50)
+}
+}
+</eventItme>
+</event>
+</View>
+<View id="21" did="20" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+</ppt>
+<event>
+<eventItme type="clicki">//--------------------------------
+s admin=
+//请在这里输入你之前注册的账号的用户名
+s pass=
+//请在这里输入你之前注册账号的密码
+//注意登录那也要填写哦~
+//--------------------------------
+simsi(sbm)
+t()
+{
+  hs("http://81.71.140.161/api/unbind.php?imei="+sbm+"&user="+admin+"&pass="+pass+"&app="+sss.appkey,sjj)
+  syso(sjj)
+  ufnsui()
+  {
+    f(sjj=="不能留空")
+    {
+      tw("服务器连接异常,请检查网络")
+    }
+    else f(sjj=="账号不存在")
+    {
+      tw("请注入者确认账号填写正确")
+    }
+    else f(sjj=="密码错误")
+    {
+      tw("请注入者确认密码填写正确")
+    }
+    else f(sjj=="该设备未绑定卡密")
+    {
+      tw("该设备未绑定卡密")
+    }
+    else f(sjj=="解绑成功")
+    {
+      tw("解绑成功")
+      fd("$cookie",1)
+    }
+    else
+    {
+      tw("appkey填写错误")
+    }
+  }
+}</eventItme></event>
+</View>
+<View id="22" did="21" type="TextView">
+<ppt>
+width=-2
+height=-2
+text=解绑
+textColor=#333333
+textStyle=bold
+textSize=14sp
+</ppt>
+<event>
+</event>
+</View>
+<UIEventset>
+<eventItme type="loading">uycl(true)
+java(pk,activity,"android.content.ContextWrapper.getPackageManager")
+java(this,activity,"android.content.ContextWrapper.getPackageName")
+java(pi,pk,"android.content.pm.PackageManager.getPackageInfo","String",this,"int",0)
+javags(sss.bb,pi,"android.content.pm.PackageInfo","versionName")
+java(pk,activity,"android.content.ContextWrapper.getPackageManager")
+java(this,activity,"android.content.ContextWrapper.getPackageName")
+java(pi,pk,"android.content.pm.PackageManager.getPackageInfo","String",this,"int",0)
+javags(sss.bm,pi,"android.content.pm.PackageInfo","packageName")
+java(pk,activity,"android.content.ContextWrapper.getPackageManager")
+java(this,activity,"android.content.ContextWrapper.getPackageName")
+java(pi,pk,"android.content.pm.PackageManager.getPackageInfo","String",this,"int",0)
+javags(sss.bbh,pi,"android.content.pm.PackageInfo","versionCode")
+sss name = "逆向杀手验证"
+//这里输入你的应用名
+us(4,"text",sss.name)
+fn 着色.编辑框着色(15,"#000000")</eventItme>
+<eventItme type="restart">
+call(back,"mjava","xfc.getAppOps",activity)
+s(sss.bb*1000,bb)
+ss(bb,bb)
+call(data, "mlua", "t3.gx", bb)
+</eventItme>
+</UIEventset>

@@ -1,0 +1,21 @@
+fn 检测()
+sss hmx=false
+s num=60
+//倒计时秒数
+t()
+{
+  w(num&gt;0&&sss.hmx==false)
+  {
+    s-(1,num)
+    syso(num)
+    f(num==0)
+    {
+      ufnsui()
+      {
+        sss mm=0
+      }
+    }
+    stop(1000)
+  }
+}
+end fn

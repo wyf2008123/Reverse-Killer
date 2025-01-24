@@ -1,0 +1,92 @@
+<View id="1" did="0" type="CardView">
+<ppt>width=-1
+height=320dp
+layout_margin=5dp
+app_CardcornerRadius=10dp</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event><eventItme type="clicki">tw("点我干啥，去选择注入啊!")</eventItme></event>
+</View>
+<View id="4" did="3" type="LinearLayout">
+<ppt>width=-1
+height=250dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="18" did="4" type="ImageView">
+<ppt>width=-1
+height=-1
+src=17301567</ppt>
+<event></event>
+</View>
+<View id="6" did="3" type="LinearLayout">
+<ppt>width=-1
+height=70dp
+orientation=vertical
+ut_below=4</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="TextView">
+<ppt>width=-1
+height=-1
+text=文本7
+textSize=18sp
+textColor=#ff000000
+layout_marginLeft=10dp
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="8" did="6" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="ImageView">
+<ppt>width=25dp
+height=25dp
+src=@icon_iapp.png
+ut_centerVertical=true
+layout_marginLeft=10dp</ppt>
+<event></event>
+</View>
+<View id="12" did="8" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本12
+ut_centerVertical=true
+ut_alignParentRight=true
+layout_marginRight=10dp</ppt>
+<event></event>
+</View>
+<View id="13" did="0" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本13
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="14" did="0" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本14
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="16" did="0" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本16
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

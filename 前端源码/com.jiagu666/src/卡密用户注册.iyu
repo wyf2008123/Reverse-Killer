@@ -1,0 +1,363 @@
+<View id="45" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="46" did="45" type="NestedScrollView">
+<ppt>width=-1
+height=-1
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="1" did="45" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=55dp
+orientation=horizontal
+gravity=center_vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="ImageView">
+<ppt>width=55dp
+height=-1
+src=@hai66.png
+padding=14dp
+backgroundripple=#ff9bd7ff</ppt>
+<event><eventItme type="clicki">end()</eventItme></event>
+</View>
+<View id="4" did="1" type="LinearLayout">
+<ppt>width=-1
+height=80dp
+orientation=vertical
+gravity=center_vertical</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="TextView">
+<ppt>width=-2
+height=-2
+text=卡密弹窗后台-用户注册
+textsize=20dp
+textcolor=#fe000000
+textstyle=bold
+layout_marginleft=31dp</ppt>
+<event></event>
+</View>
+<View id="6" did="1" type="LinearLayout">
+<ppt>width=-1
+height=10dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="7" did="1" type="RelativeLayout">
+<ppt>width=-1
+height=40dp
+layout_marginleft=21dp
+layout_marginright=21dp
+layout_margintop=12dp</ppt>
+<event></event>
+</View>
+<View id="8" did="7" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+background=
+singleline=true
+hint=设置登录账号
+textsize=15dp
+textcolor=#5f000000
+textcolorhint=#5f000000
+inputtype=text
+maxLength=10</ppt>
+<event></event>
+</View>
+<View id="9" did="7" type="TextView">
+<ppt>width=-1
+height=1
+text=
+ut_alignparentbottom=true
+background=#e0e0e0</ppt>
+<event></event>
+</View>
+<View id="11" did="1" type="RelativeLayout">
+<ppt>width=-1
+height=40dp
+layout_marginleft=21dp
+layout_marginright=21dp
+layout_margintop=12dp</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+background=
+singleline=true
+hint=设置登录密码
+textsize=15dp
+textcolor=#5f000000
+textcolorhint=#5f000000
+inputtype=textvisiblepassword
+layout_marginright=55dp
+maxLength=10</ppt>
+<event></event>
+</View>
+<View id="13" did="11" type="TextView">
+<ppt>width=-1
+height=1
+text=
+ut_alignparentbottom=true
+background=#e0e0e0</ppt>
+<event></event>
+</View>
+<View id="14" did="11" type="ImageView">
+<ppt>width=40dp
+height=-1
+src=@design_ic_visibility.png
+padding=12dp
+ut_alignparentright=true</ppt>
+<event><eventItme type="clicki">ug(15,"text",ss6)
+f(ss6=="中")
+  {
+    us(12,"inputtype","textpassword")
+    us(14,"src","@design_ic_visibility_off.png")
+    us(15,"text","英")
+  }
+else f(ss6=="英")
+  {
+    us(12,"inputtype","textvisiblepassword")
+    us(14,"src","@design_ic_visibility.png")
+    us(15,"text","中")
+  }</eventItme></event>
+</View>
+<View id="15" did="11" type="TextView">
+<ppt>width=-2
+height=-2
+text=中
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="28" did="1" type="RelativeLayout">
+<ppt>width=-1
+height=40dp
+layout_marginleft=21dp
+layout_marginright=21dp
+layout_margintop=12dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="29" did="28" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+background=
+singleline=true
+hint=请输入邮箱
+textsize=15dp
+textcolor=#5f000000
+textcolorhint=#5f000000
+inputtype=textemailaddress
+layout_marginright=0dp
+</ppt>
+<event></event>
+</View>
+<View id="30" did="28" type="TextView">
+<ppt>width=-1
+height=1
+text=
+ut_alignparentbottom=true
+background=#e0e0e0</ppt>
+<event></event>
+</View>
+<View id="40" did="1" type="RelativeLayout">
+<ppt>width=-1
+height=40dp
+layout_marginleft=21dp
+layout_marginright=21dp
+layout_margintop=12dp
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="43" did="40" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+background=
+singleline=true
+hint=请输入手机号
+textsize=15dp
+textcolor=#5f000000
+textcolorhint=#5f000000
+inputtype=phone
+layout_marginright=0dp
+</ppt>
+<event></event>
+</View>
+<View id="44" did="40" type="TextView">
+<ppt>width=-1
+height=1
+text=
+ut_alignparentbottom=true
+background=#e0e0e0</ppt>
+<event></event>
+</View>
+<View id="17" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="16" did="17" type="TextView">
+<ppt>width=-2
+height=-2
+text=已有账号？前往登录
+textcolor=#ff00b2ff
+typeface=serif
+textsize=13dp
+layout_margintop=5dp
+layout_marginleft=21dp
+layout_weight=1</ppt>
+<event><eventItme type="clicki">end()
+uigo("卡密用户登录.iyu")</eventItme></event>
+</View>
+<View id="18" did="17" type="TextView">
+<ppt>width=-2
+height=-2
+text=
+textcolor=#ff00b2ff
+typeface=serif
+textsize=13dp
+layout_margintop=5dp
+layout_marginright=21dp</ppt>
+<event></event>
+</View>
+<View id="19" did="1" type="Button">
+<ppt>width=-1
+height=38dp
+text=注册
+background=#ff00b2ff
+typeface=serif
+textsize=13dp
+layout_marginleft=21dp
+layout_marginright=21dp
+textcolor=#ffffff
+layout_margintop=15dp</ppt>
+<event><eventItme type="clicki">fr("$注册",jcxz)
+f(jcxz==2)
+{
+  tw("当前IP注册已超过最大限制")
+}
+else
+{
+  t()
+  {
+    ug(8,"text",admin)
+    ug(12,"text",pass)
+    f(admin=="")
+    {
+      ufnsui()
+      {
+        tw("用户名不能为空!")
+      }
+    }
+    else f(pass=="")
+    {
+      ufnsui()
+      {
+        tw("密码不能为空!")
+      }
+    }
+    else
+    {
+      ufnsui()
+      {
+        t()
+        {
+          ss("http://81.71.140.161/api/sign.php?user="+admin+"&pass="+pass,sj)
+          hs(sj,sj2)
+          syso(sj2)
+          ufnsui()
+          {
+            f(sj2==null)
+            {
+              tw("服务器连接异常，请检查网络")
+            }
+            else f(sj2=="账号已经被注册")
+            {
+              tw("账号已被注册")
+            }
+            else f(sj2=="注册成功")
+            {
+              fe("$注册",xz)
+              f(xz==false)
+              {
+                fw("$注册",1)
+                tw("注册成功")
+                uigo("卡密用户登录.iyu")
+                end()
+              }
+              else
+              {
+                fw("$注册",2)
+                tw("注册成功,最大注册限制为2")
+                uigo("卡密用户登录.iyu")
+                end()
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}</eventItme></event>
+</View>
+<View id="20" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+gravity=bottom
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<UIEventset>
+<eventItme type="downkey">t()
+{
+   ss("rm -r "+"/storage/emulated/0/逆向杀手/xml",sss.cm)
+   call(null,"mlua","sc.m","sss.cm")
+}
+f(st_kC==4)
+//假设变量=4
+{
+f(sss.exit==null)
+//嵌套如果判断2次，申明全局变量退出=null
+{
+sss exit=0
+//全局变量退出=0
+tw("再按一次返回上一步",0)
+//提示
+t()
+//启用新线程
+{
+stop(2000)
+sss exit=null
+//退出应用
+//停止代码2000全局变量退出=Null
+}
+}
+else
+//否则
+{
+end()
+uigo("卡密用户登录.iyu")
+//退出[显示桌面]
+}
+}</eventItme>
+<eventItme type="loading">uycl("#ffffff",true)
+ngde(10,"#ff00b2ff",ss6)
+us(19,"background",ss6)
+ushsp(false)</eventItme></UIEventset>

@@ -1,0 +1,37 @@
+<View id="1" did="0" type="GridView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">t()
+{
+  ula(list,18="@km/retouch_2022101319545664.jpg",7="半全屏卡密模板",12="卡密模板1")
+  ufnsui()
+  {
+    uls(1,list,"list.iyu",-1,-2)
+  }
+  ula(list,18="@km/retouch_2022101319551256.jpg",7="全屏卡密模板",12="卡密模板2")
+  ufnsui()
+  {
+    uls(1,list,"list.iyu",-1,-2)
+  }
+  ula(list,18="@km/retouch_2022101319552401.jpg",7="半全屏卡密模板",12="卡密模板3")
+  
+  ufnsui()
+  {
+    uls(1,list,"list.iyu",-1,-2)
+  }
+  ula(list,18="@km/retouch_2022101510070702.jpg",7="仿t3卡密模板",12="卡密模板4")
+  
+  ufnsui()
+  {
+    uls(1,list,"list.iyu",-1,-2)
+  }
+  ula(list,18="@km/retouch_2022102122102133.jpg",7="单例卡密模板",12="单例模板1")
+  
+  ufnsui()
+  {
+    uls(1,list,"list.iyu",-1,-2)
+  }
+}</eventItme><eventItme type="downkey">end()
+uigo("设置.iyu")</eventItme></UIEventset>

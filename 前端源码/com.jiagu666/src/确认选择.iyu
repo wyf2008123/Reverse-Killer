@@ -1,0 +1,184 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-2
+background=white</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="RelativeLayout">
+<ppt>width=-1
+height=45dp
+background=white</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="ImageView">
+<ppt>width=25dp
+height=35dp
+src=@File_selection/offs.png
+ut_centerVertical=true
+layout_marginLeft=15dp</ppt>
+<event><eventItme type="clicki">java(null,sss.弹窗,"android.app.Dialog.dismiss")</eventItme></event>
+</View>
+<View id="4" did="2" type="TextView">
+<ppt>width=-2
+height=-2
+text=文件 - 属性
+textColor=#333333
+textSize=14sp
+ut_toRightOf=3
+ut_centerVertical=true
+layout_marginLeft=20dp</ppt>
+<event></event>
+</View>
+<View id="17" did="2" type="ImageView">
+<ppt>width=20dp
+height=35dp
+src=@File_selection/Outlined_Icons_PSD_0004_05.png
+ut_alignParentRight=true
+ut_centerVertical=true
+layout_marginRight=10dp</ppt>
+<event><eventItme type="clicki">fr("$文件获取.txt",dir)
+tws(v,"正在提取...",0)
+t()
+{
+  syso(dir)
+  syso(sss.name)
+  fc(dir,"/storage/emulated/0/逆向杀手/"+sss.name+".apk",fc)
+  s wjj="$读取.txt"
+  s wjj2="$dat"
+  s wjj3="$dat2"
+  fw(wjj,"/storage/emulated/0/逆向杀手/"+sss.name+".apk")
+  fw(wjj2,"%"+sss.name+".apk")
+  fw(wjj3,sss.name+".apk")
+  uigo("操作台.iyu")
+  end()
+  
+}
+}</eventItme></event>
+</View>
+<View id="5" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal
+ut_below=2</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="ScrollView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="8" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal
+gravity=center_vertical
+padding=10dp</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="TextView">
+<ppt>width=-2
+height=-2
+text=文件名：
+textColor=#333333
+textSize=14sp</ppt>
+<event></event>
+</View>
+<View id="10" did="8" type="TextView">
+<ppt>width=-2
+height=-2
+text=Content
+textColor=#333333
+textSize=14sp
+singleLine=false
+layout_marginLeft=10dp</ppt>
+<event><eventItme type="press">ug(st_vW , "text" , content)
+sxb(content)
+shb(contents)
+f(contents == content)
+{
+  tw("成功拷贝到剪贴板" , 0)
+}
+else
+{
+  tw("拷贝失败…" , 0)
+}</eventItme></event>
+</View>
+<View id="11" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal
+gravity=center_vertical
+padding=10dp</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="TextView">
+<ppt>width=-2
+height=-2
+text=路径：
+textColor=#333333
+textSize=14sp</ppt>
+<event></event>
+</View>
+<View id="13" did="11" type="TextView">
+<ppt>width=-2
+height=-2
+text=Content
+textColor=#333333
+textSize=14sp
+singleLine=false
+layout_marginLeft=10dp</ppt>
+<event><eventItme type="press">ug(st_vW , "text" , content)
+sxb(content)
+shb(contents)
+f(contents == content)
+{
+  tw("成功拷贝到剪贴板" , 0)
+}
+else
+{
+  tw("拷贝失败…" , 0)
+}</eventItme></event>
+</View>
+<View id="14" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal
+gravity=center_vertical
+padding=10dp</ppt>
+<event></event>
+</View>
+<View id="15" did="14" type="TextView">
+<ppt>width=-2
+height=-2
+text=大小：
+textColor=#333333
+textSize=14sp</ppt>
+<event></event>
+</View>
+<View id="16" did="14" type="TextView">
+<ppt>width=-2
+height=-2
+text=Content
+textColor=#333333
+textSize=14sp
+singleLine=false
+layout_marginLeft=10dp</ppt>
+<event><eventItme type="press">ug(st_vW , "text" , content)
+sxb(content)
+shb(contents)
+f(contents == content)
+{
+  tw("成功拷贝到剪贴板" , 0)
+}
+else
+{
+  tw("拷贝失败…" , 0)
+}</eventItme></event>
+</View>
+<UIEventset></UIEventset>

@@ -1,0 +1,82 @@
+import android.os.Build;
+import android.util.Base64;
+import androidx.annotation.RequiresApi;
+import javax.crypto.*;
+import javax.crypto.spec.SecretKeySpec;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+
+
+
+public String AESEncode(String content,String keys) {
+    try {
+            //创建密码器
+            Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+            //初始化为加密密码器
+            cipher.init(Cipher.ENCRYPT_MODE, getSecretKey(keys));
+            byte[] encryptByte = cipher.doFinal(content.getBytes(StandardCharsets.UTF_8));
+            // 将加密以后的数据进行 Base64 编码
+            return base64Encode(encryptByte);
+     } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    
+    
+    
+ public  String AESDecode(String content,String keys) {
+    try {
+            byte[] data = base64Decode(content);
+            Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+            //设置为解密模式
+            cipher.init(Cipher.DECRYPT_MODE, getSecretKey(keys));
+            //执行解密操作
+            byte[] result = cipher.doFinal(data);
+            return new String(result, StandardCharsets.UTF_8);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    
+    /**
+     * 使用密码获取 AES 秘钥
+     */
+    public SecretKeySpec getSecretKey(String secretKey) {
+        secretKey = toMakeKey(secretKey, 32, "0");
+        return new SecretKeySpec(secretKey.getBytes(StandardCharsets.UTF_8), "AEC");
+    }
+    
+    private  String toMakeKey(String secretKey, int length, String text) {
+        // 获取密钥长度
+        int strLen = secretKey.length();
+        // 判断长度是否小于应有的长度
+        if (strLen < length) {
+            // 补全位数
+            StringBuilder builder = new StringBuilder();
+            // 将key添加至build
+            builder.append(secretKey);
+            // 遍历添加默认文本
+            for (int i = 0; i < length - strLen; i++) {
+                builder.append(text);
+            }
+            // 赋值
+            secretKey = builder.toString();
+        }
+        return secretKey;
+    }
+    
+       /**
+     * 将 Base64 字符串 解码成 字节数组
+     */
+    public  byte[] base64Decode(String data) {
+        return Base64.decode(data, Base64.NO_WRAP);
+    }
+
+    /**
+     * 将 字节数组 转换成 Base64 编码
+     */
+    public  String base64Encode(byte[] data) {
+        return Base64.encodeToString(data, Base64.NO_WRAP);
+    } 

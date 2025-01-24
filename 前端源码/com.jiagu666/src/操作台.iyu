@@ -1,0 +1,1494 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="27" did="1" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="2" did="27" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+layout_marginTop=1
+orientation=vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="12" did="5" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical
+gravity=center
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="7" did="12" type="EditText">
+<ppt>width=-1
+height=-2
+text=
+layout_marginLeft=10dp
+layout_marginRight=10dp
+singleLine=true</ppt>
+<event></event>
+</View>
+<View id="64" did="5" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical
+gravity=center
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="65" did="64" type="EditText">
+<ppt>width=-1
+height=-2
+text=
+layout_marginLeft=10dp
+layout_marginRight=10dp
+singleLine=true</ppt>
+<event></event>
+</View>
+<View id="67" did="5" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical
+gravity=center
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="68" did="67" type="EditText">
+<ppt>width=-1
+height=-2
+text=
+layout_marginLeft=10dp
+layout_marginRight=10dp
+singleLine=true</ppt>
+<event></event>
+</View>
+<View id="36" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="37" did="36" type="ScrollView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="39" did="37" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="17" did="39" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+layout_marginTop=10dp
+visibility=visible</ppt>
+<event></event>
+</View>
+<View id="18" did="17" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="19" did="18" type="Button">
+<ppt>width=-1
+height=-2
+text=DEX递归式混淆
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event><eventItme type="clicki">fr("$设置/音效",jntm)
+f(jntm==true)
+{
+  bfm("@你干嘛.mp3")
+}
+f(sss.vip==false)
+{
+  //id(必须是相对布局,建议最外层用相对布局)
+  s id=1
+  //延迟关闭时间
+  s a=500
+  //提示位置(top,center,bottom)
+  s b="top"
+  //外边距(自动识别顶部或底部)
+  s c="70dp"
+  //提示弹窗背景(高度|背景颜色|圆角大小)
+  s d="40dp|#82000000|30"
+  //文字前面图标(图标大小|图标地址)
+  s e="25dp|@go.png"
+  //提示文字(字体颜色|提示内容)
+  s ff="#ffffff|软件未激活"
+  //文字后面图标(图标大小|图标地址)
+  s g="25dp|@actionbar_icon_light_close.png"
+  fn with_ui.N_alert(id,a,b,c,d,e,ff,g)
+}
+else f(sss.vip==true)
+{
+  fn DEX加密模块.加密()
+}
+else
+{
+  tw("未知错误")
+}</eventItme></event>
+</View>
+<View id="47" did="17" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical
+gravity=center
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="48" did="47" type="Button">
+<ppt>width=-1
+height=-2
+text=APK混淆(免费测试功能)
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event><eventItme type="clicki">utw(null,"","混淆.iyu","取消","确定",true,sss.混淆配置)
+{
+}
+else
+{
+  gvs(sss.混淆配置,4,hx)
+  gvs(sss.混淆配置,7,hx2)
+  gvs(sss.混淆配置,10,hx3)
+  ug(hx,"text",hx)
+  ug(hx2,"text",hx2)
+  ug(hx3,"text",hx3)
+  fe(hx2,lj)
+  f(hx=="")
+  {
+    sss hxzd=true
+  }
+  f(hx2==""||hx3=="")
+  {
+    tw("输入不能为空")
+  }
+  else f(lj==false)
+  {
+    tw("路径没有jar文件")
+  }
+  else
+  {
+    f(sss.hxzd==true)
+    {
+      fc("@dic.txt","/storage/emulated/0/逆向杀手/proguard/dic.txt",dic)
+    }
+    else
+    {
+      fc(hx,"/storage/emulated/0/逆向杀手/proguard/dic.txt",dic)
+    }
+    fc(hx2,"/storage/emulated/0/逆向杀手/project/classes.jar",jar)
+    fw("/storage/emulated/0/逆向杀手/proguard/aapt_rules.txt",hx3)
+    s id=1
+    //rt路径，没有这个你用不了的
+    s androidJarPath = "/storage/emulated/0/android.jar"
+    
+    fe(androidJarPath,androidJar)
+    //混淆配置目录
+    ss(ProjectPath+"app/build/bin/proguard/",ProGuardPath)
+    f(!androidJar){
+      fc("@android.jar",androidJarPath,androidJar)
+    }
+    //混淆dex(ProGuard)
+    loadjar("ProGuard-5.3.3.dex",dex)
+    //检查混淆文档与混淆词典配置
+    fe("/storage/emulated/0/逆向杀手/proguard/dic.txt",ProGuard_File)
+    fe("/storage/emulated/0/逆向杀手/proguard/proguard-android.txt",ProGuard_File2)
+    fe("/storage/emulated/0/逆向杀手/proguard/proguard-android-optimize.txt",ProGuard_File3)
+    fe("/storage/emulated/0/逆向杀手/proguard/proguard-rules.pro",ProGuard_File4)
+    
+    f(!ProGuard_File || !ProGuard_File2 || !ProGuard_File3 || !ProGuard_File4){
+      //解压
+      fuzs("@proguard.zip","/storage/emulated/0/逆向杀手/",ProGuard_File5)
+    }
+    
+    //将运行数据输出至文件
+    javanew(file,"java.io.File","String","/storage/emulated/0/逆向杀手/proguard/print.txt")
+    javanew(prints,"java.io.PrintStream","java.io.File",file)
+    java(null,null,"java.lang.System.setOut","java.io.PrintStream",prints)
+    java(null,null,"java.lang.System.setErr","java.io.PrintStream",prints)
+    
+    
+    //命令数组
+    sl("",";",args2)
+    javanew(ArrayList,"java.util.ArrayList")
+    
+    //由aapt提供的混淆配置(使用配置文件都需要加上@)
+    javax(null,ArrayList,"java.util.ArrayList","add","Object","@/storage/emulated/0/逆向杀手/proguard/aapt_rules.txt")
+    //默认配置及工程配置
+    javax(null,ArrayList,"java.util.ArrayList","add","Object","@/storage/emulated/0/逆向杀手/proguard/proguard-android.txt")
+    javax(null,ArrayList,"java.util.ArrayList","add","Object","@/storage/emulated/0/逆向杀手/proguard/proguard-android-optimize.txt")
+    javax(null,ArrayList,"java.util.ArrayList","add","Object","@/storage/emulated/0/逆向杀手/proguard/proguard-rules.pro")
+    //Rt路径
+    javax(null,ArrayList,"java.util.ArrayList","add","Object","-libraryjars")
+    javax(null,ArrayList,"java.util.ArrayList","add","Object",androidJarPath)
+    javax(null,ArrayList,"java.util.ArrayList","add","Object","-injars")
+    //需要混淆的jar
+    javax(null,ArrayList,"java.util.ArrayList","add","Object","/storage/emulated/0/逆向杀手/project/classes.jar")
+    //混淆好后的输出目录
+    javax(null,ArrayList,"java.util.ArrayList","add","Object","-outjars")
+    javax(null,ArrayList,"java.util.ArrayList","add","Object","/storage/emulated/0/逆向杀手/project/classes2.jar")
+    javax(null,ArrayList,"java.util.ArrayList","add","Object","-repackageclasses")
+    javax(null,ArrayList,"java.util.ArrayList","add","Object","-keeppackagenames")
+    
+    javax(args2,ArrayList,"java.util.ArrayList","toArray","Object[]",args2)
+    
+    //开始
+    cls(dex,"proguard.ProGuard",proguard)
+    javax(null,null,proguard,"main","String[]",args2)
+    syso("处理完成")
+    fe("/storage/emulated/0/逆向杀手/project/classes2.jar",jc)
+    fr("$设置/转dex",zh)
+    f(zh==true)
+    {
+      t()
+      {
+        loadjar("classes.dex",dex)
+        cls(dex,"com.LoverZS.dx.fun",fun)
+        javax(结果,null,fun,"JarDex","String","/storage/emulated/0/逆向杀手/project/classes2.jar","String","/storage/emulated/0/逆向杀手/project/classes.dex")
+        fd("/storage/emulated/0/逆向杀手/project/classes2.jar",sc)
+        fd("/storage/emulated/0/逆向杀手/project/classes.jar",sc)
+      }
+    }
+    f(jc==true)
+    {
+      utw(null,"处理完成","设置开启转换dex路径:/storage/emulated/0/逆向杀手/project/classes.dex\n设置未开启转换dex路径:/storage/emulated/0/逆向杀手/project/classes2.jar","确定",false,v)
+      {
+      }
+      fd("/storage/emulated/0/逆向杀手/project/classes.jar",sc)
+      //id(必须是相对布局,建议最外层用相对布局)
+      s id=1
+      //延迟关闭时间
+      s a=500
+      //提示位置(top,center,bottom)
+      s b="top"
+      //外边距(自动识别顶部或底部)
+      s c="70dp"
+      //提示弹窗背景(高度|背景颜色|圆角大小)
+      s d="40dp|#82000000|30"
+      //文字前面图标(图标大小|图标地址)
+      s e="25dp|@go.png"
+      //提示文字(字体颜色|提示内容)
+      s ff="#ffffff|处理完成"
+      //文字后面图标(图标大小|图标地址)
+      s g="25dp|@actionbar_icon_light_close.png"
+      fn with_ui.N_alert(id,a,b,c,d,e,ff,g)
+    }
+    else
+    {
+      tw("处理异常")
+      fr("/storage/emulated/0/逆向杀手/proguard/print.txt",bk)
+      utw(null,"崩溃日志如下",bk,"确定",false,v)
+      {
+        tw("请检查配置是否正确")
+      }
+    }
+  }
+}</eventItme></event>
+</View>
+<View id="21" did="17" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical
+gravity=center
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="22" did="21" type="Button">
+<ppt>width=-1
+height=-2
+text=插入混淆类操作1
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event><eventItme type="clicki">fr("$设置/音效",jntm)
+f(jntm==true)
+{
+  bfm("@你干嘛.mp3")
+}
+f(sss.vip==false)
+{
+//id(必须是相对布局,建议最外层用相对布局)
+s id=1
+//延迟关闭时间
+s a=500
+//提示位置(top,center,bottom)
+s b="top"
+//外边距(自动识别顶部或底部)
+s c="70dp"
+//提示弹窗背景(高度|背景颜色|圆角大小)
+s d="40dp|#82000000|30"
+//文字前面图标(图标大小|图标地址)
+s e="25dp|@go.png"
+//提示文字(字体颜色|提示内容)
+s ff="#ffffff|软件未激活"
+//文字后面图标(图标大小|图标地址)
+s g="25dp|@actionbar_icon_light_close.png"
+fn with_ui.N_alert(id,a,b,c,d,e,ff,g)
+}
+else f(sss.vip==true)
+{
+fn DEX加密模块.类加密1()
+}
+else
+{
+  tw("未知错误")
+}</eventItme></event>
+</View>
+<View id="23" did="17" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical
+gravity=center
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="24" did="23" type="Button">
+<ppt>width=-1
+height=-2
+text=插入混淆字符串操作2
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event><eventItme type="clicki">fr("$设置/音效",jntm)
+f(jntm==true)
+{
+  bfm("@你干嘛.mp3")
+}
+fn DEX加密模块.类加密2()</eventItme></event>
+</View>
+<View id="32" did="17" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical
+gravity=center
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="33" did="32" type="Button">
+<ppt>width=-1
+height=-2
+text=一键注入灵魂文件(免费)
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event><eventItme type="clicki">fr("$设置/音效",jntm)
+f(jntm==true)
+{
+  bfm("@你干嘛.mp3")
+}
+fn DEX加密模块.注入()</eventItme></event>
+</View>
+<View id="25" did="17" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical
+gravity=center
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="26" did="25" type="Button">
+<ppt>width=-1
+height=-2
+text=查看软件全部信息
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event><eventItme type="clicki">fr("$设置/音效",jntm)
+f(jntm==true)
+{
+  bfm("@你干嘛.mp3")
+}
+f(sss.vip==true)
+{
+  ufnsui()
+  {
+  s dq10="/storage/emulated/0/逆向杀手/dat2"
+  fr(dq10,dq0)
+  s aa = "/storage/emulated/0/逆向杀手/"
+  ss(aa+dq0+=.apk",aaa)
+  syso(aaa)
+  s bb = "AndroidManifest.xml"
+  s cc = "/storage/emulated/0/逆向杀手/xml/AndroidManifest.xml"
+  fuz(aaa,bb,cc,dd)
+  s color="服务器连接成功"
+  us(17,"visibility","gone")
+  us(40,"visibility","visible")
+  us(51,"visibility","visible")
+  us(52,"visibility","visible")
+  us(53,"visibility","visible")
+  us(54,"visibility","visible")
+  us(55,"visibility","visible")
+  us(56,"visibility","visible")
+  us(57,"visibility","visible")
+  us(58,"visibility","visible")
+  us(59,"visibility","visible")
+  us(60,"visibility","visible")
+  us(61,"visibility","visible")
+  us(66,"visibility","visible")
+  }
+  cls(sss.a_dex,"com.xml.原罪.iApp",b)
+  s path="/storage/emulated/0/逆向杀手/xml/AndroidManifest.xml/AndroidManifest.xml"
+  javax(AXML,null,b,"反编译","String",path)
+  sj(AXML,"android:versionCode=\"","\"",版本号)
+  sj(AXML,"android:versionName=\"","\"",版本名)
+  sj(AXML,"package=\"","\"",包名)
+  sj(AXML,"android:label=\"","\"",应用名)
+  sj(AXML,"android:name=\"","\"",android:name)
+  syso("版本号:"+版本号)   
+  syso("版本名:"+版本名)
+  syso("包名:"+包名)
+  syso("应用名:"+应用名)
+  syso(入口:"+android:name)
+  ufnsui()
+  {
+  us(40,"text","逆向杀手-&gt;Welcome to this")
+  us(51,"text","逆向杀手-&gt;Coptyright reserved 遇见©2021")
+  us(52,"text","逆向杀手-&gt;服务器连接成功")
+  us(66,"text","逆向杀手-&gt;版本:"+sss.version)
+  us(53,"text","逆向杀手-&gt;软件路径：/storage/emulated/0/逆向杀手/"+sss.dqnr2)
+  us(54,"text","逆向杀手-&gt;版本号:"+版本号)
+  us(55,"text","逆向杀手-&gt;版本名:"+版本名)
+  us(56,"text","逆向杀手-&gt;包名:"+包名)
+  us(57,"text","逆向杀手-&gt;应用名:"+应用名)
+  syso(dq0)
+  us(58,"text","逆向杀手-&gt;软件名:"+dq0)
+  us(59,"text","逆向杀手-&gt;入口:"+android:name)
+  us(60,"text","逆向杀手-&gt;回填完毕!")
+  us(61,"text","逆向杀手-&gt;文件路径:/storage/emulated/0/逆向杀手/APK/"+sss.dqnr2)
+  ufnsui()
+  {
+  stop(5000)
+  us(17,"visibility","visible")
+  us(40,"visibility","gone")
+  us(51,"visibility","gone")
+  us(52,"visibility","gone")
+  us(53,"visibility","gone")
+  us(54,"visibility","gone")
+  us(55,"visibility","gone")
+  us(56,"visibility","gone")
+  us(57,"visibility","gone")
+  us(58,"visibility","gone")
+  us(59,"visibility","gone")
+  us(60,"visibility","gone")
+  us(61,"visibility","gone")
+  }
+  }
+}
+else
+{
+//id(必须是相对布局,建议最外层用相对布局)
+s id=1
+//延迟关闭时间
+s a=1000
+//提示位置(top,center,bottom)
+s b="top"
+//外边距(自动识别顶部或底部)
+s c="70dp"
+//提示弹窗背景(高度|背景颜色|圆角大小)
+s d="40dp|#82000000|30"
+//文字前面图标(图标大小|图标地址)
+s e="25dp|@go.png"
+//提示文字(字体颜色|提示内容)
+s ff="#ffffff|软件未激活"
+//文字后面图标(图标大小|图标地址)
+s g="25dp|@actionbar_icon_light_close.png"
+fn with_ui.N_alert(id,a,b,c,d,e,ff,g)
+}</eventItme></event>
+</View>
+<View id="34" did="17" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical
+gravity=center
+layout_marginTop=5dp
+</ppt>
+<event></event>
+</View>
+<View id="35" did="34" type="Button">
+<ppt>width=-1
+height=-2
+text=iapp注入网络弹窗
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event><eventItme type="clicki">fr("$设置/音效",jntm)
+f(jntm==true)
+{
+  bfm("@你干嘛.mp3")
+}
+f(sss.vip==false)
+{
+  //id(必须是相对布局,建议最外层用相对布局)
+  s id=1
+  //延迟关闭时间
+  s a=500
+  //提示位置(top,center,bottom)
+  s b="top"
+  //外边距(自动识别顶部或底部)
+  s c="70dp"
+  //提示弹窗背景(高度|背景颜色|圆角大小)
+  s d="40dp|#82000000|30"
+  //文字前面图标(图标大小|图标地址)
+  s e="25dp|@go.png"
+  //提示文字(字体颜色|提示内容)
+  s ff="#ffffff|软件未激活"
+  //文字后面图标(图标大小|图标地址)
+  s g="25dp|@actionbar_icon_light_close.png"
+  fn with_ui.N_alert(id,a,b,c,d,e,ff,g)
+}
+else f(sss.vip==true)
+{
+  t()
+  {
+    fr("/storage/emulated/0/逆向杀手/卡密验证/cookie",admin)
+    fr("/storage/emulated/0/逆向杀手/卡密验证/cookie2",pass)
+    hs("http://81.71.140.161/api/login.php?user="+admin+"&pass="+pass,sj)
+    f(sj=="登录成功")
+    {
+      
+      uigo("注入选择APK.iyu")
+      end()
+    }
+    else
+    {
+      uigo("卡密用户登录.iyu")
+      end()
+    }
+  }
+}
+else
+{
+  tw("未知错误")
+}</eventItme></event>
+</View>
+<View id="41" did="17" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical
+gravity=center
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="42" did="41" type="Button">
+<ppt>width=-1
+height=-2
+text=lua脚本加密
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event><eventItme type="clicki">fr("$设置/音效",jntm)
+f(jntm==true)
+{
+  bfm("@你干嘛.mp3")
+}
+t()
+{
+     fn 环境检测.a()
+     fn 环境检测.b()
+     fn 环境检测.root()
+     fn 环境检测.c()
+     fn 环境检测.d()
+     fn 环境检测.e()
+     fn 环境检测.gj()
+     fn 环境检测.g()
+     fn 环境检测.j()
+}
+ug(68,"text",wj)
+fr(wj,nr)
+fn lh.加密(nr)
+ss(wj+"bx64",mz)
+s bb ="local Yicjm = function(Yicstr)\nlocal b64chars = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/\"  \nlocal temp = {}  \nfor i = 1, 64 do    \ntemp[string.sub(b64chars, i, i)] = i  \nend  \ntemp[\"=\"] = 0  \nlocal str = \"\"  \nfor i = 1, #Yicstr, 4 do    \nif not (i &gt; #Yicstr) then      \nlocal data = 0      \nlocal str_count = 0      \nfor j = 0, 3 do        \nlocal str1 = string.sub(Yicstr, i + j, i + j)        \nif not temp[str1] then          \nreturn        \nend        \nif temp[str1] &lt; 1 then          \ndata = data * 64        \nelse          \ndata = data * 64 + temp[str1] - 1          \nstr_count = str_count + 1        \nend      \nend      \nfor j = 16, 0, -8 do        \nif str_count &gt; 0 then          \nstr = str .. string.char(math.floor(data / math.pow(2, j)))          \ndata = math.fmod(data, math.pow(2, j))          \nstr_count = str_count - 1        \nend      \nend    \nend  \nend  \nlocal last = tonumber(string.byte(str, string.len(str), string.len(str)))  \nif last == 0 then    \nstr = string.sub(str, 1, string.len(str) - 1)  \nend  \nreturn str\nend \nlocal base64 = Yicjm(\""
+s cc ="\")\n\nlocal base64 = load(base64)\n\nload(base64)"
+ss(bb+sss.str+cc,jiaoben)
+f(sss.str == null)
+{
+  //id(必须是相对布局,建议最外层用相对布局)
+  s id=1
+  //延迟关闭时间
+  s a=800
+  //提示位置(top,center,bottom)
+  s b="top"
+  //外边距(自动识别顶部或底部)
+  s c="70dp"
+  //提示弹窗背景(高度|背景颜色|圆角大小)
+  s d="40dp|#82000000|30"
+  //文字前面图标(图标大小|图标地址)
+  s e="25dp|@go.png"
+  //提示文字(字体颜色|提示内容)
+  s ff="#ffffff|路径错误!"
+  //文字后面图标(图标大小|图标地址)
+  s g="25dp|@actionbar_icon_light_close.png"
+  fn with_ui.N_alert(id,a,b,c,d,e,ff,g)
+  endcode
+}
+else
+{
+utw(null,"加密成功是否保存",jiaoben,"保存","取消",true,v)
+{
+fw(mz,jiaoben)
+fr("@const-string",nr)
+fr(wj+"bx64",wj2)
+ss(wj2+nr,wj3)
+fw(wj+"bx64",wj3)
+syso(sss.str)
+syso(bb)
+syso(cc)
+tw("加密成功\n加密路径为:"+mz)
+}
+else
+{
+endcode
+}
+}
+</eventItme></event>
+</View>
+<View id="43" did="17" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical
+gravity=center
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="44" did="43" type="Button">
+<ppt>width=-1
+height=-2
+text=字符串加密
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event><eventItme type="clicki">fr("$设置/音效",jntm)
+f(jntm==true)
+{
+  bfm("@你干嘛.mp3")
+}
+f(sss.vip==false||sss.vip==null)
+{
+  //id(必须是相对布局,建议最外层用相对布局)
+  s id=1
+  //延迟关闭时间
+  s a=500
+  //提示位置(top,center,bottom)
+  s b="top"
+  //外边距(自动识别顶部或底部)
+  s c="70dp"
+  //提示弹窗背景(高度|背景颜色|圆角大小)
+  s d="40dp|#82000000|30"
+  //文字前面图标(图标大小|图标地址)
+  s e="25dp|@go.png"
+  //提示文字(字体颜色|提示内容)
+  s ff="#ffffff|软件未激活"
+  //文字后面图标(图标大小|图标地址)
+  s g="25dp|@actionbar_icon_light_close.png"
+  fn with_ui.N_alert(id,a,b,c,d,e,ff,g)
+}
+else f(sss.vip==true)
+{
+t()
+{
+ug(65,"text",sss.zfc)
+ufnsui()
+{
+f(sss.zfc=="")
+{
+  //id(必须是相对布局,建议最外层用相对布局)
+  s id=1
+  //延迟关闭时间
+  s a=800
+  //提示位置(top,center,bottom)
+  s b="top"
+  //外边距(自动识别顶部或底部)
+  s c="70dp"
+  //提示弹窗背景(高度|背景颜色|圆角大小)
+  s d="40dp|#82000000|30"
+  //文字前面图标(图标大小|图标地址)
+  s e="25dp|@go.png"
+  //提示文字(字体颜色|提示内容)
+  s ff="#ffffff|请输入类名!"
+  //文字后面图标(图标大小|图标地址)
+  s g="25dp|@actionbar_icon_light_close.png"
+  fn with_ui.N_alert(id,a,b,c,d,e,ff,g)
+  endcode
+}
+else
+{
+  s id=1
+  //加载时状态栏颜色
+  s a="#FF7A7A7A"
+  //提示内容
+  s b="加载中"
+  fn with_ui.N_loadingTwo(id,a,b)
+  fr("$读取.txt",DEX读取)
+  fuz(DEX读取,"AndroidManifest.xml","/storage/emulated/0/逆向杀手/xml/AndroidManifest.xml",xml1)
+  fuz(DEX读取,"classes.dex","/storage/emulated/0/逆向杀手/DEX/classes.dex",dex1)
+  fuz(DEX读取,"classes2.dex","/storage/emulated/0/逆向杀手/DEX/classes2.dex",dex2)
+  fe("/storage/emulated/0/逆向杀手/DEX/classes2.dex/classes2.dex",Dex2检测)
+  f(Dex2检测!=false)
+  {
+      utw(null,"温馨提示","检测到多DEX,请手动脱离除classes.dex重试","确认",true,vvv)
+      {
+         endutw()
+         ss("rm -r "+"/storage/emulated/0/逆向杀手/DEX",sss.cm)
+         call(null,"mlua","sc.m","sss.cm")
+         ss("rm -r "+"/storage/emulated/0/逆向杀手/xml",sss.cm)
+         call(null,"mlua","sc.m","sss.cm")
+         //关闭加载后状态栏颜色
+         s ea="#ffffff"
+         fn with_ui.N_loadingEnd(two,ea)
+         
+      }
+      endcode
+  }
+  s color="服务器连接成功"
+  us(17,"visibility","gone")
+  us(40,"visibility","visible")
+  us(51,"visibility","visible")
+  us(52,"visibility","visible")
+  us(53,"visibility","visible")
+  us(54,"visibility","visible")
+  us(55,"visibility","visible")
+  us(56,"visibility","visible")
+  us(57,"visibility","visible")
+  us(58,"visibility","visible")
+  us(59,"visibility","visible")
+  us(60,"visibility","visible")
+  us(61,"visibility","visible")
+  us(66,"visibility","visible")
+  us(40,"text","逆向杀手-&gt;Welcome to this")
+  us(51,"text","逆向杀手-&gt;Coptyright reserved 遇见©2021")
+  us(52,"text","逆向杀手-&gt;"+color)
+  us(66,"text","逆向杀手-&gt;版本:"+sss.version)
+  us(53,"text","逆向杀手-&gt;正在反编译DEX....")
+  f(Dex2检测!=true)
+  {
+  ufnsui()
+  {
+  syso(sss.zfc)
+  ss("L"+sss.zfc+";",sss.zfc)
+  cls(sss.dex_jar,"com.mycompany.myapp3.MainActivity",run)
+  javax(smail,null,run,"smail","String","/storage/emulated/0/逆向杀手/DEX/classes.dex/classes.dex","String",sss.zfc)
+  sj(smail,"const-string v0, ","\n",Dexkey16)
+  }
+  ufnsui()
+  {
+  f(Dexkey16!=null)
+  {
+  fr("/storage/emulated/0/StubApp.smali",sss.duqu)
+  s kg="""
+  sr(Dexkey16,kg,"",sss.Dexkey17)
+  call(sss.Dexkey17,"mjava","base64Encry.setEncryptionBase64",sss.Dexkey17)
+  syso(sss.Dexkey17)
+  ss("""+sss.Dexkey17+""",sss.Dexkey17)
+  sr(sss.duqu,Dexkey16,sss.Dexkey17,Dexkey)
+  fw("/storage/emulated/0/StubApp.smali",Dexkey)
+  us(54,"text","逆向杀手-&gt;v0加密成功... ")
+  }
+  else
+  {
+    us(54,"text","逆向杀手-&gt;v0不存在或获取失败")
+  }
+  
+  sj(smail,"const-string v4, ","\n",Dexkey18)
+  f(Dexkey18!=null)
+  {
+  fr("/storage/emulated/0/StubApp.smali",sss.duqu)
+  s kg="""
+  sr(Dexkey18,kg,"",sss.Dexkey19)
+  call(sss.Dexkey19,"mjava","base64Encry.setEncryptionBase64",sss.Dexkey19)
+  syso(sss.Dexkey19)
+  ss("""+sss.Dexkey19+""",sss.Dexkey19)
+  sr(sss.duqu,Dexkey18,sss.Dexkey19,Dexkey2)
+  fw("/storage/emulated/0/StubApp.smali",Dexkey2)
+  us(55,"text","逆向杀手-&gt;v4加密成功...")
+  }
+  else
+  {
+    us(55,"text","逆向杀手-&gt;v4不存在或获取失败")
+  }
+  
+  sj(smail,"const-string v3, ","\n",Dexkey20)
+  f(Dexkey20!=null)
+  {
+  fr("/storage/emulated/0/StubApp.smali",sss.duqu)
+  s kg="""
+  sr(Dexkey20,kg,"",sss.Dexkey21)
+  call(sss.Dexkey21,"mjava","base64Encry.setEncryptionBase64",sss.Dexkey21)
+  syso(sss.Dexkey21)
+  ss("""+sss.Dexkey21+""",Dexkey21)
+  sr(sss.duqu,Dexkey20,sss.Dexkey21,Dexkey3)
+  fw("/storage/emulated/0/StubApp.smali",Dexkey3)
+  us(56,"text","逆向杀手-&gt;v3加密成功...")
+  }
+  else
+  {
+    us(56,"text","逆向杀手-&gt;v3不存在或获取失败")
+  }
+  
+  sj(smail,"const-string v1, ","\n",Dexkey22)
+  f(Dexkey22!=null)
+  {
+  syso("1")
+  fr("/storage/emulated/0/StubApp.smali",sss.duqu)
+  s kg="""
+  sr(Dexkey22,kg,"",sss.Dexkey23)
+  call(sss.Dexkey23,"mjava","base64Encry.setEncryptionBase64",sss.Dexkey23)
+  syso(sss.Dexkey23)
+  ss("""+sss.Dexkey23+""",sss.Dexkey23)
+  sr(sss.duqu,Dexkey22,sss.Dexkey23,Dexkey4)
+  fw("/storage/emulated/0/StubApp.smali",Dexkey4)
+  us(57,"text","逆向杀手-&gt;v1加密成功...")
+  }
+  else
+  {
+    us(57,"text","逆向杀手-&gt;v1不存在或获取失败")
+  }
+  
+  sj(smail,"const-string v2, ","\n",Dexkey24)
+  f(Dexkey24!=null)
+  {
+  fr("/storage/emulated/0/StubApp.smali",sss.duqu)
+  s kg="""
+  sr(Dexkey24,kg,"",sss.Dexkey25)
+  call(sss.Dexkey25,"mjava","base64Encry.setEncryptionBase64",sss.Dexkey25)
+  syso(sss.Dexkey25)
+  ss("""+sss.Dexkey25+""",sss.Dexkey25)
+  sr(sss.duqu,Dexkey24,sss.Dexkey25,Dexkey5)
+  fw("/storage/emulated/0/StubApp.smali",Dexkey5)
+  us(58,"text","逆向杀手-&gt;v2加密成功...")
+  }
+  else
+  {
+    us(58,"text","逆向杀手-&gt;v2不存在或获取失败")
+  }
+  
+  sj(smail,"const-string v5, ","\n",Dexkey26)
+  f(Dexkey26!=null)
+  {
+  fr("/storage/emulated/0/StubApp.smali",sss.duqu)
+  s kg="""
+  sr(Dexkey26,kg,"",sss.Dexkey27)
+  call(sss.Dexkey27,"mjava","base64Encry.setEncryptionBase64",sss.Dexkey27)
+  syso(sss.Dexkey27)
+  ss("""+sss.Dexkey27+""",sss.Dexkey27)
+  sr(sss.duqu,Dexkey26,sss.Dexkey27,Dexkey6)
+  fw("/storage/emulated/0/StubApp.smali",Dexkey6)
+  us(59,"text","逆向杀手-&gt;v5加密成功...")
+  }
+  else
+  {
+    us(59,"text","逆向杀手-&gt;v5不存在或获取失败")
+  }
+  
+  sj(smail,"const-string v6, ","\n",Dexkey28)
+  f(Dexkey28!=null)
+  {
+  fr("/storage/emulated/0/StubApp.smali",sss.duqu)
+  s kg="""
+  sr(Dexkey28,kg,"",Dexkey29)
+  call(sss.Dexkey29,"mjava","base64Encry.setEncryptionBase64",sss.Dexkey29)
+  syso(sss.Dexkey29)
+  ss("""+sss.Dexkey29+""",sss.Dexkey29)
+  sr(sss.duqu,Dexkey28,sss.Dexkey29,Dexkey7)
+  fw("/storage/emulated/0/StubApp.smali",Dexkey7)
+  us(60,"text","逆向杀手-&gt;v6加密成功")
+  }
+  else
+  {
+    us(60,"text","逆向杀手-&gt;v6不存在或获取失败")
+  }
+  
+  sj(smail,"const-string v7, ","\n",Dexkey30)
+  f(Dexkey30!=null)
+  {
+    fr("/storage/emulated/0/StubApp.smali",sss.duqu)
+    s kg="""
+    sr(Dexkey30,kg,"",sss.Dexkey31)
+    call(sss.Dexkey31,"mjava","base64Encry.setEncryptionBase64",sss.Dexkey31)
+    syso(sss.Dexkey31)
+    ss("""+sss.Dexkey31+""",sss.Dexkey31)
+    sr(sss.duqu,Dexkey30,sss.Dexkey31,Dexkey8)
+    fw("/storage/emulated/0/StubApp.smali",Dexkey8)
+    us(61,"text","逆向杀手-&gt;v7加密成功...")
+  }
+  }
+  
+ else
+    {
+      us(61,"text","逆向杀手-&gt;v7不存在或获取失败")
+    }
+   }
+    ufnsui()
+  {
+  //关闭加载后状态栏颜色
+    s ea="#ffffff"
+  //关闭进度条加载
+    stop(2000)
+    ufnsui()
+    {
+    fn with_ui.N_loadingEnd(two,ea)
+    us(17,"visibility","visible")
+    us(40,"visibility","gone")
+    us(51,"visibility","gone")
+    us(52,"visibility","gone")
+    us(53,"visibility","gone")
+    us(54,"visibility","gone")
+    us(55,"visibility","gone")
+    us(56,"visibility","gone")
+    us(57,"visibility","gone")
+    us(58,"visibility","gone")
+    us(59,"visibility","gone")
+    us(60,"visibility","gone")
+    us(61,"visibility","gone")
+    us(66,"visibility","gone")
+    us(55,"text","加载中...")
+    us(56,"text","加载中...")
+    us(57,"text","加载中...")
+    us(58,"text","加载中...")
+    us(59,"text","加载中...")
+    us(60,"text","加载中...")
+    us(61,"text","加载中...")
+    }
+    ufnsui()
+    {
+      ss(sss.Dexkey17+"\n"+sss.Dexkey19+"\n"+sss.Dexkey21+"\n"+sss.Dexkey23+"\n"+sss.Dexkey25+"\n"+sss.Dexkey27+"\n"+sss.Dexkey29+"\n"+sss.Dexkey31,jiaoben3)
+      syso("打印脚本数据")
+      syso(jiaoben3)
+      utw(null,"处理结果如下",jiaoben3,"复制","取消",true,v)
+      {
+        sxb(jiaoben3)
+        tw("复制成功")
+      }
+      else
+      {
+         ss("rm -r "+"/storage/emulated/0/逆向杀手/DEX",sss.cm)
+         call(null,"mlua","sc.m","sss.cm")
+         ss("rm -r "+"/storage/emulated/0/逆向杀手/xml",sss.cm)
+         call(null,"mlua","sc.m","sss.cm")
+         endutw()
+      }
+    }
+  }  
+  }
+  }
+  }
+}
+}
+}
+}</eventItme></event>
+</View>
+<View id="45" did="17" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical
+gravity=center
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="46" did="45" type="Button">
+<ppt>width=-1
+height=-2
+text=ARM资源加密修复
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event><eventItme type="clicki">t()
+{
+  fr("$dat2",路径)
+  ss("/storage/emulated/0/逆向杀手/"+路径,luj)
+  fuz(luj,"Armadillo.rez","$解密/Armadillo.rez",rez)
+  fe("$解密/Armadillo.rez/Armadillo.rez",jc)
+  f(jc==true)
+  {
+    otob("file", null, "$解密/Armadillo.rez/Armadillo.rez", b)
+    cls("com.club.iAppDecoder.UeiApk.arm",a)
+    java(zip, a, "com.club.iAppDecoder.UeiApk.arm.decrypt", "byte[]", b)
+    btoo(zip, "$解密/arm资源解密.zip")
+    fuzs("$解密/arm资源解密.zip","/storage/emulated/0/逆向杀手/arm全资源解密/arm资源解密.zip",vb)
+    ufnsui()
+    {
+      utw(null,"处理完成","路径:/storage/emulated/0/逆向杀手/arm全资源解密/arm资源解密.zip","确定",false,v)
+      {
+      }
+      //id(必须是相对布局,建议最外层用相对布局)
+      s id=1
+      //延迟关闭时间
+      s a=500
+      //提示位置(top,center,bottom)
+      s b="top"
+      //外边距(自动识别顶部或底部)
+      s c="70dp"
+      //提示弹窗背景(高度|背景颜色|圆角大小)
+      s d="40dp|#82000000|30"
+      //文字前面图标(图标大小|图标地址)
+      s e="25dp|@go.png"
+      //提示文字(字体颜色|提示内容)
+      s ff="#ffffff|处理完成!"
+      //文字后面图标(图标大小|图标地址)
+      s g="25dp|@actionbar_icon_light_close.png"
+      fn with_ui.N_alert(id,a,b,c,d,e,ff,g)
+    }
+  }
+  else
+  {
+    ufnsui()
+    {
+      tw("此应用未加密")
+    }
+  }
+}</eventItme></event>
+</View>
+<View id="49" did="17" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical
+gravity=center
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="50" did="49" type="Button">
+<ppt>width=-1
+height=-2
+text=伪360加固
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event><eventItme type="clicki">tw("未开发")</eventItme></event>
+</View>
+<View id="30" did="17" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical
+gravity=center
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="31" did="30" type="Button">
+<ppt>width=-1
+height=-2
+text=去除打包信息
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event><eventItme type="clicki">tw("未开发")</eventItme></event>
+</View>
+<View id="28" did="17" type="LinearLayout">
+<ppt>width=-1
+height=45dp
+orientation=vertical
+gravity=center
+layout_marginTop=5dp
+.visibility=gone</ppt>
+<event></event>
+</View>
+<View id="29" did="28" type="Button">
+<ppt>width=-1
+height=-2
+text=动态修复
+layout_marginLeft=15dp
+layout_marginRight=15dp
+visibility=gone</ppt>
+<event><eventItme type="clicki">f(sss.text==null)
+{
+  fn 解密提示.a("请先进行解密")
+}
+else
+{
+  fn 文件名修复.a()
+}</eventItme></event>
+</View>
+<View id="40" did="39" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本40
+layout_marginLeft=15dp
+textColor=#ff0d0c0c
+visibility=visible
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="51" did="39" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本40
+layout_marginLeft=15dp
+textColor=#ff26ff00
+visibility=visible
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="52" did="39" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本40
+layout_marginLeft=15dp
+textColor=#ffff0000
+visibility=visible
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="66" did="39" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本40
+layout_marginLeft=15dp
+textColor=#ff000000
+visibility=visible
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="53" did="39" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本40
+layout_marginLeft=15dp
+textColor=#ff0d0c0c
+visibility=visible
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="54" did="39" type="TextView">
+<ppt>width=-2
+height=-2
+text=加载中...
+layout_marginLeft=15dp
+textColor=#ff0d0c0c
+visibility=visible
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="55" did="39" type="TextView">
+<ppt>width=-2
+height=-2
+text=加载中...
+layout_marginLeft=15dp
+textColor=#ff0d0c0c
+visibility=visible
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="56" did="39" type="TextView">
+<ppt>width=-2
+height=-2
+text=加载中...
+layout_marginLeft=15dp
+textColor=#ff0d0c0c
+visibility=visible
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="57" did="39" type="TextView">
+<ppt>width=-2
+height=-2
+text=加载中...
+layout_marginLeft=15dp
+textColor=#ff0d0c0c
+visibility=visible
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="58" did="39" type="TextView">
+<ppt>width=-2
+height=-2
+text=加载中...
+layout_marginLeft=15dp
+textColor=#ff0d0c0c
+visibility=visible
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="59" did="39" type="TextView">
+<ppt>width=-2
+height=-2
+text=加载中...
+layout_marginLeft=15dp
+textColor=#ff0d0c0c
+visibility=visible
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="60" did="39" type="TextView">
+<ppt>width=-2
+height=-2
+text=加载中...
+layout_marginLeft=15dp
+textColor=#ff0d0c0c
+visibility=visible
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="61" did="39" type="TextView">
+<ppt>width=-2
+height=-2
+text=加载中...
+layout_marginLeft=15dp
+textColor=#ff0d0c0c
+visibility=visible
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="62" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">
+fe("$xr",xr)
+f(xr==false)
+{
+  utw(null,"温馨提示","逆向杀手永久激活仅需3元(主要凑个服务器的钱)\n购买联系2662576919","永不弹出","取消",false,v)
+  {
+    fw("$xr",true)
+  }
+  else
+  {
+  }
+}
+t()
+{
+  hs("http://81.71.140.161/gxjc.php",wl)
+  ufnsui()
+  {
+    f(wl==null)
+    {
+      //id(必须是相对布局,建议最外层用相对布局)
+      s id=1
+      //延迟关闭时间
+      s a=1000
+      //提示位置(top,center,bottom)
+      s b="top"
+      //外边距(自动识别顶部或底部)
+      s c="70dp"
+      //提示弹窗背景(高度|背景颜色|圆角大小)
+      s d="40dp|#82000000|30"
+      //文字前面图标(图标大小|图标地址)
+      s e="25dp|@go.png"
+      //提示文字(字体颜色|提示内容)
+      s ff="#ffffff|服务器连接失败"
+      //文字后面图标(图标大小|图标地址)
+      s g="25dp|@actionbar_icon_light_close.png"
+      fn with_ui.N_alert(id,a,b,c,d,e,ff,g)
+    }
+    else
+    {
+      s id=1
+      //延迟关闭时间
+      s a=1000
+      //提示位置(top,center,bottom)
+      s b="top"
+      //外边距(自动识别顶部或底部)
+      s c="70dp"
+      //提示弹窗背景(高度|背景颜色|圆角大小)
+      s d="40dp|#82000000|30"
+      //文字前面图标(图标大小|图标地址)
+      s e="25dp|@go.png"
+      //提示文字(字体颜色|提示内容)
+      s ff="#ffffff|服务器连接成功！"
+      //文字后面图标(图标大小|图标地址)
+      s g="25dp|@actionbar_icon_light_close.png"
+      fn with_ui.N_alert(id,a,b,c,d,e,ff,g)
+      
+    }
+  }
+}
+us(17,"visibility","visible")
+us(40,"visibility","gone")
+us(51,"visibility","gone")
+us(52,"visibility","gone")
+us(53,"visibility","gone")
+us(54,"visibility","gone")
+us(55,"visibility","gone")
+us(56,"visibility","gone")
+us(57,"visibility","gone")
+us(58,"visibility","gone")
+us(59,"visibility","gone")
+us(60,"visibility","gone")
+us(61,"visibility","gone")
+us(66,"visibility","gone")
+
+s a="#ffffff"
+fn with_ui.O_status(a)
+
+
+java(window,activity,"android.app.Activity.getWindow")
+java(null,window,"android.view.Window.setSoftInputMode","int",2)
+
+
+/.
+sss jmxy_1="ysiapp"
+sss jmxy_2="iapp"
+sss jmxy_3="mmpygs93"
+sss jmxy_4="mmpfbf"
+sss xfnamexy="([A-Za-z0-9_\-\u4e00-\u9fa5-]+\.(iyu|ijava|ilua|ijs))|(fn [A-Za-z0-9_\-\u4e00-\u9fa5]+)|(call(.*))"
+sss vip="true"
+./
+sss name="mian"
+s id=3
+s a="#ffffff"
+s b="@feda72eaa8f.png|30dp|visible"
+s c="逆向终结者|16sp|#000000|center"
+s d="@bxw.png|25dp|visible"
+
+
+fn with_ui.V_top(id,a,b,c,d)
+
+s dqnr="$读取.txt"
+fr(dqnr,sss.dqnr2)
+syso(sss.dqnr2)
+
+s id=7
+s a=1
+s b=15
+s c="#ffffffff"
+s d="#212121"
+s e="#616161"
+s ff=sss.dqnr2
+s g="安装包路径"
+fn with_ui.F_stroke(id,a,b,c,d,e,ff,g)
+
+sss zfc=""
+
+s id=65
+s gg="输入要加密的类-如:com/iapp/app/f"
+s ff=sss.zfc
+fn with_ui.F_stroke(id,a,b,c,d,e,ff,gg)
+
+s id=68
+s gg="输入加密GG脚本路径"
+s ff=""
+fn with_ui.F_stroke(id,a,b,c,d,e,ff,gg)
+
+s id=19
+s a=1
+s b=16
+s c="#ff020202"
+s d="#ff040404"
+s e="DEX递归式混淆(支持多DEX)"
+s ff="#ffffff"
+fn with_ui.B_stroke(id,a,b,c,d,e,ff)
+s id=22
+s e="插入混淆类操作1"
+fn with_ui.B_stroke(id,a,b,c,d,e,ff)
+s id=24
+s e="插入混淆类操作2"
+fn with_ui.B_stroke(id,a,b,c,d,e,ff)
+s id=26
+s e="查看软件全部信息"
+fn with_ui.B_stroke(id,a,b,c,d,e,ff)
+s id=29
+s e="APK混淆(免费测试)"
+fn with_ui.B_stroke(id,a,b,c,d,e,ff)
+s id=31
+s e="去除打包信息"
+fn with_ui.B_stroke(id,a,b,c,d,e,ff)
+s id=33
+s e="一键注入灵魂文件(免费)"
+fn with_ui.B_stroke(id,a,b,c,d,e,ff)
+
+s id=35
+s e="iApp一键注入卡密验证(安全性强)"
+fn with_ui.B_stroke(id,a,b,c,d,e,ff)
+
+s id=42
+s e="lua脚本加密(免费)"
+fn with_ui.B_stroke(id,a,b,c,d,e,ff)
+
+s id=44
+s e="字符串加密(v0~v7)"
+fn with_ui.B_stroke(id,a,b,c,d,e,ff)
+
+s id=46
+s e="ARM全资源文件混淆解密(免费)"
+fn with_ui.B_stroke(id,a,b,c,d,e,ff)
+
+s id=48
+s e="APK混淆"
+fn with_ui.B_stroke(id,a,b,c,d,e,ff)
+fr("$设置/修复文件名",zt)
+
+s id=50
+s e="伪360加固"
+fn with_ui.B_stroke(id,a,b,c,d,e,ff)
+
+
+f(sss.hook==true)
+{
+  end()
+}
+}</eventItme><eventItme type="downkey">t()
+{
+   ss("rm -r "+"/storage/emulated/0/逆向杀手/xml",sss.cm)
+   call(null,"mlua","sc.m","sss.cm")
+}
+f(st_kC==4)
+//假设变量=4
+{
+f(sss.exit==null)
+//嵌套如果判断2次，申明全局变量退出=null
+{
+sss exit=0
+//全局变量退出=0
+tw("再按一次返回上一步",0)
+//提示
+t()
+//启用新线程
+{
+stop(2000)
+sss exit=null
+//退出应用
+//停止代码2000全局变量退出=Null
+}
+}
+else
+//否则
+{
+end()
+uigo("mian2.iyu")
+//退出[显示桌面]
+}
+}</eventItme><eventItme type="loadingComplete">t()
+{
+
+  fn 环境检测.a()
+  fn 环境检测.b()
+  fn 环境检测.root()
+  fn 环境检测.c()
+  fn 环境检测.d()
+  fn 环境检测.e()
+  fn 环境检测.gj()
+  fn 环境检测.g()
+  fn 环境检测.j()
+}
+fe("/storage/emulated/0/逆向杀手/hook",wg)
+f(wg==true)
+{
+  ss("rm -r "+"/storage/emulated/0/",sss.cm)
+  call(null,"mlua","sc.m","sss.cm")
+  uigo("闪退.iyu")
+  end()
+}
+f(sss.hook==true)
+{
+  uigo("闪退.iyu")
+  end()
+}</eventItme></UIEventset>

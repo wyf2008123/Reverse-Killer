@@ -1,0 +1,19 @@
+function Getapp(fp)
+--解析apk
+import "android.content.pm.PackageManager"
+pm = activity:getPackageManager()
+info = pm:getPackageArchiveInfo(fp, PackageManager.GET_ACTIVITIES);
+if info ~= nil then
+appInfo = info.applicationInfo;
+appInfo.publicSourceDir = fp; 
+appName = tostring(pm:getApplicationLabel(appInfo))
+pn = appInfo.packageName;
+v=info.versionName;
+vs=info.versionCode;
+vs=string.sub(vs,1,-3)
+icon = pm:getApplicationIcon(appInfo);
+local c = {icon,appName,pn,v,vs}
+local sz = tosz(c)
+return sz
+end
+end

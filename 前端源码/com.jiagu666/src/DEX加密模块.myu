@@ -1,0 +1,570 @@
+fn 加密()
+f(sss.vip==true)
+{
+  s color="服务器连接成功"
+  us(17,"visibility","gone")
+  us(40,"visibility","visible")
+  us(51,"visibility","visible")
+  us(52,"visibility","visible")
+  us(53,"visibility","visible")
+  us(54,"visibility","visible")
+  us(55,"visibility","visible")
+  us(56,"visibility","visible")
+  us(57,"visibility","visible")
+  us(58,"visibility","visible")
+  us(59,"visibility","visible")
+  us(60,"visibility","visible")
+  us(61,"visibility","visible")
+  us(66,"visibility","visible")
+  us(40,"text","逆向杀手-&gt;Welcome to this")
+  us(51,"text","逆向杀手-&gt;Coptyright reserved 遇见©2021")
+  us(52,"text","逆向杀手-&gt;"+color)
+  us(66,"text","逆向杀手-&gt;版本:"+sss.version)
+  us(53,"text","逆向杀手-&gt;正在解析APK....")
+  ufnsui()
+  {
+    s id=1
+    //加载时状态栏颜色
+    s a="#FF7A7A7A"
+    //提示内容
+    s b="加载中"
+    fn with_ui.N_loadingTwo(id,a,b)
+    ug(7,"text",jiagu)
+    syso(jiagu)
+    s a = jiagu
+    s b = "classes.dex"
+    s c = "%逆向杀手/DEX"
+    fuz(a, b, c, d)
+    s a = jiagu
+    s b = "classes2.dex"
+    s c = "%逆向杀手/DEX"
+    fuz(a, b, c, d)
+    s a = jiagu
+    s b = "classes3.dex"
+    s c = "%逆向杀手/DEX"
+    fuz(a, b, c, d)
+    s a = jiagu
+    s b = "classes4.dex"
+    s c = "%逆向杀手/DEX"
+    fuz(a, b, c, d)
+    s a = jiagu
+    s b = "classes5.dex"
+    s c = "%逆向杀手/DEX"
+    fuz(a, b, c, d)
+    s a = jiagu
+    s b = "classes6.dex"
+    s c = "%逆向杀手/DEX"
+    fuz(a, b, c, d)
+    //关闭加载后状态栏颜色
+    s ea="#ffffff"
+    //关闭进度条加载
+    fn with_ui.N_loadingEnd(two,ea)
+  }
+  us(54,"text","逆向杀手-&gt;解析完成,开始倒序匹配... ")
+  ufnsui()
+  {
+    ss("%"+jiagu,j)
+    s b="%/storage/emulated/0/逆向杀手/缓存文件"
+    sran(0,0,ss)
+    fc(txt,txt2,xs)
+    ss(b+ss,b)
+    fuzs(j,b,o)
+    ss("@"+sss.文件夹混淆+"ぃ",hx)
+    fuzs(hx,b,o)
+    sran(15,130,dex)
+    s txt="%逆向杀手/DEX/classes.dex"
+    s txt100="%逆向杀手/缓存文件0/classes"
+    s txt101=dex
+    ss(txt100+txt101+".dex",txt2)
+    fc(txt,txt2,xs)
+    syso(dex)
+    s txt3="%逆向杀手/DEX/classes2.dex"
+    s txt9="%逆向杀手/缓存文件0/classes"
+    sran(15,130,dex1)
+    s txt10=dex1
+    ss(txt9+txt10+".dex",txt11)
+    fc(txt3,txt11,xs)
+    s txt5="%逆向杀手/DEX/classes3.dex"
+    s txt6="%逆向杀手/缓存文件0/classes"
+    sran(15,130,dex2)
+    s txt12=dex2
+    ss(txt6+txt12+".dex",txt13)
+    fc(txt5,txt13,xs)
+    s txt7="%逆向杀手/DEX/classes4.dex"
+    s txt8="%逆向杀手/缓存文件0/classes"
+    sran(15,130,dex3)
+    s txt14=dex3
+    ss(txt8+txt14+".dex",txt15)
+    fc(txt7,txt15,xs)
+    utw(null,"提示","是否控制流混淆DEX并合并","GO","NO",true,v)
+    {
+      ufnsui()
+      {
+        s id=1
+        //加载时状态栏颜色
+        s a="#FF7A7A7A"
+        //提示内容
+        s b="加载中"
+        fn with_ui.N_loadingTwo(id,a,b)
+        syso("控制流混淆运行成功")
+        s b="逆向杀手/缓存文件0/classes2.dex"
+        ss("classes"+dex+".dex",dex1111)
+        ss("逆向杀手/缓存文件0/"+dex1111,DOX1)
+        s DOX2="逆向杀手/缓存文件0/classes2.dex"
+        cls(sss.dex,"com.mycompany.myapp3.MainActivity",run)
+        ss("/storage/emulated/0/"+b,v)
+        syso(v)
+        ss("/storage/emulated/0/"+DOX1,C)
+        syso(C)
+        ss("/storage/emulated/0/"+DOX2,C1)
+        syso(C1)
+        javax(返回,null,run,"run","String",C,"String",C1,"String",v)
+        fd("/storage/emulated/0/逆向杀手/缓存文件0/"+dex1111,classesdex)
+        syso(classesdex)
+        fc("@填充.dex","/storage/emulated/0/逆向杀手/缓存文件0/"+dex1111,classesdex2)
+        syso(classesdex2)
+        ufnsui()
+        {
+          fn sh.生成()
+        }
+      }
+    }
+    else
+    {
+      sran(0,999999,sss.sjs)
+      fj(b,"%/storage/emulated/0/逆向杀手/apk/加固"+sss.sjs+".apk",l)
+      fw("$签名获取.txt",sss.sjs)
+      us(55,"text","逆向杀手-&gt;软件路径"+sss.dqnr2)
+      us(56,"text","逆向杀手-&gt;插入混淆DEX...")
+      //调用模块开始删除(模块会自动判断路径的正确性以及是否是文件夹)
+      us(57,"text","逆向杀手-&gt;插入图片混淆...")
+      us(58,"text","逆向杀手-&gt;资源文件混淆中...")
+      ufnsui()
+      {
+        ss("rm -r "+"/storage/emulated/0/逆向杀手/缓存文件0/",sss.cm)
+        call(null,"mlua","sc.m","sss.cm")
+        us(59,"text","逆向杀手-&gt;回填DEX...")
+        ug(4,"text",cm)
+        ss("rm -r "+"/storage/emulated/0/逆向杀手/DEX",sss.cm)
+        call(null,"mlua","sc.m","sss.cm")
+        us(60,"text","逆向杀手-&gt;回填完毕!")
+        us(61,"text","逆向杀手-&gt;文件路径:/storage/emulated/0/逆向杀手/apk/"+sss.sjs)
+        fn 列表.pull()
+        fn 计时.秒()
+        //id(必须是相对布局,建议最外层用相对布局)
+        s id=1
+        //延迟关闭时间
+        s a=2000
+        //提示位置(top,center,bottom)
+        s b="top"
+        //外边距(自动识别顶部或底部)
+        s c="70dp"
+        //提示弹窗背景(高度|背景颜色|圆角大小)
+        s d="40dp|#82000000|30"
+        //文字前面图标(图标大小|图标地址)
+        s e="25dp|@go.png"
+        //提示文字(字体颜色|提示内容)
+        s ff="#ffffff|混淆成功!"
+        //文字后面图标(图标大小|图标地址)
+        s g="25dp|@actionbar_icon_light_close.png"
+        fn with_ui.N_alert(id,a,b,c,d,e,ff,g)
+      }
+      ufnsui()
+      {
+        stop(1000)
+        us(17,"visibility","visible")
+        us(40,"visibility","gone")
+        us(51,"visibility","gone")
+        us(52,"visibility","gone")
+        us(53,"visibility","gone")
+        us(54,"visibility","gone")
+        us(55,"visibility","gone")
+        us(56,"visibility","gone")
+        us(57,"visibility","gone")
+        us(58,"visibility","gone")
+        us(59,"visibility","gone")
+        us(60,"visibility","gone")
+        us(61,"visibility","gone")
+        us(66,"visibility","gone")
+        us(55,"text","加载中...")
+        us(56,"text","加载中...")
+        us(57,"text","加载中...")
+        us(58,"text","加载中...")
+        us(59,"text","加载中...")
+        us(60,"text","加载中...")
+        us(61,"text","加载中...")
+      }
+    }
+  }
+}
+}
+}
+
+
+end fn
+
+
+
+
+
+
+
+
+fn 类加密1()
+f(sss.vip==true)
+{
+  s color="服务器连接成功"
+  us(17,"visibility","gone")
+  us(40,"visibility","visible")
+  us(51,"visibility","visible")
+  us(52,"visibility","visible")
+  us(53,"visibility","visible")
+  us(54,"visibility","visible")
+  us(55,"visibility","visible")
+  us(56,"visibility","visible")
+  us(57,"visibility","visible")
+  us(58,"visibility","visible")
+  us(59,"visibility","visible")
+  us(60,"visibility","visible")
+  us(61,"visibility","visible")
+  us(66,"visibility","visible")
+  us(40,"text","逆向杀手-&gt;Welcome to this")
+  us(51,"text","逆向杀手-&gt;Coptyright reserved 遇见©2021")
+  us(52,"text","逆向杀手-&gt;"+color)
+  us(66,"text","逆向杀手-&gt;版本:"+sss.version)
+  us(53,"text","逆向杀手-&gt;正在解析APK....")
+  ug(7,"text",jiagu)
+  syso(jiagu)
+  s a = jiagu
+  s b = "classes.dex"
+  s c = "%逆向杀手/DEX"
+  fuz(a, b, c, d)
+  us(54,"text","逆向杀手-&gt;解析完成,开始倒序匹配... ")
+  ufnsui()
+  {
+    ss("%"+jiagu,j)
+    s b="%/storage/emulated/0/逆向杀手/缓存文件"
+    sran(0,0,ss)
+    ss(b+ss,b)
+    fuzs(j,b,o)
+    ss("@"+sss.文件夹混淆+"ぐ",zfhx)
+    fuzs(zfhx,b,o)
+    sran(0,999999,sss.sjs)
+    fj(b,"%/storage/emulated/0/逆向杀手/apk/加固"+sss.sjs+".apk",l)
+    fw("$签名获取.txt",sss.sjs)
+    us(55,"text","逆向杀手-&gt;软件路径"+sss.dqnr2)
+    us(56,"text","逆向杀手-&gt;插入混淆DEX...")
+    us(57,"text","逆向杀手-&gt;插入字符串...")
+    us(58,"text","逆向杀手-&gt;资源合并...")
+    s hc="%逆向杀手/缓存文件0"
+    //获取文件夹路径
+    ufnsui()
+    {
+      us(59,"text","逆向杀手-&gt;DEX合并...")
+      us(60,"text","逆向杀手-&gt;合并完毕!")
+      us(61,"text","逆向杀手-&gt;文件路径:/storage/emulated/0/逆向杀手/APK/"+sss.sjs)
+      sss kj="true"
+      fn 列表.pull()
+      fn 计时.秒()
+    }
+    ufnsui()
+    {
+      //id(必须是相对布局,建议最外层用相对布局)
+      s id=1
+      //延迟关闭时间
+      s a=800
+      //提示位置(top,center,bottom)
+      s b="top"
+      //外边距(自动识别顶部或底部)
+      s c="70dp"
+      //提示弹窗背景(高度|背景颜色|圆角大小)
+      s d="40dp|#82000000|30"
+      //文字前面图标(图标大小|图标地址)
+      s e="25dp|@go.png"
+      //提示文字(字体颜色|提示内容)
+      s ff="#ffffff|插入成功!"
+      //文字后面图标(图标大小|图标地址)
+      s g="25dp|@actionbar_icon_light_close.png"
+      fn with_ui.N_alert(id,a,b,c,d,e,ff,g)
+      stop(1000)
+      us(17,"visibility","visible")
+      us(40,"visibility","gone")
+      us(51,"visibility","gone")
+      us(52,"visibility","gone")
+      us(53,"visibility","gone")
+      us(54,"visibility","gone")
+      us(55,"visibility","gone")
+      us(56,"visibility","gone")
+      us(57,"visibility","gone")
+      us(58,"visibility","gone")
+      us(59,"visibility","gone")
+      us(60,"visibility","gone")
+      us(61,"visibility","gone")
+      us(66,"visibility","gone")
+      us(55,"text","加载中...")
+      us(56,"text","加载中...")
+      us(57,"text","加载中...")
+      us(58,"text","加载中...")
+      us(59,"text","加载中...")
+      us(60,"text","加载中...")
+      us(61,"text","加载中...")
+    }
+  }
+}
+}
+}
+end fn
+
+
+
+
+
+fn 类加密2()
+f(sss.vip==true)
+{
+  f(sss.kj==true)
+  {
+    //id(必须是相对布局,建议最外层用相对布局)
+    s id=1
+    //加载时状态栏颜色
+    s a="#FF7A7A7A"
+    //提示内容
+    s b="加载中"
+    fn with_ui.N_loadingTwo(id,a,b)
+    ufnsui()
+    {
+      ss("@"+sss.文件夹混淆+"ぐ",zfhx)
+      s sjcs=zfhx
+      s sjcs2="%逆向杀手/DEX"
+      fuzs(sjcs,sjcs2,sjcs3)
+      s b="逆向杀手/apk/删除软件内classes1将此填入重命名即可.dex"
+      s DOX1="逆向杀手/DEX/classes.dex"
+      s DOX2="逆向杀手/DEX/classes8.dex"
+      cls(sss.dex,"com.mycompany.myapp3.MainActivity",run)
+      ss("/storage/emulated/0/"+b,v)
+      syso(v)
+      ss("/storage/emulated/0/"+DOX1,C)
+      syso(C)
+      ss("/storage/emulated/0/"+DOX2,C1)
+      syso(C1)
+      javax(返回,null,run,"run","String",C,"String",C1,"String",v)
+      ss("rm -r "+"/storage/emulated/0/逆向杀手/DEX",sss.cm)
+      call(null,"mlua","sc.m","sss.cm")
+      ss("rm -r "+"/storage/emulated/0/逆向杀手/缓存文件0",sss.cm)
+      call(null,"mlua","sc.m","sss.cm")
+      fn 列表.pull()
+      fn 计时.秒()
+    }
+    ufnsui()
+    {
+      //关闭加载后状态栏颜色
+      s ea="#ffffff"
+      //关闭进度条加载
+      fn with_ui.N_loadingEnd(two,ea)
+      sss kj=flase
+      //id(必须是相对布局,建议最外层用相对布局)
+      s id=1
+      //延迟关闭时间
+      s a=500
+      //提示位置(top,center,bottom)
+      s b="top"
+      //外边距(自动识别顶部或底部)
+      s c="70dp"
+      //提示弹窗背景(高度|背景颜色|圆角大小)
+      s d="40dp|#82000000|30"
+      //文字前面图标(图标大小|图标地址)
+      s e="25dp|@go.png"
+      //提示文字(字体颜色|提示内容)
+      s ff="#ffffff|处理完成"
+      //文字后面图标(图标大小|图标地址)
+      s g="25dp|@actionbar_icon_light_close.png"
+      fn with_ui.N_alert(id,a,b,c,d,e,ff,g)
+    }
+  }
+  else
+  {
+    //id(必须是相对布局,建议最外层用相对布局)
+    s id=1
+    //延迟关闭时间
+    s a=1000
+    //提示位置(top,center,bottom)
+    s b="top"
+    //外边距(自动识别顶部或底部)
+    s c="70dp"
+    //提示弹窗背景(高度|背景颜色|圆角大小)
+    s d="40dp|#82000000|30"
+    //文字前面图标(图标大小|图标地址)
+    s e="25dp|@go.png"
+    //提示文字(字体颜色|提示内容)
+    s ff="#ffffff|您需要先点击操作1"
+    //文字后面图标(图标大小|图标地址)
+    s g="25dp|@actionbar_icon_light_close.png"
+    fn with_ui.N_alert(id,a,b,c,d,e,ff,g)
+  }
+}
+else
+{
+  //id(必须是相对布局,建议最外层用相对布局)
+  s id=1
+  //延迟关闭时间
+  s a=1000
+  //提示位置(top,center,bottom)
+  s b="top"
+  //外边距(自动识别顶部或底部)
+  s c="70dp"
+  //提示弹窗背景(高度|背景颜色|圆角大小)
+  s d="40dp|#82000000|30"
+  //文字前面图标(图标大小|图标地址)
+  s e="25dp|@go.png"
+  //提示文字(字体颜色|提示内容)
+  s ff="#ffffff|软件未激活"
+  //文字后面图标(图标大小|图标地址)
+  s g="25dp|@actionbar_icon_light_close.png"
+  fn with_ui.N_alert(id,a,b,c,d,e,ff,g)
+}
+end fn
+
+
+
+
+fn 注入()
+s color="服务器连接成功"
+us(17,"visibility","gone")
+us(40,"visibility","visible")
+us(51,"visibility","visible")
+us(52,"visibility","visible")
+us(53,"visibility","visible")
+us(54,"visibility","visible")
+us(55,"visibility","visible")
+us(56,"visibility","visible")
+us(57,"visibility","visible")
+us(58,"visibility","visible")
+us(59,"visibility","visible")
+us(60,"visibility","visible")
+us(61,"visibility","visible")
+us(66,"visibility","visible")
+us(40,"text","逆向杀手-&gt;Welcome to this")
+us(51,"text","逆向杀手-&gt;Coptyright reserved 遇见©2021")
+us(52,"text","逆向杀手-&gt;"+color)
+us(66,"text","逆向杀手-&gt;版本:"+sss.version)
+us(53,"text","逆向杀手-&gt;正在解析APK....")
+ufnsui()
+{
+  //id(必须是相对布局,建议最外层用相对布局)
+  s id=1
+  //加载时状态栏颜色
+  s a="#FF7A7A7A"
+  //提示内容
+  s b="加载中"
+  fn with_ui.N_loadingTwo(id,a,b)
+  ug(7,"text",jiagu)
+  syso(jiagu)
+  s a = jiagu
+  s b = "classes.dex"
+  s c = "%逆向杀手/DEX"
+  fuz(a, b, c, d)
+  s a = jiagu
+  s b = "classes2.dex"
+  s c = "%逆向杀手/DEX"
+  fuz(a, b, c, d)
+  s a = jiagu
+  s b = "classes3.dex"
+  s c = "%逆向杀手/DEX"
+  fuz(a, b, c, d)
+  s a = jiagu
+  s b = "classes4.dex"
+  s c = "%逆向杀手/DEX"
+  fuz(a, b, c, d)
+  s a = jiagu
+  s b = "classes5.dex"
+  s c = "%逆向杀手/DEX"
+  fuz(a, b, c, d)
+  s a = jiagu
+  s b = "classes6.dex"
+  s c = "%逆向杀手/DEX"
+  fuz(a, b, c, d)
+  //关闭加载后状态栏颜色
+  s ea="#ffffff"
+  //关闭进度条加载
+  fn with_ui.N_loadingEnd(two,ea)
+}
+us(54,"text","逆向杀手-&gt;解析完成,开始倒序匹配... ")
+ufnsui()
+{
+  ss("%"+jiagu,j)
+  s b="%/storage/emulated/0/逆向杀手/缓存文件"
+  sran(0,0,ss)
+  fc(txt,txt2,xs)
+  ss(b+ss,b)
+  fuzs(j,b,o)
+  ss("@"+sss.文件夹混淆+"あ",lj)
+  fuzs(lj,b,o)
+  sran(0,999999,sss.sjs)
+  fj(b,"%/storage/emulated/0/逆向杀手/apk/加固"+sss.sjs+".apk",l)
+  us(55,"text","逆向杀手-&gt;软件路径"+sss.dqnr2)
+  us(56,"text","逆向杀手-&gt;处理残余...")
+  fw("$签名获取.txt",sss.sjs)
+  //调用模块开始删除(模块会自动判断路径的正确性以及是否是文件夹)
+  us(57,"text","逆向杀手-&gt;插入图片混淆...")
+  us(58,"text","逆向杀手-&gt;插入资源文件混淆中...")
+  ufnsui()
+  {
+    ss("rm -r "+"/storage/emulated/0/逆向杀手/DEX",sss.cm)
+    call(null,"mlua","sc.m","sss.cm")
+    ss("rm -r "+"/storage/emulated/0/逆向杀手/缓存文件0",sss.cm)
+    call(null,"mlua","sc.m","sss.cm")
+  }
+  ufnsui()
+  {
+    stop(3500)
+    us(59,"text","逆向杀手-&gt;回填DEX...")
+    us(60,"text","逆向杀手-&gt;回填完毕!")
+    us(61,"text","逆向杀手-&gt;文件路径:/storage/emulated/0/逆向杀手/apk/"+sss.sjs)
+  }
+  ufnsui()
+  {
+    //id(必须是相对布局,建议最外层用相对布局)
+    s id=1
+    //延迟关闭时间
+    s a=2000
+    //提示位置(top,center,bottom)
+    s b="top"
+    //外边距(自动识别顶部或底部)
+    s c="70dp"
+    //提示弹窗背景(高度|背景颜色|圆角大小)
+    s d="40dp|#82000000|30"
+    //文字前面图标(图标大小|图标地址)
+    s e="25dp|@go.png"
+    //提示文字(字体颜色|提示内容)
+    s ff="#ffffff|混淆成功!"
+    //文字后面图标(图标大小|图标地址)
+    s g="25dp|@actionbar_icon_light_close.png"
+    fn with_ui.N_alert(id,a,b,c,d,e,ff,g)
+    stop(1000)
+    us(17,"visibility","visible")
+    us(40,"visibility","gone")
+    us(51,"visibility","gone")
+    us(52,"visibility","gone")
+    us(53,"visibility","gone")
+    us(54,"visibility","gone")
+    us(55,"visibility","gone")
+    us(56,"visibility","gone")
+    us(57,"visibility","gone")
+    us(58,"visibility","gone")
+    us(59,"visibility","gone")
+    us(60,"visibility","gone")
+    us(61,"visibility","gone")
+    us(66,"visibility","gone")
+    us(55,"text","加载中...")
+    us(56,"text","加载中...")
+    us(57,"text","加载中...")
+    us(58,"text","加载中...")
+    us(59,"text","加载中...")
+    us(60,"text","加载中...")
+    us(61,"text","加载中...")
+  }
+}
+}
+}
+
+end fn

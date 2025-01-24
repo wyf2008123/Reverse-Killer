@@ -1,0 +1,4 @@
+import java.io.*;
+public static PrintStream getPrint(File file){
+  return new PrintStream(file);
+  }

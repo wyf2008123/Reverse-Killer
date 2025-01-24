@@ -1,0 +1,146 @@
+<View id="1" did="0" type="CardView">
+<ppt>width=-1
+height=60dp
+app_CardcornerRadius=10dp
+layout_marginLeft=10dp
+layout_marginRight=10dp
+layout_marginTop=5dp
+layout_marginBottom=5dp
+app_CardBackgroundColor=#F8f8f8
+app_CardElevation=0</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event><eventItme type="clicki">utw(null,"提示","是否签名安装包","确定","取消",false,v)
+{
+   loadjar("sign.dex",插件)
+   //加载库
+   cls(插件,"中国dlay.插件.签名插件",类)
+   //获取类
+   s keyPath = "@sign_key.jks"
+   fr("$签名获取.txt",qm)
+   //签名证书文件路径，这里源码自带的示例证书
+   ss("/storage/emulated/0/逆向杀手/apk/加固"+qm+".apk",inputApkPath)
+   //要签名的apk文件路径，打包后不能加载@，需要用fc复制出去
+   s outputApkPath = "%签名成功.apk"
+   //签名后的apk输出路径
+   fdir(keyPath,签名证书路径)
+   fdir(inputApkPath,输入文件)
+   fdir(outputApkPath,输出文件)
+   //都是取绝对路径
+   javax(是否,null,类,"签名","String",签名证书路径,"String","chinadlay1","String","中国dlay","String","chinadlay1","String",输入文件,"String",输出文件)
+   //调用签名，参数：签名证书绝对路径，签名证书密码，证书别名，别名密码，要签名的apk文件绝对路径，签名后的apk输出的绝对路径
+   f(是否)
+   {
+      ufnsui()
+     {
+       tw("签名成功")
+       fo("/storage/emulated/0/签名成功.apk")
+     }
+   }
+   else
+   {
+      ufnsui()
+      {
+        tw("签名失败")
+      }
+   }
+}
+else
+{
+}</eventItme><eventItme type="press">ulag(st_vW,12,a)
+
+utw(null,"提示","是否删除"+a+"?","确定","取消",false,v)
+{
+  
+   ss("rm -r "+"/storage/emulated/0/逆向杀手/列表",sss.cm)
+   call(null,"mlua","sc.m","sss.cm")
+   ss("rm -r "+"/storage/emulated/0/逆向杀手/xml",sss.cm)
+   call(null,"mlua","sc.m","sss.cm")
+   sss shanchu=true
+   tw("删除成功，退出重启即可刷新缓存")
+}
+else
+{
+}</eventItme></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=60dp
+height=-1
+orientation=vertical
+gravity=center
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="8" did="3" type="ImageView">
+<ppt>width=40dp
+height=40dp
+src=17301567</ppt>
+<event></event>
+</View>
+<View id="4" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="9" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="11" did="9" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本11
+textColor=#ff020202
+textStyle=bold
+textSize=11sp</ppt>
+<event></event>
+</View>
+<View id="10" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="12" did="10" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本12
+textSize=10sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="14" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=2
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="15" did="14" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本15
+textSize=10sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="7" did="0" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本7
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

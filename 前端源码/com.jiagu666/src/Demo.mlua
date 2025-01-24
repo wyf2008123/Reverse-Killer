@@ -1,0 +1,6 @@
+import "dalvik.system.DexClassLoader";
+
+function LoadDex(dexPath)
+return DexClassLoader(i:fdir(dexPath),"/data/data/"..activity:getPackageName().."/files/",nil,activity:getClassLoader());
+
+end

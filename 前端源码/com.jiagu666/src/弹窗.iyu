@@ -1,0 +1,88 @@
+<View id="1" did="0" type="CardView">
+<ppt>width=-1
+height=-2
+app_CardcornerRadius=15dp
+app_CardElevation=0dp
+layout_marginLeft=35dp
+layout_marginRight=35dp
+</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+gravity=center
+padding=20dp</ppt>
+<event></event>
+</View>
+<View id="5" did="3" type="TextView">
+<ppt>width=-2
+height=-2
+text=我是标题
+textColor=#000000
+textSize=17sp
+textStyle=bold
+layout_marginTop=2dp</ppt>
+<event></event>
+</View>
+<View id="6" did="3" type="TextView">
+<ppt>width=-2
+height=-2
+text=我是弹窗的内容,欢迎使用
+textSize=16sp
+layout_marginTop=12dp</ppt>
+<event></event>
+</View>
+<View id="7" did="2" type="LinearLayout">
+<ppt>width=-1
+height=0.3dp
+background=#ffe6e6e6
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="2" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="8" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="TextView">
+<ppt>width=-2
+height=-2
+text=取消
+textSize=18sp</ppt>
+<event></event>
+</View>
+<View id="10" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="11" did="10" type="TextView">
+<ppt>width=-2
+height=-2
+text=确定
+textColor=#ff0079ff
+textSize=18sp</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

@@ -1,0 +1,119 @@
+<View id="4" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="1" did="4" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=55dp
+orientation=horizontal
+gravity=center_vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="6" did="3" type="CardView">
+<ppt>width=-2
+height=-2
+app_CardElevation=1dp
+layout_marginLeft=15dp
+layout_marginRight=15dp
+app_CardcornerRadius=20dp</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="8" did="7" type="RoundImageView">
+<ppt>width=35dp
+height=35dp
+src=@icon (1).png
+scaleType=centercrop</ppt>
+<event><eventItme type="clicki">javax(null,sss.侧滑栏,sss.类,"openPane")
+
+</eventItme></event>
+</View>
+<View id="12" did="3" type="TextView">
+<ppt>width=-1
+height=-2
+text=
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="9" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=#fdfdfd</ppt>
+<event></event>
+</View>
+<View id="10" did="9" type="SwipeRefreshLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event><eventItme type="onrefresh">f(sss.shanchu==true)
+{
+  tw("当前无项目")
+  us(home.10,"refreshing",false)
+}
+else f(sss.列表==null)
+{
+  tw("当前无任务")
+  us(home.10,"refreshing",false)
+}
+else
+{
+  fn 列表.pull()
+  us(home.10,"refreshing",false)
+  tw("刷新成功!")
+}</eventItme></event>
+</View>
+<View id="11" did="10" type="ListView">
+<ppt>width=-1
+height=-1
+dividerHeight=0</ppt>
+<event></event>
+</View>
+<View id="13" did="1" type="CardView">
+<ppt>width=60dp
+height=60dp
+app_CardcornerRadius=30dp
+ut_alignParentRight=true
+ut_alignParentBottom=true
+layout_marginRight=20dp
+layout_marginBottom=50dp
+app_CardBackgroundColor=#03A9F4</ppt>
+<event></event>
+</View>
+<View id="14" did="13" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+</ppt>
+<event><eventItme type="clicki">end()
+uigo("提取apk.iyu")</eventItme></event>
+</View>
+<View id="15" did="14" type="TextView">
+<ppt>width=-2
+height=-2
+text=+
+textColor=#ffffff
+textSize=16sp</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

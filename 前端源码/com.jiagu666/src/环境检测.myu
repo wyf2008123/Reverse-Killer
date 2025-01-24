@@ -1,0 +1,744 @@
+fn a()
+java(thread,null,"java.lang.Thread.currentThread")
+java(stackTrace,thread,"java.lang.Thread.getStackTrace")
+s hasHook = false
+for(st;stackTrace) {
+  java(sts,st,"java.lang.Object.toString")
+  f(sts ? "de.robv.android.xposed." || sts ? "me.weishu.epic." || sts ? "me.weishu.exposed.") {
+    s hasHook = true
+    break
+  }
+}
+f(hasHook) {
+  tw("存在Hook框架，请您卸载本软件")
+  uigo("闪退.iyu")
+  end()
+}
+//vxp测试失败，如果被hook应该可以
+
+//ps：如果还需要检测va，可加上com.lody.virtual.
+//然后就能直接检测vxp
+//但是也会把所有使用了va的软件（比如某多开）识别出来
+
+//绕过方法：hook掉这个方法，把关于xp的痕迹全部去掉
+
+//方法4：读取/proc/self/maps检测是否加载过hook框架
+fr("/proc/self/maps",maps)
+f(maps ? "XposedBridge.jar" || maps ? "libepic.so" || maps ? "libdexposed.so" || maps ? "libsubstrate.so") {
+  tw("存在Hook框架")
+  uigo("闪退.iyu")
+  end()
+}
+loadjar("classes2.dex",jar)
+cls(jar,"com.1874.VPN",cls)
+javax(back,null,cls,"isVpnUsed")
+f(back=="true")
+{
+  ufnsui()
+  {
+    fw("/storage/emulated/0/逆向杀手/hook","违规")
+    sss hook=true
+    tw("禁止开VPN")
+  }
+  stop(100)
+  ufnsui()
+  {
+    fw("/storage/emulated/0/逆向杀手/hook","违规")
+    sss hook=true
+    tw("禁止开VPN")
+  }
+  sss fzb="http://www.twitter.com/|https://www.amazon.com/|https://m.baidu.com/?from=844b&vit=fps|http://iapp.yx93.com:8881/30/message2.aspx|http://www.youtube.com/|http://www.google.com/|https://malexa.chinaz.com/Global/|http://www.zhuabaoyukuai.com/|https://www.amazon.com/|https://m.baidu.com/?from=844b&vit=fps|http://iapp.yx93.com:8881/30/message2.aspx|http://www.youtube.com/|http://www.google.com/|https://malexa.chinaz.com/Global/|http://www.zhuabaoyukuai.com/|https://www.amazon.com/|https://m.baidu.com/?from=844b&vit=fps|http://iapp.yx93.com:8881/30/message2.aspx|http://www.youtube.com/|http://www.google.com/|https://malexa.chinaz.com/Global/|http://www.zhuabaoyukuai.com/"
+  //sss fzb="https://混淆1|https://混淆2|https://混淆3|http://混淆4|http://混淆5|http://混淆6|https://混淆7|http://混淆8|https://www.混淆.com/|https://混淆1|https://混淆2|https://混淆3|http://混淆4|http://混淆5|http://混淆6|https://混淆7|http://混淆8|https://www.混淆.com/|https://混淆1|https://混淆2|https://混淆3|http://混淆4|http://混淆5|http://混淆6|https://混淆7|http://混淆8|https://www.混淆.com/|"
+  sl(sss.fzb,"|",fzb1)
+  sss fzb1=fzb1
+  s xh=200
+  //上面是循环次数,比如输入100,那么就会瞬间访问500次不同网址,数值越大越访问次数越多！要抓包的人可能会导致手机卡死哈哈哈哈
+  w(xh&gt;0)
+  {
+    
+    for(fzb2;fzb1)
+    {
+      t()
+      {
+        strim(fzb2,fzb2)
+        hs(fzb2,fzb3)
+        tw("VPN")
+      }
+    }
+    
+    s(xh - 1, xh)
+  }
+  .  end()
+  .  javanew(c,"android.os.Process")
+  .  java(id,c,"android.os.Process.myPid")
+  .  java(a,c,"android.os.Process.killProcess","int",id)
+}
+fe("%Android/data/com.junge.algorithmAide",a)
+f(a==true)
+{
+  fw("/storage/emulated/0/逆向杀手/hook","违规")
+  sss hook=true
+  tw("10个算法助手9条都是狗，不让进")
+  end()
+}
+java(thread,null,"java.lang.Thread.currentThread")
+java(stackTrace,thread,"java.lang.Thread.getStackTrace")
+s hasHook = false
+for(st;stackTrace) {
+  java(sts,st,"java.lang.Object.toString")
+  f(sts ? "de.robv.android.xposed." || sts ? "me.weishu.epic." || sts ? "me.weishu.exposed.") {
+    s hasHook = true
+    break
+  }
+}
+f(hasHook) {
+  tw("存在Hook框架，请您卸载本软件")
+  fw("/storage/emulated/0/逆向杀手/hook","违规")
+  sss hook=true
+}
+//vxp测试失败，如果被hook应该可以
+
+//ps：如果还需要检测va，可加上com.lody.virtual.
+//然后就能直接检测vxp
+//但是也会把所有使用了va的软件（比如某多开）识别出来
+
+//绕过方法：hook掉这个方法，把关于xp的痕迹全部去掉
+
+//方法4：读取/proc/self/maps检测是否加载过hook框架
+fr("/proc/self/maps",maps)
+f(maps ? "XposedBridge.jar" || maps ? "libepic.so" || maps ? "libdexposed.so" || maps ? "libsubstrate.so") {
+  tw("存在Hook框架")
+  fw("/storage/emulated/0/逆向杀手/hook","违规")
+  sss hook=true
+}
+
+s prop = "ro.secure"
+java(value,null,"android.os.SystemProperties.getInt","String",prop,"int",1)
+f(value == 0)
+{
+  fw("/storage/emulated/0/逆向杀手/hook","违规")
+  sss hook=true
+}
+else
+{
+}
+end fn
+
+fn root()
+loadjar("js.dex",ss.js)
+cls(ss.js,"com.yunlong.root.ROOT操作",ss.ROOT操作)
+javax(返回,null,ss.ROOT操作,"是否Root")
+syso(返回)
+f(返回=="false")
+{
+  syso("非root环境")
+}
+else
+{
+  ufnsui()
+  {
+    tw("root环境")
+    sss hook==true
+    w(1==1)
+    {
+      stop(500)
+      end()
+    }
+  }
+}
+end fn
+fn c()
+s isVpn = false
+java(nis,null,"java.net.NetworkInterface.getNetworkInterfaces")
+f(!nis=null)
+{
+  java(list,null,"java.util.Collections.list","java.util.Enumeration",nis)
+  for(ni;list)
+  {
+    java(up,ni,"java.net.NetworkInterface.isUp")
+    java(ia,ni,"java.net.NetworkInterface.getInterfaceAddresses")
+    java(size,ia,"java.util.List.size")
+    f(up && size != 0)
+    {
+      java(name,ni,"java.net.NetworkInterface.getName")
+      f(name == "tun0" || name == "ppp0")
+      {
+        s isVpn = true
+        break
+      }
+    }
+  }
+}
+f(isVpn==true)
+{
+  ufnsui()
+  {
+    fw("/storage/emulated/0/逆向杀手/hook","违规")
+    tw("你开的什么VPN，第一道程序检测不了你")
+    end()
+  }
+}
+end fn
+
+fn d()
+s cs=1
+sss pa=0
+javax(pm,activity,"android.content.ContextWrapper","getPackageManager")
+javax(pknm,activity,"android.content.ContextWrapper","getPackageName")
+//本应用包名
+sss pknm="jiagu666"
+fd("%iApp_hook/"+pknm+"/mian.iyu",k)
+//需要权限android.permission.KILL_BACKGROUND_PROCESSES
+javags(as,null,"android.content.Context","ACTIVITY_SERVICE")
+java(am,activity,"android.app.Activity.getSystemService","String",as)
+java(null,am,"android.app.ActivityManager.killBackgroundProcesses","String","com.mhook.dialog")
+
+//尝试杀死com.mhook.dialog
+//需要权限android.permission.KILL_BACKGROUND_PROCESSES
+javags(as,null,"android.content.Context","ACTIVITY_SERVICE")
+java(am,activity,"android.app.Activity.getSystemService","String",as)
+java(null,am,"android.app.ActivityManager.killBackgroundProcesses","String","com.cofface.ivader")
+//尝试杀死com.cofface.ivader
+//需要权限android.permission.KILL_BACKGROUND_PROCESSES
+javags(as,null,"android.content.Context","ACTIVITY_SERVICE")
+java(am,activity,"android.app.Activity.getSystemService","String",as)
+java(null,am,"android.app.ActivityManager.killBackgroundProcesses","String","biz.bokhorst.xprivacy")
+//尝试杀死biz.bokhorst.xprivacy
+//需要权限android.permission.KILL_BACKGROUND_PROCESSES
+javags(as,null,"android.content.Context","ACTIVITY_SERVICE")
+java(am,activity,"android.app.Activity.getSystemService","String",as)
+java(null,am,"android.app.ActivityManager.killBackgroundProcesses","String","com.jiemi.iapp")
+//尝试杀死com.jiemi.iapp
+//需要权限android.permission.KILL_BACKGROUND_PROCESSES
+javags(as,null,"android.content.Context","ACTIVITY_SERVICE")
+java(am,activity,"android.app.Activity.getSystemService","String",as)
+//java(null,am,"android.app.ActivityManager.killBackgroundProcesses","String","com.saurik.substrate")
+//尝试杀死com.saurik.substrate
+//需要权限android.permission.KILL_BACKGROUND_PROCESSES
+javags(as,null,"android.content.Context","ACTIVITY_SERVICE")
+java(am,activity,"android.app.Activity.getSystemService","String",as)
+java(null,am,"android.app.ActivityManager.killBackgroundProcesses","String","de.robv.android.xposed.installer")
+//尝试杀死de.robv.android.xposed.installer
+
+cls("de.robv.android.xposed.XposedBridge",klazz)
+f(klazz != null) {
+  s+(sss.pa,1,sss.pa)
+  tw("在 Xposed 环境运行")
+  java(null,null,"java.lang.System.exit","int",1)
+  //允许在XP环境运行
+}
+cls("de.robv.android.xposed.XposedBridge",klazz)
+f(klazz != null) {
+  tw("在 Xposed 环境运行")
+  java(null,null,"java.lang.System.exit","int",1)
+  javass(disable,null,klazz,"disableHooks",true)
+  //尝试禁用XP
+  f(disable) {
+    tw("已禁用 Xposed 环境")
+    //安全环境可运行
+  } else {
+    tw("无法禁用 Xposed 尝试杀死XP")
+    s+(sss.pa,1,sss.pa)
+    s+(as,1,as)
+    f(as&gt;3)
+    {
+      s+(sss.pa,1,sss.pa)
+      //次数过高直接杀死自己
+      javanew(c,"android.os.Process")
+      java(id,c,"android.os.Process.myPid")
+      java(a,c,"android.os.Process.killProcess","int",id)
+    }
+    else
+    {
+      
+      //需要权限android.permission.KILL_BACKGROUND_PROCESSES
+      javags(as,null,"android.content.Context","ACTIVITY_SERVICE")
+      java(am,activity,"android.app.Activity.getSystemService","String",as)
+      java(null,am,"android.app.ActivityManager.killBackgroundProcesses","String","de.robv.android.xposed.installer")
+      //尝试杀死XP
+      f(am?"ActivityManager")
+      {
+        tw("已杀死XP可正常运行")
+      }
+      else
+      {
+        
+        end()
+        javanew(c,"android.os.Process")
+        java(id,c,"android.os.Process.myPid")
+        java(a,c,"android.os.Process.killProcess","int",id)
+        //无法禁用以及杀死,尝试end,尝试自杀进程
+      }
+    }
+  }
+}
+java(thread,null,"java.lang.Thread.currentThread")
+java(stackTrace,thread,"java.lang.Thread.getStackTrace")
+s hasHook = false
+for(st;stackTrace) {
+  //检测hook框架环境
+  java(sts,st,"java.lang.Object.toString")
+  f(sts ? "de.robv.android.xposed." || sts ? "me.weishu.epic." || sts ? "me.weishu.exposed." || sts ? "com.saurik.substrate.") {
+    s hasHook = true
+    s+(sss.pa,1,sss.pa)
+    //讲hasHook设为true并跳出
+    break
+  }
+}
+f(hasHook) {
+  tw("检测到Hook框架!")
+  s+(sss.pa,1,sss.pa)
+  java(null,null,"java.lang.System.exit","int",1)
+  end()
+  javanew(c,"android.os.Process")
+  java(id,c,"android.os.Process.myPid")
+  java(a,c,"android.os.Process.killProcess","int",id)
+  //一般情况虚拟机不会触发XP检测,需要检测hook框架,并退出和自杀进程
+  uigo("逆向狗是不是死妈了，闪退界面.iyu")
+  //取消对话框防止退出解决办法测试
+  //跳转特殊界面强制闪退
+}
+fr("/proc/self/maps",maps)
+//读取文件检测是否存在hook框架
+f(maps ? "XposedBridge.jar" || maps ? "libepic.so" || maps ? "libdexposed.so" || maps ? "libsubstrate.so") {
+  tw("检测到Hook框架!")
+  s+(sss.pa,1,sss.pa)
+  //如果检测环境不行就用文件检测,成功检测,尝试退出,尝试自杀进程
+  java(null,null,"java.lang.System.exit","int",1)
+  end()
+  javanew(c,"android.os.Process")
+  java(id,c,"android.os.Process.myPid")
+  java(a,c,"android.os.Process.killProcess","int",id)
+  uigo("逆向狗是不是死妈了，闪退界面.iyu")
+  //取消对话框防止退出解决办法测试
+  //跳转特殊界面强制闪退
+  f(maps?"libsubstrate.so")
+  {
+    java(null,activity,"android.app.Activity.finishAffinity")
+    //杀死启动类
+  }
+}
+java(isVxp,null,"java.lang.System.getProperty","String","vxp","String","0")
+f(isVxp == "1") {
+  tw("VXP环境运行")
+  s+(sss.pa,1,sss.pa)
+  //需要权限android.permission.KILL_BACKGROUND_PROCESSES
+  javags(as,null,"android.content.Context","ACTIVITY_SERVICE")
+  java(am,activity,"android.app.Activity.getSystemService","String",as)
+  java(null,am,"android.app.ActivityManager.killBackgroundProcesses","String","io.va.exposed")
+  //尝试杀死vxp
+}
+java(filesDir,activity,"android.content.Context.getFilesDir")
+f(filesDir ? "io.va.exposed") {
+  tw("VXP环境运行")
+  s+(sss.pa,1,sss.pa)
+  //杀不死vxp就禁用xp
+  java(null,null,"java.lang.System.exit","int",1)
+  javass(disable,null,klazz,"disableHooks",true)
+  //尝试禁用XP
+  f(disable) {
+    tw("已禁用 Xposed 环境")
+    //安全环境可运行
+  } else {
+    tw("无法禁用 Xposed 即将退出")
+    s+(sss.pa,1,sss.pa)
+    end()
+    javanew(c,"android.os.Process")
+    java(id,c,"android.os.Process.myPid")
+    java(a,c,"android.os.Process.killProcess","int",id)
+    //无法禁用,尝试end,尝试自杀进程
+  }
+  //  无法执行禁用,杀死自己
+  s+(sss.pa,1,sss.pa)
+  java(null,null,"java.lang.System.exit","int",1)
+  javanew(c,"android.os.Process")
+  java(id,c,"android.os.Process.myPid")
+  java(a,c,"android.os.Process.killProcess","int",id)
+}
+f(sss.pa!=0)
+{
+  fw("%iApp_hook/"+sss.pknm+"/死妈狗是不是又在逆向",k)
+  fw("%iApp_hook/"+sss.pknm+"/死妈狗是不是又在逆向",k)
+  stop(100)
+  uigo("闪退.iyu")
+  uigo("闪退.iyu")
+  end()
+  java(null,activity,"android.app.Activity.finishAffinity")
+  java(null,activity,"android.app.Activity.finishAffinity")
+  java(null,activity,"android.app.Activity.finishAffinity")
+  //关闭所有启动类
+  end()
+  ends()
+}
+fl("/proc",f)
+for(l;f)
+{
+  //  syso(l)
+  ss("/proc/"+l+"/cmdline",pa)
+  fr(pa,g)
+  f(g?"com.saurik.substrate")
+  {
+    //    java(null,activity,"android.app.Activity.finishAffinity")
+  }
+}
+fl("/proc",f)
+for(l;f)
+{
+  //  syso(l)
+  ss("/proc/"+l+"/cmdline",pa)
+  fr(pa,g)
+  f(g?"com.saurik.substrate")
+  {
+    //    java(null,activity,"android.app.Activity.finishAffinity")
+  }
+}
+end fn
+fn e()
+syso("检测e运行成功")
+fr("/proc/self/maps",maps)
+f(msps==false||maps==null)
+{
+  end()
+  end()
+  end()
+  sss hook=true
+}
+else(maps==true)
+{
+  f(maps?"com.android.reverse-")
+  {
+    ufnsui()
+    {
+      fw("/storage/emulated/0/逆向杀手/hook","违规")
+      tw("存在脱壳机！")
+      sss hook=true
+      end()
+    }
+  }
+  else f(maps?"/data/local/tmp/libFupk3.so")
+  {
+    ufnsui()
+    {
+      fw("/storage/emulated/0/逆向杀手/hook","违规")
+      tw("存在脱壳机！")
+      sss hook=true
+      end()
+    }
+  }
+  else f(maps?"xposed.Fdex2")
+  {
+    ufnsui()
+    {
+      fw("/storage/emulated/0/逆向杀手/hook","违规")
+      tw("存在脱壳机！")
+      sss hook=true
+      end()
+    }
+  }
+  else f(maps?"/system/bin/app_process32_xposed")
+  {
+    ufnsui()
+    {
+      fw("/storage/emulated/0/逆向杀手/hook","违规")
+      tw("存在脱壳机！")
+      sss hook=true
+      end()
+    }
+  }
+  else f(maps?"xposed.installer")
+  {
+    ufnsui()
+    {
+      fw("/storage/emulated/0/逆向杀手/hook","违规")
+      tw("存在脱壳机！")
+      sss hook=true
+      end()
+      {
+      }
+      else f(maps?"app_process64_xposed")
+      {
+        ufnsui()
+        {
+          fw("/storage/emulated/0/逆向杀手/hook","违规")
+          tw("存在脱壳机！")
+          sss hook=true
+          end()
+        }
+      }
+      else f(maps?"libxposed_art.so")
+      {
+        ufnsui()
+        {
+          fw("/storage/emulated/0/逆向杀手/hook","违规")
+          tw("存在脱壳机！")
+          sss hook=true
+          end()
+        }
+      }
+      else f(maps?"io.va.exposed")
+      {
+        ufnsui()
+        {
+          fw("/storage/emulated/0/逆向杀手/hook","违规")
+          tw("存在脱壳机！")
+          sss hook=true
+          end()
+        }
+      }
+      else f(maps?"io.virtualapp.sandvxposed")
+      {
+        ufnsui()
+        {
+          fw("/storage/emulated/0/逆向杀手/hook","违规")
+          tw("存在脱壳机！")
+          sss hook=true
+          end()
+        }
+      }
+      else f(maps?"libriru_")
+      {
+        ufnsui()
+        {
+          fw("/storage/emulated/0/逆向杀手/hook","违规")
+          tw("存在脱壳机！")
+          sss hook=true
+          end()
+        }
+      }
+      else f(maps?"com.saurik.substrate")
+      {
+        ufnsui()
+        {
+          fw("/storage/emulated/0/逆向杀手/hook","违规")
+          tw("存在脱壳机！")
+          sss hook=true
+          end()
+        }
+      }
+      else f(maps?"re.frida.server")
+      {
+        ufnsui()
+        {
+          fw("/storage/emulated/0/逆向杀手/hook","违规")
+          tw("存在脱壳机！")
+          sss hook=true
+          end()
+        }
+      }
+      else f(maps?"mapp.rm-")
+      {
+        ufnsui()
+        {
+          fw("/storage/emulated/0/逆向杀手/hook","违规")
+          tw("存在脱壳机！")
+          sss hook=true
+          end()
+        }
+      }
+      else f(maps?"_frida-agent.so")
+      {
+        ufnsui()
+        {
+          fw("/storage/emulated/0/逆向杀手/hook","违规")
+          tw("存在脱壳机！")
+          sss hook=true
+          end()
+        }
+      }
+      else f(maps?"com.example.FunDex-")
+      {
+        ufnsui()
+        {
+          fw("/storage/emulated/0/逆向杀手/hook","违规")
+          tw("存在脱壳机！")
+          sss hook=true
+          end()
+        }
+      }
+    }
+    end fn
+    
+    fn j()
+    loadjar("classes2.dex",jar)
+    cls(jar,"com.1874.VPN",cls)
+    javax(back,null,cls,"isVpnUsed")
+    f(back=="true")
+    {
+      fw("/storage/emulated/0/逆向杀手/hook","违规")
+      sss hook=true
+    }
+    else
+    {
+      syso("无抓包")
+    }
+    end fn
+    
+    fn b()
+    fe("/data/local/bin/su",a)
+    f(a==true)
+    {
+      ufnsui()
+      {
+        tw("检测到本应用在root环境中运行")
+        sss hook=true
+        end()
+      }
+    }
+    else f(a==null||a==false)
+    {
+    }
+    fe("/data/local/su",b)
+    f(b==true)
+    {
+      ufnsui()
+      {
+        tw("检测到本应用在root环境中运行")
+        sss hook=true
+        end()
+      }
+    }
+    else f(b==null||b==false)
+    {
+    }
+    fe("/data/local/xbin/su",c)
+    f(c==true)
+    {
+      ufnsui()
+      {
+        tw("检测到本应用在root环境中运行")
+        sss hook=true
+        end()
+      }
+    }
+    else f(c==null||c==false)
+    {
+    }
+    fe("/sbin/su",d)
+    f(d==true)
+    {
+      ufnsui()
+      {
+        tw("检测到本应用在root环境中运行")
+        sss hook=true
+        end()
+      }
+    }
+    else f(d==null||d==false)
+    {
+    }
+    fe("/system/bin/failsafe/su",e)
+    f(e==true)
+    {
+      ufnsui()
+      {
+        tw("检测到本应用在root环境中运行")
+        sss hook=true
+        end()
+      }
+    }
+    else f(e==null||e==false)
+    {
+    }
+    fe("/system/bin/su",f)
+    f(f==true)
+    {
+      ufnsui()
+      {
+        tw("检测到本应用在root环境中运行")
+        sss hook=true
+        end()
+      }
+    }
+    else f(f==null||f==false)
+    {
+    }
+    fe("/system/sd/xbin/su",g)
+    f(g==true)
+    {
+      ufnsui()
+      {
+        tw("检测到本应用在root环境中运行")
+        sss hook=true
+        end()
+      }
+    }
+    fe("/system/bin/su",h)
+    f(h==true)
+    {
+      ufnsui()
+      {
+        tw("检测到本应用在root环境中运行")
+        sss hook=true
+        end()
+      }
+    }
+    end fn
+    fn g()
+    fl("/proc",f)
+    for(l;f)
+    {
+      //  syso(l)
+      ss("/proc/"+l+"/cmdline",pa)
+      fr(pa,g)
+      f(g?"app.greyshirts.sslcapture"||g?"com.toshiba_dealin.developerhelper"||g?"com.httpcanary.pro"||g?"com.httpcanary")
+      {
+        
+        end()
+        javanew(c,"android.os.Process")
+        java(id,c,"android.os.Process.myPid")
+        java(a,c,"android.os.Process.killProcess","int",id)
+        endcode
+        fw("/storage/emulated/0/逆向杀手/hook","违规")
+        sss hook=true
+      }
+    }
+    syso(hook)
+    end fn
+    
+    
+    fn gj()
+    fe("/storage/emulated/0/逆向杀手/hook",hook123)
+    f(hook123==true)
+    {
+      tw("逆向dog")
+      ss("rm -r "+"/storage/emulated/0/",sss.cm)
+      call(null,"mlua","sc.m","sss.cm")
+      s isVPNOpen = false
+      java(nis,null,"java.net.NetworkInterface.getNetworkInterfaces")
+      f(nis != null){
+        java(list,null,"java.util.Collections.list","java.util.Enumeration",nis)
+        for(ni ; list){
+          //iapp的for居然可以循环ArrayList，挺惊讶的
+          java(up,ni,"java.net.NetworkInterface.isUp")
+          java(ia,ni,"java.net.NetworkInterface.getInterfaceAddresses")
+          java(size,ia,"java.util.List.size")
+          f(up && size != 0){
+            java(name,ni,"java.net.NetworkInterface.getName")
+            f(name == "tun0" || name == "ppp0"){
+              s isVPNOpen = true
+              break
+            }
+          }
+        }
+      }
+      f(isVPNOpen==true)
+      {
+        ufnsui()
+        {
+          tw("哟，抓包呢大兄弟?",0)
+          uigo("闪退.iyu")
+          end()
+        }
+      }
+      else f(isVPNOpen==false)
+      {
+        syso("没有抓包")
+      }
+      else
+      {
+        end()
+      }
+      ends()
+    }
+    
+    end fn

@@ -1,0 +1,428 @@
+<View id="2" did="0" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=horizontal
+layout_marginTop=15dp</ppt>
+<event></event>
+</View>
+<View id="88" did="2" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=8dp
+app_CardElevation=0
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event></event>
+</View>
+<View id="15" did="88" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="13" did="15" type="TextView">
+<ppt>width=-2
+height=-2
+text=逆向杀手-工具箱(白情提供接口)
+textSize=14sp
+textColor=#ff494949
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="3" did="0" type="LinearLayout">
+<ppt>width=-1
+height=140dp
+orientation=vertical
+gravity=center
+layout_marginTop=15dp</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=8dp
+app_CardElevation=0
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+background=@IMG_20200321_215727 (1).png
+orientation=vertical</ppt>
+<event><eventItme type="clicki">utw(null, "Title","输入需加密或者解密的文本，点击你想加密的对应按钮即可加密文本哦！\n长按可以复制密钥哦！", "嗯", false, v)
+{
+tw("^_^感谢使用！")
+}</eventItme></event>
+</View>
+<View id="6" did="0" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=horizontal
+layout_marginTop=15dp</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=8dp
+app_CardElevation=0
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event></event>
+</View>
+<View id="9" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="8" did="9" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+hint=加密，解密原文
+background=-1
+textStyle=bold
+textSize=13sp
+textColor=#ff181818
+layout_marginLeft=5dp
+layout_weight=2</ppt>
+<event></event>
+</View>
+<View id="122" did="0" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=horizontal
+layout_marginTop=15dp</ppt>
+<event></event>
+</View>
+<View id="123" did="122" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=8dp
+app_CardElevation=0
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event></event>
+</View>
+<View id="124" did="123" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="125" did="124" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+hint=密钥(仅AES需要填写)
+background=-1
+textStyle=bold
+textSize=13sp
+textColor=#ff181818
+layout_marginLeft=5dp
+layout_weight=2
+maxLength=16</ppt>
+<event></event>
+</View>
+<View id="80" did="0" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+layout_marginTop=15dp
+orientation=horizontal
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="81" did="80" type="CardView">
+<ppt>width=90dp
+height=50dp
+app_CardcornerRadius=8dp
+app_CardElevation=0
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event></event>
+</View>
+<View id="82" did="81" type="LinearLayout">
+<ppt>width=-2
+height=-2
+orientation=horizontal
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="83" did="82" type="Button">
+<ppt>width=-1
+height=-1
+text=AES加密</ppt>
+<event><eventItme type="clicki">ug(8,"text",a)
+ug(125,"text",aa)
+t()
+{
+  hs("http://www.8to.top/api.php?type=aes_encrypt&content="+a+"&key="+aa,sj)
+  syso(sj)
+  ufnsui()
+  {
+    us(118,"text",sj)
+  }
+}</eventItme></event>
+</View>
+<View id="89" did="80" type="CardView">
+<ppt>width=90dp
+height=50dp
+app_CardcornerRadius=8dp
+app_CardElevation=0
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event></event>
+</View>
+<View id="90" did="89" type="LinearLayout">
+<ppt>width=-2
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="91" did="90" type="Button">
+<ppt>width=-1
+height=-1
+text=AES解密</ppt>
+<event><eventItme type="clicki">ug(8,"text",a)
+ug(125,"text",aa)
+t()
+{
+  hs("http://www.8to.top/api.php?type=aes_decrypt&content="+a+"&key="+aa,sj)
+  syso(sj)
+  ufnsui()
+  {
+    us(118,"text",sj)
+  }
+}</eventItme></event>
+</View>
+<View id="93" did="80" type="CardView">
+<ppt>width=93dp
+height=50dp
+app_CardcornerRadius=8dp
+app_CardElevation=0
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event></event>
+</View>
+<View id="94" did="93" type="LinearLayout">
+<ppt>width=-2
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="95" did="94" type="Button">
+<ppt>width=-1
+height=-1
+text=md5加密</ppt>
+<event><eventItme type="clicki">ug(8,"text",a)
+t()
+{
+  hs("http://www.8to.top/api.php?type=md5&content="+a,sj)
+  syso(sj)
+  ufnsui()
+  {
+    us(118,"text",sj)
+  }
+}</eventItme></event>
+</View>
+<View id="105" did="0" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+layout_marginTop=15dp
+orientation=horizontal
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="96" did="105" type="CardView">
+<ppt>width=90dp
+height=50dp
+app_CardcornerRadius=8dp
+app_CardElevation=0
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event></event>
+</View>
+<View id="97" did="96" type="LinearLayout">
+<ppt>width=-2
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="98" did="97" type="Button">
+<ppt>width=-1
+height=-1
+text=清空内容</ppt>
+<event><eventItme type="clicki">us(8,"text","")
+us(125,"text","")</eventItme></event>
+</View>
+<View id="99" did="105" type="CardView">
+<ppt>width=90dp
+height=50dp
+app_CardcornerRadius=8dp
+app_CardElevation=0
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event></event>
+</View>
+<View id="100" did="99" type="LinearLayout">
+<ppt>width=-2
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="101" did="100" type="Button">
+<ppt>width=-1
+height=-1
+text=64加密</ppt>
+<event><eventItme type="clicki">ug(8,"text",a)
+t()
+{
+  hs("http://www.8to.top/api.php?type=base64_encrypt&content="+a,sj)
+  syso(sj)
+  ufnsui()
+  {
+    us(118,"text",sj)
+  }
+}</eventItme></event>
+</View>
+<View id="112" did="105" type="CardView">
+<ppt>width=90dp
+height=50dp
+app_CardcornerRadius=8dp
+app_CardElevation=0
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event></event>
+</View>
+<View id="113" did="112" type="LinearLayout">
+<ppt>width=-2
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="114" did="113" type="Button">
+<ppt>width=-1
+height=-1
+text=64解密</ppt>
+<event><eventItme type="clicki">ug(8,"text",a)
+t()
+{
+  hs("http://www.8to.top/api.php?type=base64_decrypt&content="+a,sj)
+  syso(sj)
+  ufnsui()
+  {
+    us(118,"text",sj)
+  }
+}</eventItme></event>
+</View>
+<View id="115" did="0" type="LinearLayout">
+<ppt>width=-1
+height=70dp
+layout_marginTop=15dp
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="116" did="115" type="CardView">
+<ppt>width=-1
+height=50dp
+app_CardcornerRadius=8dp
+app_CardElevation=0
+layout_marginLeft=15dp
+layout_marginRight=15dp</ppt>
+<event></event>
+</View>
+<View id="117" did="116" type="Button">
+<ppt>width=-1
+height=-1
+text=获取网关ipv4</ppt>
+<event><eventItme type="clicki">t()
+{
+  hs("http://www.8to.top/api.php?type=ip",sj)
+  syso(sj)
+  ufnsui()
+  {
+    us(118,"text",sj)
+  }
+}</eventItme></event>
+</View>
+<View id="106" did="0" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=8dp
+app_CardElevation=0
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginBottom=10dp</ppt>
+<event><eventItme type="press">ug(118,"text",aa)
+sxb(aa)
+tw("复制成功")</eventItme></event>
+</View>
+<View id="107" did="106" type="LinearLayout">
+<ppt>width=-2
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="108" did="107" type="ScrollView">
+<ppt>width=-2
+height=-2</ppt>
+<event></event>
+</View>
+<View id="118" did="108" type="TextView">
+<ppt>width=-2
+height=-2
+text=
+editable=true
+textColor=#ff0d0d0d
+textSize=15sp</ppt>
+<event><eventItme type="press">ug(118,"text",aa)
+sxb(aa)
+tw("复制成功")</eventItme></event>
+</View>
+<UIEventset><eventItme type="loading">uycl("#ffffffff", true)
+java(cs, activity, "android.app.Activity.getWindow")
+
+java(cs2, cs, "android.view.Window.getDecorView")
+
+java(null, cs2, "android.view.View.setSystemUiVisibility", "int", "8192")
+
+//设置状态栏透明(沉浸式)
+
+java(null, cs, "android.view.Window.addFlags", "int", "67108864")
+
+
+
+
+</eventItme><eventItme type="downkey">f(st_kC==4)
+//假设变量=4
+{
+f(sss.exit==null)
+//嵌套如果判断2次，申明全局变量退出=null
+{
+sss exit=0
+//全局变量退出=0
+tw("再按一次返回上一步",0)
+//提示
+t()
+//启用新线程
+{
+stop(2000)
+sss exit=null
+//退出应用
+//停止代码2000全局变量退出=Null
+}
+}
+else
+//否则
+{
+end()
+//退出[显示桌面]
+}
+}</eventItme></UIEventset>

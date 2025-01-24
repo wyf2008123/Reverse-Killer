@@ -1,0 +1,343 @@
+<View id="16" did="0" type="RelativeLayout">
+<ppt>
+width=-1
+height=-1
+</ppt>
+<event>
+</event>
+</View>
+<View id="1" did="16" type="LinearLayout">
+<ppt>width=-1
+height=100dp
+orientation=vertical
+background=white
+</ppt>
+<event>
+</event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>
+width=-1
+height=20dp
+orientation=vertical
+</ppt>
+<event>
+</event>
+</View>
+<View id="3" did="1" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=horizontal
+gravity=bottom
+</ppt>
+<event>
+</event>
+</View>
+<View id="4" did="3" type="TextView">
+<ppt>
+width=-2
+height=-2
+text=管理中心
+layout_marginBottom=5dp
+layout_marginLeft=15dp
+textSize=20sp
+textColor=#000000
+textStyle=bold
+</ppt>
+<event>
+</event>
+</View>
+<View id="24" did="16" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+ut_below=1
+BackgroundColor=#fffafafa
+</ppt>
+<event>
+</event>
+</View>
+<View id="6" did="16" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+</ppt>
+<event>
+</event>
+</View>
+<View id="8" did="6" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+</ppt>
+<event>
+</event>
+</View>
+<View id="9" did="8" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+layout_weight=1
+orientation=vertical
+gravity=bottom
+</ppt>
+<event>
+</event>
+</View>
+<View id="7" did="9" type="CardView">
+<ppt>
+width=-1
+height=80dp
+layout_margin=10dp
+app_CardcornerRadius=6dp
+app_CardElevation=3dp
+layout_marginRight=60dp
+layout_marginBottom=3dp
+</ppt>
+<event>
+</event>
+</View>
+<View id="14" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+</ppt>
+<event>
+
+<eventItme type="clicki">utw(null,"","卡密时间.iyu","取消",true,sss.卡密时间)
+{
+}
+gvs(sss.卡密时间,1,bjk)
+gvs(sss.卡密时间,2,bjk1)
+gvs(sss.卡密时间,4,bjk2)
+s a=1
+s b=15
+s c="#ffffffff"
+s d="#212121"
+s e="#616161"
+s ff=""
+s g="请输入生成卡密数量"
+fn with_ui.F_stroke(bjk,a,b,c,d,e,ff,g)
+s ggg="卡密的有效时间 单位为秒 例如:1天=1*60*60*24=86400秒"
+fn with_ui.F_stroke(bjk1,a,b,c,d,e,ff,ggg)
+s a=1
+s b=16
+s c="#ff020202"
+s d="#ff040404"
+s e="GO"
+s ff="#ffffff"
+fn with_ui.B_stroke(bjk2,a,b,c,d,e,ff)</eventItme></event>
+</View>
+<View id="15" did="14" type="TextView">
+<ppt>width=-2
+height=-2
+text=卡密生成
+textSize=20sp
+textColor=#ff0e0e0e
+textStyle=bold
+typeface=@fonts/Ex_GameFont.ttf</ppt>
+<event>
+</event>
+</View>
+<View id="17" did="9" type="CardView">
+<ppt>
+width=-1
+height=80dp
+layout_margin=10dp
+app_CardcornerRadius=6dp
+app_CardElevation=3dp
+layout_marginRight=60dp
+layout_marginBottom=5dp
+layout_marginTop=5dp
+layout_marginTop=3dp
+layout_marginLeft=60dp
+</ppt>
+<event>
+</event>
+</View>
+<View id="18" did="17" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+</ppt>
+<event>
+<eventItme type="clicki">fr("$卡密.txt",km)
+f(!km==null)
+{
+  utw(null,"列表如下",km,"导入为txt","删除备份",false,v)
+  {
+    fw("/storage/emulated/0/卡密备份.txt",km)
+    tw("生成成功,路径:/storage/emulated/0/卡密备份.txt")
+    endutw()
+  }
+  else
+  {
+    fd("$卡密.txt",a)
+    tw("删除成功!")
+  }
+}
+else
+{
+  tw("当前无卡密")
+}</eventItme>
+</event>
+</View>
+<View id="19" did="18" type="TextView">
+<ppt>width=-2
+height=-2
+text=卡密列表
+textSize=20sp
+textColor=#ff0e0e0e
+textStyle=bold
+typeface=@fonts/Ex_GameFont.ttf
+</ppt>
+<event>
+</event>
+</View>
+<View id="10" did="8" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+layout_weight=1
+orientation=vertical
+gravity=top
+</ppt>
+<event>
+</event>
+</View>
+<View id="11" did="10" type="CardView">
+<ppt>
+width=-1
+height=80dp
+layout_margin=10dp
+app_CardcornerRadius=6dp
+app_CardElevation=3dp
+layout_marginLeft=60dp
+layout_marginBottom=3dp
+layout_marginTop=5dp
+layout_marginRight=60dp
+</ppt>
+<event>
+</event>
+</View>
+<View id="12" did="11" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+</ppt>
+<event>
+<eventItme type="clicki">tw("点我干啥")</eventItme>
+</event>
+</View>
+<View id="13" did="12" type="TextView">
+<ppt>width=-2
+height=-2
+text=暂未开发
+textSize=20sp
+textColor=#ff0e0e0e
+textStyle=bold
+typeface=@fonts/Ex_GameFont.ttf</ppt>
+<event>
+</event>
+</View>
+<View id="20" did="10" type="CardView">
+<ppt>
+width=-1
+height=80dp
+layout_margin=10dp
+app_CardcornerRadius=6dp
+app_CardElevation=3dp
+layout_marginLeft=60dp
+layout_marginBottom=2dp
+layout_marginTop=3dp
+</ppt>
+<event>
+</event>
+</View>
+<View id="21" did="20" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+</ppt>
+<event>
+
+<eventItme type="clicki">utw(null,"使用说明","1.注入完应用后请在按钮控件填写相对应的APPKEY和账号\n2.APPKEY就是你应用的包名,我们会对它进行二次加密\n3.删除项目无法恢复,并且会有缓存,退出重进就会消失\n4.遇到问题联系QQ:2662576919\n5.祝您使用愉快","取消",false,v)
+{
+}</eventItme></event>
+</View>
+<View id="22" did="21" type="TextView">
+<ppt>width=-2
+height=-2
+text=使用说明
+textSize=20sp
+textColor=#ff0e0e0e
+textStyle=bold
+typeface=@fonts/Ex_GameFont.ttf</ppt>
+<event>
+</event>
+</View>
+<UIEventset>
+<eventItme type="loading">fr("$nx",zm)
+ss("管理中心-当前管理应用包名:\n"+zm,ui)
+us(4,"text",ui)
+java(cs,activity,"android.app.Activity.getWindow")
+java(cs2,cs,"android.view.Window.getDecorView")
+java(null,cs2,"android.view.View.setSystemUiVisibility","int","8192")
+java(null,cs,"android.view.Window.addFlags","int","67108864")
+dht(dh, -1000, 0, 0, 0)
+dh(dh, "duration", 500)
+us(7, "dh", dh)
+dht(dh, 1000, 0, 0, 0)
+dh(dh, "duration", 500)
+us(20, "dh", dh)
+t()
+{
+     fn 环境检测.a()
+     fn 环境检测.b()
+     fn 环境检测.root()
+     fn 环境检测.c()
+     fn 环境检测.d()
+     fn 环境检测.e()
+     fn 环境检测.gj()
+     fn 环境检测.g()
+     fn 环境检测.j()
+}    
+/.</eventItme>
+<eventItme type="downkey">f(st_kC==4)
+//假设变量=4
+{
+f(sss.exit==null)
+//嵌套如果判断2次，申明全局变量退出=null
+{
+sss exit=0
+//全局变量退出=0
+tw("再按一次返回上一步",0)
+//提示
+t()
+//启用新线程
+{
+stop(2000)
+sss exit=null
+//退出应用
+//停止代码2000全局变量退出=Null
+}
+}
+else
+//否则
+{
+end()
+uigo("mian2.iyu")
+//退出[显示桌面]
+}
+}</eventItme></UIEventset>

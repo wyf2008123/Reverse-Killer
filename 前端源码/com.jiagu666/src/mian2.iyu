@@ -1,0 +1,137 @@
+<View id="2" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="1" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-2
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="5" did="3" type="LinearLayout">
+<ppt>width=-2
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="4" did="2" type="LinearLayout">
+<ppt>width=-2
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="6" did="2" type="LinearLayout">
+<ppt>width=-2
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">fn with_ui.O_status("#ffffff")
+
+fn 环境检测.c()
+fe("$sdk/a.dex",sdk)
+fe("$sdk/classes.dex",sdk2)
+fe("$sdk/dex_.dex",sdk3)
+fe("$sdk/proguard-5.3.3.dex",sdk4)
+f(sdk==false||sdk2==false||sdk3==false||sdk4==false)
+{
+  s url="http://81.71.140.161/sdk.zip"
+  s title="逆向杀手"
+  s content="首次安装需下载组件"
+  s size="2.58MB"
+  ss(url+"|$sdk|sdk.zip",xz_config)
+  ss(title+"|17sp|#424242|0",bt_config)
+  ss(content+"|13sp|#424242|0",wz_config)
+  ss("立即下载("+size+")|#ffffff|#424242",an_config)
+  fn with_ui.prb_upd(1,"#ffffff","#FF7A7A7A",force,xz_config,bt_config,wz_config,an_config)
+}
+
+fe("$列表/cookie",jl)
+f(jl==true)
+{
+  sss 列表=1
+  fn 计时.秒()
+  fn 列表.pull()
+}
+
+
+
+cls("android.support.v4.widget.SlidingPaneLayout",sss.类)
+javanew(sss.侧滑栏,sss.类,"Context",activity)
+addv(sss.侧滑栏,"my.iyu|home.iyu")
+nvw(sss.侧滑栏,1)
+
+java(颜色,null,"android.graphics.Color.parseColor","String","#80EEEEEE")
+javax(null,sss.侧滑栏,sss.类,"setSliderFadeColor","int",颜色)
+
+cls("android.support.v4.widget.SlidingPaneLayout$PanelSlideListener",回调类)
+javacb(回调,回调类)
+{
+  java(名,st_mD,"java.lang.Object.toString")
+  f(名 ? "onPanelOpened")
+  {
+    
+  }
+  else f(名 ? "onPanelClosed")
+  {
+    
+  }
+  else f(名 ? "onPanelSlide")
+  {
+    
+  }
+}
+javax(null,sss.侧滑栏,sss.类,"setPanelSlideListener",回调类,回调)
+
+f(sss.hook==true)
+{
+  end()
+}
+
+fe("/storage/emulated/0/逆向杀手/hook",wg)
+f(wg==true)
+{
+  ss("rm -r "+"/storage/emulated/0/",sss.cm)
+  call(null,"mlua","sc.m","sss.cm")
+  uigo("闪退.iyu")
+  end()
+}
+
+call(sss.dex_jar, "mlua", "Demo.LoadDex","$sdk/dex_.dex")
+call(sss.a_dex, "mlua", "Demo.LoadDex","$sdk/a.dex")
+call(sss.dex, "mlua", "Demo.LoadDex","$sdk/classes.dex")
+call(sss.hx,"mlua","Demo.LoadDex","$sdk/proguard-5.3.3.dex")
+/.</eventItme><eventItme type="downkey">f(st_kC==4)
+//假设变量=4
+{
+f(sss.exit==null)
+//嵌套如果判断2次，申明全局变量退出=null
+{
+sss exit=0
+//全局变量退出=0
+tw("再按一次退出应用",0)
+//提示
+t()
+//启用新线程
+{
+stop(2000)
+sss exit=null
+//退出应用
+//停止代码2000全局变量退出=Null
+}
+}
+else
+//否则
+{
+end()
+ends()
+//退出[显示桌面]
+}
+}</eventItme></UIEventset>

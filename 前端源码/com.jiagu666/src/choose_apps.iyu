@@ -1,0 +1,199 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="16" did="1" type="RelativeLayout">
+<ppt>width=-1
+height=56dp
+BackgroundColor=#ffffffff
+elevation=2dp</ppt>
+<event></event>
+</View>
+<View id="2" did="16" type="LinearLayout">
+<ppt>width=-1
+height=56dp
+orientation=horizontal
+gravity=center_vertical
+BackgroundColor=#ffffffff
+</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="ImageView">
+<ppt>width=56dp
+height=-1
+padding=16dp
+src=@back.png
+BackgroundRipple=#ffd7d7d7</ppt>
+<event><eventItme type="clicki">end()</eventItme></event>
+</View>
+<View id="4" did="2" type="TextView">
+<ppt>width=-2
+height=-2
+text=在应用中选择
+textSize=17sp
+textColor=#424242</ppt>
+<event></event>
+</View>
+<View id="5" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=center_vertical|right</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="ImageView">
+<ppt>width=50dp
+height=-1
+src=@search646.png
+padding=12dp
+backgroundripple=#e3e3e3e3</ppt>
+<event><eventItme type="clicki">us(9,"visibility","visible")
+swh("w",w)
+zdp(w,w)
+//ss("-"+w,fw)
+dht(dh1,w,0,0,0)
+dh(dh1, "duration", 350)
+us(9, "dh", dh1)
+</eventItme></event>
+</View>
+<View id="9" did="16" type="LinearLayout">
+<ppt>width=-1
+height=56dp
+orientation=horizontal
+gravity=center_vertical
+BackgroundColor=#ffffffff
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="11" did="9" type="ImageView">
+<ppt>width=56dp
+height=-1
+padding=15dp
+src=@clear961.png
+BackgroundRipple=#ffd7d7d7</ppt>
+<event><eventItme type="clicki">
+swh("w",w)
+zdp(w,w)
+//ss("-"+w,fw)
+dht(dh1,0,w,0,0)
+dh(dh1, "duration", 350)
+us(9, "dh", dh1)
+dhon(dh1)
+{
+  us(9,"visibility","gone")
+}
+</eventItme></event>
+</View>
+<View id="12" did="9" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardElevation=1dp
+app_CardcornerRadius=5dp
+layout_marginright=10dp
+layout_marginTop=8dp
+layout_marginBottom=8dp
+app_CardElevation=0</ppt>
+<event></event>
+</View>
+<View id="13" did="12" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=center_vertical
+BackgroundColor=#EEEEEE
+BackgroundRipple=#ffd0d0d0</ppt>
+<event></event>
+</View>
+<View id="14" did="13" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+hint=app名称
+textSize=14sp
+BackgroundColor=0
+layout_marginLeft=5dp
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="15" did="13" type="ImageView">
+<ppt>width=50dp
+height=-1
+src=@search646.png
+padding=9dp
+BackgroundRipple=#ffc3c3c3</ppt>
+<event><eventItme type="clicki">ug(14,"text",word)
+f(word=="")
+{
+  tw("请输入关键词!",0)
+  endcode
+}
+us(8,"refreshing",true)
+ss num=0
+t()
+{
+java(管理器,activity,"Context.getPackageManager")
+java(应用列表,管理器,"android.content.pm.PackageManager.getInstalledPackages","int",0)
+for(应用;应用列表)
+{
+  javags(应用,应用,"android.content.pm.PackageInfo","applicationInfo")
+  java(名字,应用,"android.content.pm.PackageItemInfo.loadLabel","android.content.pm.PackageManager",管理器)
+  f(名字?word)
+  {
+    s+(ss.num,1,ss.num)
+    java(图标,应用,"android.content.pm.PackageItemInfo.loadIcon","android.content.pm.PackageManager",管理器)
+    javags(包名,应用,"android.content.pm.PackageItemInfo","packageName")
+    javags(目录,应用,"android.content.pm.ApplicationInfo","sourceDir")
+    ula(list,2=图标,4=名字,5=包名,1=目录)
+  }
+}
+ufnsui()
+{
+  us(8,"refreshing",false)
+  f(ss.num==0)
+  {
+    tw("没有搜索结果!",0)
+    endcode
+  }
+  uls(7,list,"choose_apps_list.iyu",-1,-2)
+}
+}
+</eventItme></event>
+</View>
+<View id="8" did="1" type="SwipeRefreshLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event><eventItme type="onrefresh">us(8,"refreshing",false)</eventItme></event>
+</View>
+<View id="7" did="8" type="RecyclerView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">uycl("#E0E0E0",true,0)
+us(8,"refreshing",true)
+us(8,"colorschemecolors",sss.ztys)
+
+//加载应用列表
+
+t()
+{
+java(管理器,activity,"Context.getPackageManager")
+java(应用列表,管理器,"android.content.pm.PackageManager.getInstalledPackages","int",0)
+for(应用;应用列表)
+{
+  javags(应用,应用,"android.content.pm.PackageInfo","applicationInfo")
+  java(名字,应用,"android.content.pm.PackageItemInfo.loadLabel","android.content.pm.PackageManager",管理器)
+  java(图标,应用,"android.content.pm.PackageItemInfo.loadIcon","android.content.pm.PackageManager",管理器)
+  javags(包名,应用,"android.content.pm.PackageItemInfo","packageName")
+  javags(目录,应用,"android.content.pm.ApplicationInfo","sourceDir")
+  ula(list,2=图标,4=名字,5=包名,1=目录)
+}
+ufnsui()
+{
+  us(8,"refreshing",false)
+  uls(7,list,"choose_apps_list.iyu",-1,-2)
+}
+}
+</eventItme></UIEventset>

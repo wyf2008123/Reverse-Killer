@@ -1,0 +1,64 @@
+fn file_type(文件路径)
+s file = 文件路径
+slg(file , 字符长度)
+s(字符长度 - 4 , v1)
+s(字符长度 - 5 , v2)
+ssg(file , v1 , 字符长度 , type)
+ssg(file , v2 , 字符长度 , type2)
+//当前版本只定义了 4种文件格式 
+//图片
+//视频
+//音频
+//文档
+//其他格式请自行按照以下写法增加即可
+s image = ".bmp,.jpg,.png,.tif,.gif,.pcx,.tga,.exif,.fpx,.svg,.psd,.cdr,.pcd,.dxf,.ufo,.eps,.ai,.raw,.WMF,.webp"
+s video = ".RM、.RMVB、.3GP、.AVI、.MPEG、.MPG、.MKV、.DAT、.ASF、.WMV、.FLV、.MOV、.MP4、.OGG、.OGM"
+s Audio = ".CD、.OGG、.MP3、.ASF、.WMA、.WAV、.MP3PRO、.RM、.REAL、.APE、.MODULE、.MIDI、.VQF"
+s Documentation = ".txt,.html,.java,.php,.json,.xml,.iyu,.myu,.ijava,.mjava,.ilua,mlua,.ini"
+//为方便操作，转为小写
+slower(type , type)
+slower(image , image)
+slower(video , video)
+slower(Audio , Audio)
+slower(Documentation , Documentation)
+//判断
+f(image ? type || image ? type2)
+{
+  s type = "@File_selection/Tiny__0018_19.-Pictures---Night.png"
+}
+else f(video ? type || video ? type2)
+{
+  s type = "@File_selection/Tiny__0022_23.-Videos.png"
+}
+else f(Audio ? type || Audio ? type2)
+{
+  s type = "@File_selection/Tiny__0020_21.-Music.png"
+}
+else f(Documentation ? type || Documentation ? type2)
+{
+  s type = "@File_selection/Tiny__0011_12.-File.png"
+}
+else
+{
+  s type = "@File_selection/Tiny__0012_13.-Clipboard.png"
+}
+//返回 全局变量 结果 
+sss file_type = type
+end fn
+
+
+
+
+fn Sort(循环文件夹目录 , 文件夹路径)
+//文件排序，废弃…会卡死…
+s name = 循环文件夹目录
+ssg(name , 0 , 1 , head)
+slower(head , head)
+f(head == "a")
+{
+  ula(ula , 1=null , 2=ss.files , 3=循环文件夹目录 , 4=文件夹路径)
+}
+else f(head == "b")
+{
+}
+end fn

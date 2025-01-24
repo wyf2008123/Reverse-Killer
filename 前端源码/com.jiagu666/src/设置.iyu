@@ -1,0 +1,853 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="128" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="129" did="128" type="ScrollView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="4" did="129" type="LinearLayout">
+<ppt>width=-1
+height=-1
+layout_marginTop=1
+orientation=vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="16" did="5" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="17" did="16" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=10dp
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=5dp
+layout_marginBottom=5dp
+app_CardBackgroundColor=#F8f8f8
+app_CardElevation=0</ppt>
+<event></event>
+</View>
+<View id="18" did="17" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="19" did="18" type="LinearLayout">
+<ppt>width=50dp
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="20" did="19" type="LinearLayout">
+<ppt>width=5dp
+height=5dp
+layout_marginLeft=15dp
+layout_marginRight=10dp
+background=black</ppt>
+<event></event>
+</View>
+<View id="21" did="18" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="22" did="21" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center|left</ppt>
+<event></event>
+</View>
+<View id="23" did="22" type="TextView">
+<ppt>width=-2
+height=-2
+text=软件功能点击音效
+textColor=#ff0b0b0b
+textSize=13sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="24" did="21" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=4
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="25" did="24" type="CheckBox">
+<ppt>width=-2
+height=-2
+text=
+gravity=center</ppt>
+<event><eventItme type="clicki">ug(25,"checked",zt)
+f(zt==true)
+{
+  fw("$设置/音效","true")
+}
+else
+{
+  fw("$设置/音效","false")
+}</eventItme></event>
+</View>
+<View id="75" did="5" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="76" did="75" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=10dp
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=5dp
+layout_marginBottom=5dp
+app_CardBackgroundColor=#F8f8f8
+app_CardElevation=0</ppt>
+<event></event>
+</View>
+<View id="77" did="76" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="78" did="77" type="LinearLayout">
+<ppt>width=50dp
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="79" did="78" type="LinearLayout">
+<ppt>width=5dp
+height=5dp
+layout_marginLeft=15dp
+layout_marginRight=10dp
+background=black</ppt>
+<event></event>
+</View>
+<View id="80" did="77" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="81" did="80" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center|left</ppt>
+<event></event>
+</View>
+<View id="82" did="81" type="TextView">
+<ppt>width=-2
+height=-2
+text=自动jar转dex(混淆功能使用)
+textColor=#ff0b0b0b
+textSize=13sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="83" did="80" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=4
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="84" did="83" type="CheckBox">
+<ppt>width=-2
+height=-2
+text=
+gravity=center</ppt>
+<event><eventItme type="clicki">ug(84,"checked",zt)
+f(zt==true)
+{
+  fw("$设置/转dex","true")
+}
+else
+{
+  fw("$设置/转dex","false")
+}</eventItme></event>
+</View>
+<View id="130" did="5" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="131" did="130" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=10dp
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=5dp
+layout_marginBottom=5dp
+app_CardBackgroundColor=#F8f8f8
+app_CardElevation=0</ppt>
+<event></event>
+</View>
+<View id="132" did="131" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event><eventItme type="clicki">uigo("工具箱.iyu")</eventItme></event>
+</View>
+<View id="133" did="132" type="LinearLayout">
+<ppt>width=50dp
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="134" did="133" type="LinearLayout">
+<ppt>width=5dp
+height=5dp
+layout_marginLeft=15dp
+layout_marginRight=10dp
+background=black</ppt>
+<event></event>
+</View>
+<View id="135" did="132" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="136" did="135" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center|left</ppt>
+<event></event>
+</View>
+<View id="137" did="136" type="TextView">
+<ppt>width=-2
+height=-2
+text=工具箱
+textColor=#ff0b0b0b
+textSize=13sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="66" did="5" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="67" did="66" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=10dp
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=5dp
+layout_marginBottom=5dp
+app_CardBackgroundColor=#F8f8f8
+app_CardElevation=0</ppt>
+<event></event>
+</View>
+<View id="68" did="67" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event><eventItme type="clicki">uigo("卡密模板.iyu")
+end()</eventItme></event>
+</View>
+<View id="69" did="68" type="LinearLayout">
+<ppt>width=50dp
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="70" did="69" type="LinearLayout">
+<ppt>width=5dp
+height=5dp
+layout_marginLeft=15dp
+layout_marginRight=10dp
+background=black</ppt>
+<event></event>
+</View>
+<View id="71" did="68" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="72" did="71" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center|left</ppt>
+<event></event>
+</View>
+<View id="73" did="72" type="TextView">
+<ppt>width=-2
+height=-2
+text=卡密模板预览
+textColor=#ff0b0b0b
+textSize=13sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="74" did="71" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=4
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="36" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="37" did="36" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="38" did="37" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=10dp
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=5dp
+layout_marginBottom=5dp
+app_CardBackgroundColor=#F8f8f8
+app_CardElevation=0</ppt>
+<event></event>
+</View>
+<View id="39" did="38" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event><eventItme type="clicki">s qq="2662576919"
+
+//以上为你的QQ号
+
+s url = "mqqapi://card/show_pslcard?src_type=internal&source=sharecard&version=1&uin="
+
+ss(url+qq,url)
+
+sit(a, "action", "android.intent.action.VIEW")
+
+sit(a, "data", url)
+
+uit(a, "chooser", "跳转到加好友")</eventItme></event>
+</View>
+<View id="40" did="39" type="LinearLayout">
+<ppt>width=50dp
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="41" did="40" type="LinearLayout">
+<ppt>width=5dp
+height=5dp
+layout_marginLeft=15dp
+layout_marginRight=10dp
+background=black</ppt>
+<event></event>
+</View>
+<View id="42" did="39" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="43" did="42" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center|left</ppt>
+<event></event>
+</View>
+<View id="44" did="43" type="TextView">
+<ppt>width=-2
+height=-2
+text=联系作者
+textColor=#ff0b0b0b
+textSize=13sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="45" did="42" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=4
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="47" did="36" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="48" did="47" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=10dp
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=5dp
+layout_marginBottom=5dp
+app_CardBackgroundColor=#F8f8f8
+app_CardElevation=0</ppt>
+<event></event>
+</View>
+<View id="49" did="48" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event><eventItme type="clicki">uigo("加群详情.iyu")</eventItme></event>
+</View>
+<View id="50" did="49" type="LinearLayout">
+<ppt>width=50dp
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="51" did="50" type="LinearLayout">
+<ppt>width=5dp
+height=5dp
+layout_marginLeft=15dp
+layout_marginRight=10dp
+background=black</ppt>
+<event></event>
+</View>
+<View id="52" did="49" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="53" did="52" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center|left</ppt>
+<event></event>
+</View>
+<View id="54" did="53" type="TextView">
+<ppt>width=-2
+height=-2
+text=加入交流群
+textColor=#ff0b0b0b
+textSize=13sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="55" did="52" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=4
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="56" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="57" did="56" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="58" did="57" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=10dp
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=5dp
+layout_marginBottom=5dp
+app_CardBackgroundColor=#F8f8f8
+app_CardElevation=0</ppt>
+<event></event>
+</View>
+<View id="59" did="58" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="60" did="59" type="LinearLayout">
+<ppt>width=50dp
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="61" did="60" type="LinearLayout">
+<ppt>width=5dp
+height=5dp
+layout_marginLeft=15dp
+layout_marginRight=10dp
+background=black</ppt>
+<event></event>
+</View>
+<View id="62" did="59" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="63" did="62" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center|left</ppt>
+<event></event>
+</View>
+<View id="64" did="63" type="TextView">
+<ppt>width=-2
+height=-2
+text=By白情-遇见
+textColor=#ff0b0b0b
+textSize=13sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="65" did="62" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=4
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="95" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="96" did="95" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="97" did="96" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=10dp
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=5dp
+layout_marginBottom=5dp
+app_CardBackgroundColor=#F8f8f8
+app_CardElevation=0</ppt>
+<event></event>
+</View>
+<View id="98" did="97" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event><eventItme type="clicki">s id=1
+//延迟关闭时间
+s a=1000
+//提示位置(top,center,bottom)
+s b="top"
+//外边距(自动识别顶部或底部)
+s c="70dp"
+//提示弹窗背景(高度|背景颜色|圆角大小)
+s d="40dp|#82000000|30"
+//文字前面图标(图标大小|图标地址)
+s e="25dp|@go.png"
+//提示文字(字体颜色|提示内容)
+s ff="#ffffff|复制成功!"
+//文字后面图标(图标大小|图标地址)
+s g="25dp|@actionbar_icon_light_close.png"
+fn with_ui.N_alert(id,a,b,c,d,e,ff,g)
+sxb(sss.id)</eventItme></event>
+</View>
+<View id="99" did="98" type="LinearLayout">
+<ppt>width=50dp
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="100" did="99" type="LinearLayout">
+<ppt>width=5dp
+height=5dp
+layout_marginLeft=15dp
+layout_marginRight=10dp
+background=black</ppt>
+<event></event>
+</View>
+<View id="101" did="98" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="102" did="101" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+layout_weight=1
+gravity=center|left</ppt>
+<event></event>
+</View>
+<View id="103" did="102" type="TextView">
+<ppt>width=-2
+height=-2
+text=设备码:
+textColor=#ff0b0b0b
+textSize=13sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="105" did="102" type="TextView">
+<ppt>width=-2
+height=-2
+text=000000
+textColor=#ff0b0b0b
+textSize=13sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="104" did="101" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=4
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="106" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="107" did="106" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="108" did="107" type="CardView">
+<ppt>width=-1
+height=-1
+app_CardcornerRadius=10dp
+layout_marginLeft=15dp
+layout_marginRight=15dp
+layout_marginTop=5dp
+layout_marginBottom=5dp
+app_CardBackgroundColor=#F8f8f8
+app_CardElevation=0</ppt>
+<event></event>
+</View>
+<View id="109" did="108" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="110" did="109" type="LinearLayout">
+<ppt>width=50dp
+height=-1
+orientation=vertical
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="111" did="110" type="LinearLayout">
+<ppt>width=5dp
+height=5dp
+layout_marginLeft=15dp
+layout_marginRight=10dp
+background=black</ppt>
+<event></event>
+</View>
+<View id="112" did="109" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event><eventItme type="clicki">tw("点我也没用，请找开发者进行授权")</eventItme></event>
+</View>
+<View id="113" did="112" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+layout_weight=1
+gravity=center|left</ppt>
+<event></event>
+</View>
+<View id="114" did="113" type="TextView">
+<ppt>width=-2
+height=-2
+text=激活状态:
+textColor=#ff0b0b0b
+textSize=13sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="115" did="113" type="TextView">
+<ppt>width=-2
+height=-2
+text=未激活
+textColor=#ff0b0b0b
+textSize=13sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="116" did="112" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=4
+gravity=center</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">s a="#ffffff"
+fn with_ui.O_status(a)
+
+
+sss name="mian"
+s id=3
+s a="#ffffff"
+s b="@actionbar_icon_dark_back.png|25dp|visible"
+s c="设置|16sp|#000000|center"
+s d="0|25dp|gone"
+
+
+fn with_ui.V_top(id,a,b,c,d)
+//id
+s id=15
+//选项颜色
+s a="#ff0b0b0b"
+//背景颜色
+s b="#ffffff"
+
+fn with_ui.F_radio(id,a,b)
+
+s id="25"
+fn with_ui.F_radio(id,a,b)
+
+
+s id="35"
+fn with_ui.F_radio(id,a,b)
+
+s id="84"
+fn with_ui.F_radio(id,a,b)
+
+s id="94"
+fn with_ui.F_radio(id,a,b)
+
+s id="127"
+fn with_ui.F_radio(id,a,b)
+
+s id="139"
+fn with_ui.F_radio(id,a,b)
+
+us(105,"text",sss.id+"\n(点击复制设备码)")
+syso(sss.vip)
+f(sss.vip==true)
+{
+  us(115,"text","已激活")
+  us(115,"textcolor","#ffca2222")
+}
+
+fr("$设置/音效",yy)
+f(yy==true)
+{
+  us(25,"checked",true)
+}
+
+fr("$设置/转dex",dex)
+f(dex==true)
+{
+  us(84,"checked",true)
+}</eventItme><eventItme type="downkey">
+f(st_kC==4)
+//假设变量=4
+{
+f(sss.exit==null)
+//嵌套如果判断2次，申明全局变量退出=null
+{
+sss exit=0
+//全局变量退出=0
+tw("再按一次返回上一步",0)
+//提示
+t()
+//启用新线程
+{
+stop(2000)
+sss exit=null
+//退出应用
+//停止代码2000全局变量退出=Null
+}
+}
+else
+//否则
+{
+end()
+uigo("操作台.iyu")
+//退出[显示桌面]
+}
+}</eventItme></UIEventset>

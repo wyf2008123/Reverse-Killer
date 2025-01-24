@@ -1,0 +1,174 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="RelativeLayout">
+<ppt>width=-1
+height=50dp
+background=white
+padding=10dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="ImageView">
+<ppt>width=25dp
+height=30dp
+src=@File_selection/offs.png
+ut_centerVertical=true</ppt>
+<event><eventItme type="clicki">sss File_Name = null
+sss File_Path = null
+uigo("提取apk.iyu")
+end()</eventItme></event>
+</View>
+<View id="5" did="1" type="ListView">
+<ppt>width=-1
+height=-1
+divider=#00000000
+background=#ffffff</ppt>
+<event></event>
+</View>
+<View id="6" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+background=white</ppt>
+<event></event>
+</View>
+<View id="7" did="6" type="ImageView">
+<ppt>width=-2
+height=-2
+src=@File_selection/mkz_default_dynamicnull.png</ppt>
+<event></event>
+</View>
+<View id="8" did="6" type="TextView">
+<ppt>width=-2
+height=-2
+text=该文件夹下没有任何文件(夹)哟…
+textColor=#333333
+textSize=14sp
+layout_marginTop=20dp</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">sss File_Name = null
+sss File_Path = null
+fdir(sd)
+sss dir = sd
+fl(sd , true , 文件夹目录)
+fl(sd , false , 文件目录)
+sgszl(文件夹目录 , 文件夹数量)
+sgszl(文件目录 , 文件数量)
+s list_view = 5
+s oops_view = 6
+s main = "File_selection_list.iyu"
+s files = "@File_selection/Tiny__0009_10.-Folder.png"
+f(sss.选择目录 == true)
+{
+  s main = "File_selection_lists.iyu"
+}
+ss list_view = list_view
+ss oops_view = oops_view
+ss main = main
+ss files = files
+f(文件夹数量 == "0" && 文件数量 == "0")
+{
+}
+else
+{
+  t()
+  {
+    for(循环文件夹目录 ; 文件夹目录)
+    {
+      f(循环文件夹目录 == null)
+      {
+      }
+      else
+      {
+        ss(sd+"/"+循环文件夹目录,文件夹路径)
+        ula(ula , -1="1" , 1=null , 2=files , 3=循环文件夹目录 , 4=文件夹路径)
+      }
+    }
+    ufnsui()
+    {
+      uls(list_view , ula , main , -1 , -2)
+      t()
+      {
+        for(循环文件目录 ; 文件目录)
+        {
+          f(循环文件目录 == null)
+          {
+          }
+          else
+          {
+            ss(sd+"/"+循环文件目录,文件路径)
+            fn File_selection.file_type(文件路径)
+            ula(ula, -1="0" , 1=null , 2=sss.file_type,3=循环文件目录,4=文件路径)
+          }
+        }
+        ufnsui()
+        {
+          uls(list_view , ula , main , -1 , -2)
+        }
+      }
+    }
+  }
+}</eventItme><eventItme type="downkey">f(st_kC==4)
+{
+  s lj = sss.dir
+  f(lj=="/storage/emulated/0")
+  {
+    uigo("提取apk.iyu")
+    end()
+  }
+  else
+  {
+    slg(lj,zfcd)
+    slof(lj,"/",zfcd,jq)
+    ssg(lj,"0",jq,lj)
+    sss dir = lj
+    fl(lj,true,文件夹目录)
+    fl(lj,false,文件目录)
+    sgszl(文件夹目录,文件夹目录数量)
+    sgszl(文件目录,文件目录数量)
+    f(文件夹目录数量 == "0" && 文件目录数量 == "0")
+    {
+      us(ss.list_view,"visibility","gone")
+      us(ss.oops_view,"visibility","visible")
+    }
+    else
+    {
+      t()
+      {
+        for(循环文件夹目录 ; 文件夹目录)
+        {
+          f(循环文件夹目录 != null)
+          {
+            ss(lj+"/"+循环文件夹目录,文件夹路径)
+            ula(ula,-1="1",1=null,2=ss.files,3=循环文件夹目录,4=文件夹路径)
+          }
+        }
+        ufnsui()
+        {
+          uls(ss.list_view , ula , ss.main , -1 , -2)
+          t()
+          {
+            for(循环文件目录 ; 文件目录)
+            {
+              f(循环文件目录 != null)
+              {
+                ss(lj+循环文件目录,文件路径)
+                fn File_selection.file_type(文件路径)
+                ula(ula,-1="0",1=null,2=sss.file_type,3=循环文件目录,4=文件路径)
+              }
+            }
+            ufnsui()
+            {
+              uls(ss.list_view , ula , ss.main , -1 , -2)
+            }
+          }
+        }
+      }
+    }
+  }
+}</eventItme></UIEventset>

@@ -1,0 +1,115 @@
+<View id="1" did="0" type="CardView">
+<ppt>width=-1
+height=60dp
+app_CardcornerRadius=10dp
+layout_marginLeft=10dp
+layout_marginRight=10dp
+layout_marginTop=5dp
+layout_marginBottom=5dp
+app_CardBackgroundColor=#F8f8f8
+app_CardElevation=0</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event><eventItme type="clicki">utw(null,"提示","是否跳转管理应用","确定","取消",false,v)
+{
+  ulag(st_vW,12,a)
+  uigo("卡密管理2.iyu")
+  end()
+  fw("$nx",a)
+}
+else
+{
+}</eventItme><eventItme type="press">ulag(st_vW,12,a)
+
+utw(null,"提示","是否删除"+a+"?","确定","取消",false,v)
+{
+  
+   ss("rm -r "+"/storage/emulated/0/逆向杀手/卡密验证/lib/"+a,sss.cm)
+   call(null,"mlua","sc.m","sss.cm")
+   tw("删除成功")
+}
+else
+{
+}</eventItme></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=60dp
+height=-1
+orientation=vertical
+gravity=center
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="8" did="3" type="ImageView">
+<ppt>width=40dp
+height=40dp
+src=17301567</ppt>
+<event></event>
+</View>
+<View id="4" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="9" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=left|center</ppt>
+<event></event>
+</View>
+<View id="11" did="9" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本11
+textColor=#ff020202
+textStyle=bold
+textSize=11sp</ppt>
+<event></event>
+</View>
+<View id="10" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="12" did="10" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本12
+textSize=10sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="14" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=2
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="15" did="14" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本15
+textSize=10sp
+textStyle=bold</ppt>
+<event></event>
+</View>
+<View id="7" did="0" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本7
+visibility=gone</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

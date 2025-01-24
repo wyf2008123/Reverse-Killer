@@ -1,0 +1,43 @@
+
+fn V_top(code)
+f(code==1)
+{
+  //图片控件1点击事件
+  syso("图片控件1")
+  end()
+}
+f(code==2)
+{
+  //图片控件2点击事件
+  uigo("设置.iyu")
+  end()
+}
+end fn
+//top导航栏
+
+
+//单按钮弹窗
+fn A_oneUtw(bid,did,uycls)
+  //关闭弹窗
+  fn with_ui.N_ender(bid,did,uycls)
+  tw("点击了按钮")
+end fn
+//单按钮弹窗
+
+
+//双按钮弹窗
+fn A_twoUtw(bid,did,uycls,code)
+  //关闭弹窗
+  fn with_ui.N_ender(bid,did,uycls)
+  f(code==1)
+  {
+    tw("点击了按钮1")
+    //按钮1执行事件
+  }
+  f(code==2)
+  {
+    tw("点击了按钮2")
+    //按钮2执行事件
+  }
+end fn
+//双按钮弹窗

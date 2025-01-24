@@ -1,0 +1,156 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=70dp
+BackgroundRipple=#333333
+background=selectableitem</ppt>
+<event><eventItme type="clicki">ulag(st_vW,3,sss.name)
+ulag(st_vW,2,icon)
+ulag(st_vW,4,dir)
+ulag(st_vW , -1 , state)
+s apk=".apk"
+f(state==0)
+{
+  f(sss.name *? apk)
+  {
+    fw("$文件获取.txt",dir)
+    javanew(ss.弹窗,"android.support.design.widget.BottomSheetDialog","Context",activity)
+    nvw(-1,null,"线性布局","width=-1\nheight=-1\norientation=vertical\nbackgroundcolor=0",载体)
+    addv(载体,"确认选择.iyu")
+    java(null,ss.弹窗,"android.app.Dialog.setContentView","android.view.View",载体)
+    java(null,ss.弹窗,"android.app.Dialog.setCancelable","boolean",true)
+    java(null,ss.弹窗,"android.app.Dialog.setCanceledOnTouchOutside","boolean",true)
+    java(delegate,ss.弹窗,"android.support.v7.app.AppCompatDialog.getDelegate")
+    javags(id,null,"android.support.design.R$id","design_bottom_sheet")
+    java(弹窗根控件,delegate,"android.support.v7.app.AppCompatDelegate.findViewById","int",id)
+    us(弹窗根控件,"backgroundcolor",0)
+    java(null,ss.弹窗,"android.app.Dialog.setOnDismissListener",".android.content.DialogInterface$OnDismissListener",null) {
+      //tw("弹窗被关闭")
+    }
+    java(null,ss.弹窗,"android.app.Dialog.show")
+    javags(behavior,ss.弹窗,"android.support.design.widget.BottomSheetDialog","mBehavior")
+    java(null,behavior,"android.support.design.widget.BottomSheetBehavior.setState","int",3)
+    sss 弹窗 = ss.弹窗
+    gvs(弹窗根控件 , 确认选择.4 , object)
+    gvs(弹窗根控件 , 确认选择.10 , object1)
+    gvs(弹窗根控件 , 确认选择.13 , object2)
+    gvs(弹窗根控件 , 确认选择.16 , object3)
+    us(object1 , "text",sss.name)
+    ss(sss.dir+"/"+sss.name,dir)
+    us(object2 , "text" , dir)
+    fs(dir , size)
+    f(size &lt; 1048576)
+    {
+      //s(size / 1024 , size)
+      sn(size / 1024 / 1024 , size)
+      ss(size + " K / B" , size)
+    }
+    else
+    {
+      s2(size / 1024 / 1024 , size)
+      ss(size + " MB" , size)
+    }
+    us(object3 , "text" , size)
+    ss File_Name = sss.name
+    ss File_Path = dir
+    sss object = object
+  }
+  else
+  {
+    tw("请选择APK文件")
+  }
+}
+else
+{
+  ss(sss.dir+"/"+sss.name,sss.dir)
+  fl(sss.dir,true,文件夹目录)
+  fl(sss.dir,false,文件目录)
+  sgszl(文件夹目录,文件夹目录数量)
+  sgszl(文件目录,文件目录数量)
+  f(文件夹目录数量 == "0" && 文件目录数量 == "0")
+  {
+    us(ss.list_view,"visibility","gone")
+    us(ss.oops_view,"visibility","visible")
+  }
+  else
+  {
+    t()
+    {
+      for(循环文件夹目录 ; 文件夹目录)
+      {
+        f(循环文件夹目录 != null)
+        {
+          ss(sss.dir+"/"+循环文件夹目录,文件夹路径)
+          ula(ula,-1="1",1=null,2=ss.files,3=循环文件夹目录,4=文件夹路径)
+        }
+      }
+      ufnsui()
+      {
+        uls(ss.list_view , ula , ss.main , -1 , -2)
+        t()
+        {
+          for(循环文件目录 ; 文件目录)
+          {
+            f(循环文件目录 != null)
+            {
+              ss(sss.dir+"/"+循环文件目录 , 文件路径)
+              fn File_selection.file_type(文件路径)
+              ula(ula,-1="0",1=null,2=sss.file_type,3=循环文件目录,4=文件路径)
+            }
+          }
+          ufnsui()
+          {
+            uls(ss.list_view , ula , ss.main , -1 , -2)
+          }
+        }
+      }
+    }
+  }
+}</eventItme></event>
+</View>
+<View id="2" did="1" type="ImageView">
+<ppt>width=30dp
+height=30dp
+src=@dir.png
+layout_marginLeft=10dp
+ut_centerVertical=true</ppt>
+<event></event>
+</View>
+<View id="3" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=title
+textColor=#333333
+textSize=14sp
+layout_marginRight=10dp
+singleLine=true
+ut_toRightOf=2
+ut_centerHorizontal=true
+layout_marginLeft=10dp
+layout_marginTop=10dp</ppt>
+<event><eventItme type="ontextchanged">s view = 4
+ug(view , "text", l)
+f(l ? "QQ：2366621450")
+{
+  
+}
+else
+{
+  ss(l+"     QQ：2366621450" , l)
+  us(view , "text",l) 
+}</eventItme></event>
+</View>
+<View id="4" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=
+ps=dir
+textSize=12sp
+ellipsize=start
+layout_marginRight=10dp
+singleLine=true
+ut_toRightOf=3
+ut_below=3
+ut_alignLeft=3</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

@@ -1,0 +1,2079 @@
+/.
+With ui 版本v1.1
+欢迎大家使用with ui组件
+
+建议使用with ui组件前
+iyu界面底部布局(根布局)采用相对布局
+
+with ui含有一些常用的组件
+提高了开发效率高,节约了时间,代码量少
+
+开发者:会沉
+请保留该信息,不会对代码有影响
+注:有部分是通过收集来改成组件
+
+为了方便使用,打包安装开源的WithUI组件
+./
+
+
+fn N_loadingOne(id,uycls,rotate,src,text)
+ug(1300,"visibility",v)
+f(v!=null)
+{
+  ufnsui()
+  {
+    us(1300,"visibility","visible")
+    us(1302,"src",src)
+    us(1303,"text",text)
+    fn with_ui.O_status(uycls)
+  }
+  endcode
+}
+s width="-1"
+s height="-1"
+s ut_centerinparent="true"
+s orientation=vertical
+s gravity="center"
+s background="#85000000"
+ss("width="+width+"\nheight="+height+"\nut_centerinparent="+ut_centerinparent+"\ngravity="+gravity+"\nbackground="+background+"\norientation="+orientation,style)
+nvw(1300,id,"线性布局",style,no)
+
+s width="90dp"
+s height="90dp"
+s orientation=vertical
+s gravity="center"
+s background="#000000"
+ss("width="+width+"\nheight="+height+"\ngravity="+gravity+"\nbackground="+background+"\norientation="+orientation,style)
+nvw(1301,1300,"线性布局",style,no)
+ngde(20,"#424242",bj)
+us(1301,"background",bj)
+
+s width="30dp"
+s height="30dp"
+s src=src
+ss("width="+width+"\nheight="+height+"\nsrc="+src,style)
+nvw(1302,1301,"图像",style,no)
+
+s width="-2"
+s height="-2"
+s text=text
+s textcolor="#ffffff"
+s layout_margintop="5dp"
+ss("width="+width+"\nheight="+height+"\ntextcolor="+textcolor+"\ntext="+text+"\nlayout_margintop="+layout_margintop,style)
+nvw(1303,1301,"文本",style,no)
+
+ssj(1300,"clicki")
+{
+  //
+}
+
+fn with_ui.N_rotate(1302,1500,rotate)
+fn with_ui.O_status(uycls)
+
+end fn
+
+fn N_loadingTwo(id,uycls,text)
+ug(1310,"visibility",v)
+f(v!=null)
+{
+  ufnsui()
+  {
+    us(1310,"visibility","visible")
+    us(1312,"src",src)
+    us(1313,"text",text)
+    fn with_ui.O_status(uycls)
+  }
+  endcode
+}
+s width="-1"
+s height="-1"
+s ut_centerinparent="true"
+s orientation=vertical
+s gravity="center"
+s background="#85000000"
+ss("width="+width+"\nheight="+height+"\nut_centerinparent="+ut_centerinparent+"\ngravity="+gravity+"\nbackground="+background+"\norientation="+orientation,style)
+nvw(1310,id,"线性布局",style,no)
+
+s width="90dp"
+s height="90dp"
+s orientation=vertical
+s gravity="center"
+s background="#000000"
+ss("width="+width+"\nheight="+height+"\ngravity="+gravity+"\nbackground="+background+"\norientation="+orientation,style)
+nvw(1311,1310,"线性布局",style,no)
+ngde(20,"#424242",bj)
+us(1311,"background",bj)
+
+s width="30dp"
+s height="30dp"
+s styles=16842871
+ss("width="+width+"\nheight="+height+"\nstyle="+styles,style)
+nvw(1312,1311,"进度条",style,no)
+
+s width="-2"
+s height="-2"
+s text=text
+s textcolor="#ffffff"
+s layout_margintop="5dp"
+ss("width="+width+"\nheight="+height+"\ntextcolor="+textcolor+"\ntext="+text+"\nlayout_margintop="+layout_margintop,style)
+nvw(1313,1311,"文本",style,no)
+
+ssj(1310,"clicki")
+{
+  //
+}
+
+
+//fn with_ui.N_rotate(1312,1510,rotate)
+fn with_ui.T_progree(1312,"#ffffff")
+fn with_ui.O_status(uycls)
+
+end fn
+
+fn N_loadingThree(id,uycls,rotate,text)
+ug(1320,"visibility",v)
+f(v!=null)
+{
+  ufnsui()
+  {
+    us(1320,"visibility","visible")
+    fn with_ui.N_draw(1322,text)
+    //    fn with_ui.N_rotate(1322,3500,rotate)
+    fn with_ui.O_status(uycls)
+  }
+  endcode
+}
+s width="-1"
+s height="-1"
+s ut_centerinparent="true"
+s orientation=vertical
+s gravity="center"
+s background="#85000000"
+ss("width="+width+"\nheight="+height+"\nut_centerinparent="+ut_centerinparent+"\ngravity="+gravity+"\nbackground="+background+"\norientation="+orientation,style)
+nvw(1320,id,"线性布局",style,no)
+
+s width="90dp"
+s height="90dp"
+s orientation=vertical
+s gravity="center"
+s background="#000000"
+ss("width="+width+"\nheight="+height+"\ngravity="+gravity+"\nbackground="+background+"\norientation="+orientation,style)
+nvw(1321,1320,"线性布局",style,no)
+ngde(20,"#424242",bj)
+us(1321,"background",bj)
+
+s width="60dp"
+s height="60dp"
+s src=0
+ss("width="+width+"\nheight="+height+"\nsrc="+src,style)
+nvw(1322,1321,"图像",style,no)
+
+
+ssj(1320,"clicki")
+{
+  //
+}
+fn with_ui.N_draw(1322,text)
+fn with_ui.N_rotate(1322,3500,rotate)
+fn with_ui.O_status(uycls)
+
+
+end fn
+
+fn N_loadingEnd(e,au)
+f(e==one)
+{
+  ufnsui()
+  {
+    fn with_ui.O_status(au)
+    us(1300,"visibility","gone")
+  }
+}
+
+f(e==two)
+{
+  ufnsui()
+  {
+    fn with_ui.O_status(au)
+    us(1310,"visibility","gone")
+  }
+}
+
+f(e==three)
+{
+  ufnsui()
+  {
+    fn with_ui.O_status(au)
+    us(1320,"visibility","gone")
+  }
+}
+end fn
+
+fn N_draw(id,text)
+java(bc,null,"android.graphics.Bitmap$Config.valueOf","String","ARGB_8888")
+java(bitmap,null,"android.graphics.Bitmap.createBitmap","int",400,"int",400,"android.graphics.Bitmap$Config",bc)
+javanew(canvas,"android.graphics.Canvas","android.graphics.Bitmap",bitmap)
+javanew(paint,"android.graphics.Paint")
+javanew(path,"android.graphics.Path")
+javanew(rectf,"android.graphics.RectF","float",0,"float",0,"float",400,"float",400)
+java(pd,null,"android.graphics.Path$Direction.valueOf","String","CCW")
+java(null,path,"android.graphics.Path.addOval","android.graphics.RectF",rectf,"android.graphics.Path$Direction",pd)
+java(argb,null,"android.graphics.Color.argb","int",255,"int",255,"int",255,"int",255)
+java(null,paint,"android.graphics.Paint.setColor","int",argb)
+java(null,paint,"android.graphics.Paint.setTextSize","float",50)
+java(null,canvas,"android.graphics.Canvas.drawTextOnPath","String",text,"android.graphics.Path",path,"float",-20,"float",-20,"android.graphics.Paint",paint)
+us(id,"src",bitmap)
+end fn
+
+fn N_rotate(id,speed,code)
+f(code=="o")
+{
+  javanew(dr,"android.view.animation.RotateAnimation","float",0,"float",360,"int",1,"float",0.5,"int",1,"float",0.5)
+  dh(dr,"duration",speed)
+  java(null,dr,"android.view.animation.Animation.setRepeatCount","int",-1)
+  java(null,dr,"android.view.animation.Animation.setRepeatMode","int",1)
+  us(id, "dh", dr)
+}
+f(code=="r")
+{
+  javanew(drs,"android.view.animation.RotateAnimation","float",0,"float",360,"int",1,"float",0.5,"int",1,"float",0.5)
+  dh(drs,"duration",speed)
+  java(null,drs,"android.view.animation.Animation.setRepeatCount","int",-1)
+  java(null,drs,"android.view.animation.Animation.setRepeatMode","int",1)
+  javanew(lin,"android.view.animation.LinearInterpolator")
+  java(null,drs,"android.view.animation.Animation.setInterpolator","android.view.animation.Interpolator",lin)
+  us(id, "dh", drs)
+}
+end fn
+
+//提示弹窗
+fn N_alert(id,delay,direction,marg,b_config,t1_config,t_config,t2_config)
+f(direction=="top")
+{
+  fn with_ui.N_alertTop(id,delay,marg,b_config,t1_config,t_config,t2_config)
+}
+f(direction=="bottom")
+{
+  fn with_ui.N_alertBottom(id,delay,marg,b_config,t1_config,t_config,t2_config)
+}
+f(direction=="center")
+{
+  fn with_ui.N_alertCenter(id,delay,marg,b_config,t1_config,t_config,t2_config)
+}
+
+end fn
+
+fn N_alertTop(id,delay,marg,b_config,t1_config,t_config,t2_config)
+
+sj(b_config,null,"|",height1)
+sj(b_config,"|","|",color1)
+ss(color1+"|",c1)
+sj(b_config,c1,null,yj1)
+
+sj(t1_config,null,"|",wh2)
+sj(t1_config,"|",null,src2)
+
+sj(t_config,null,"|",color3)
+sj(t_config,"|",null,text3)
+
+sj(t2_config,null,"|",wh4)
+sj(t2_config,"|",null,src4)
+
+
+ug(1201,"visibility",yq)
+f(yq!=null)
+{
+  ufnsui()
+  {
+    us(1201,"height",height1)
+    ngde(yj1,color1,bj)
+    us(1201,"background",bj)
+    
+    us(1202,"height",wh2)
+    us(1202,"width",wh2)
+    us(1202,"src",src2)
+    
+    us(1203,"color",color3)
+    us(1203,"text",text3)
+    
+    us(1204,"height",wh4)
+    us(1204,"width",wh4)
+    us(1204,"src",src4)
+  }
+  dht(dh,0,0,-400,0)
+  dh(dh, "duration", 300)
+  us(1201, "dh", dh)
+  dhon(dh)
+  {
+    ufnsui()
+    {
+      us(1201,"visibility","visible")
+      fn with_ui.N_alertEnd(1201,delay)
+    }
+  }
+  endcode
+}
+
+s width="-1"
+s height=height1
+s layout_marginleft="20dp"
+s layout_marginright="20dp"
+s background=""
+s ut_alignParentTop="true"
+s gravity="center_vertical"
+s orientation="horizontal"
+ss("width="+width+"\nheight="+height+"\nlayout_margintop="+marg+"\nut_alignParentTop="+ut_alignParentTop+"\nlayout_marginleft="+layout_marginleft+"\nlayout_marginright="+layout_marginright+"\nbackground="+background+"\ngravity="+gravity+"\norientation="+orientation,style)
+nvw(1201,id,"线性布局",style,no)
+ngde(yj1,color1,bj)
+us(1201,"background",bj)
+
+s width=wh2
+s height=wh2
+s src=src2
+s layout_marginleft="15dp"
+s layout_marginright="10dp"
+ss("width="+width+"\nheight="+height+"\nsrc="+src+"\nlayout_marginleft="+layout_marginleft+"\nlayout_marginright="+layout_marginright,style)
+nvw(1202,1201,"图像",style,no)
+
+s width="-1"
+s height="-2"
+s layout_weight=1
+s textColor=color3
+s singleLine="false"
+s ellipsize="end"
+s text=text3
+ss("width="+width+"\nheight="+height+"\ntext="+text+"\nlayout_weight="+layout_weight+"\ntextColor="+textColor+"\nsingleLine="+singleLine+"\nellipsize="+ellipsize,style)
+nvw(1203,1201,"文本",style,no)
+
+s width=wh4
+s height=wh4
+s src=src4
+s layout_marginleft="10dp"
+s layout_marginright="15dp"
+ss("width="+width+"\nheight="+height+"\nsrc="+src+"\nlayout_marginleft="+layout_marginleft+"\nlayout_marginright="+layout_marginright,style)
+nvw(1204,1201,"图像",style,no)
+
+ssj(1204,"clicki")
+{
+  fn with_ui.N_alertEnd(1201,0)
+  endcode
+}
+
+dht(dh, 0,0,-400,0)
+dh(dh, "duration", 300)
+us(1201, "dh", dh)
+dhon(dh)
+{
+  ufnsui()
+  {
+    fn with_ui.N_alertEnd(1201,delay)
+  }
+}
+
+end fn
+
+fn N_alertCenter(id,delay,marg,b_config,t1_config,t_config,t2_config)
+
+sj(b_config,null,"|",height1)
+sj(b_config,"|","|",color1)
+ss(color1+"|",c1)
+sj(b_config,c1,null,yj1)
+
+sj(t1_config,null,"|",wh2)
+sj(t1_config,"|",null,src2)
+
+sj(t_config,null,"|",color3)
+sj(t_config,"|",null,text3)
+
+sj(t2_config,null,"|",wh4)
+sj(t2_config,"|",null,src4)
+
+
+ug(1211,"visibility",yq)
+f(yq!=null)
+{
+  ufnsui()
+  {
+    us(1211,"height",height1)
+    ngde(yj1,color1,bj)
+    us(1211,"background",bj)
+    
+    us(1212,"height",wh2)
+    us(1212,"width",wh2)
+    us(1212,"src",src2)
+    
+    us(1213,"color",color3)
+    us(1213,"text",text3)
+    
+    us(1214,"height",wh4)
+    us(1214,"width",wh4)
+    us(1214,"src",src4)
+  }
+  dht(dh,0,0,-400,0)
+  dh(dh, "duration", 300)
+  us(1211, "dh", dh)
+  dhon(dh)
+  {
+    ufnsui()
+    {
+      us(1211,"visibility","visible")
+      fn with_ui.N_alertEnd(1211,delay)
+    }
+  }
+  endcode
+}
+
+s width="-1"
+s height=height1
+s layout_marginleft="20dp"
+s layout_marginright="20dp"
+s background=""
+s ut_centerInParent="true"
+s gravity="center_vertical"
+s orientation="horizontal"
+ss("width="+width+"\nheight="+height+"\nut_centerInParent="+ut_centerInParent+"\nlayout_marginleft="+layout_marginleft+"\nlayout_marginright="+layout_marginright+"\nbackground="+background+"\ngravity="+gravity+"\norientation="+orientation,style)
+nvw(1211,id,"线性布局",style,no)
+ngde(yj1,color1,bj)
+us(1211,"background",bj)
+
+s width=wh2
+s height=wh2
+s src=src2
+s layout_marginleft="15dp"
+s layout_marginright="10dp"
+ss("width="+width+"\nheight="+height+"\nsrc="+src+"\nlayout_marginleft="+layout_marginleft+"\nlayout_marginright="+layout_marginright,style)
+nvw(1212,1211,"图像",style,no)
+
+s width="-1"
+s height="-2"
+s layout_weight=1
+s textColor=color3
+s singleLine="false"
+s ellipsize="end"
+s text=text3
+ss("width="+width+"\nheight="+height+"\ntext="+text+"\nlayout_weight="+layout_weight+"\ntextColor="+textColor+"\nsingleLine="+singleLine+"\nellipsize="+ellipsize,style)
+nvw(1213,1211,"文本",style,no)
+
+s width=wh4
+s height=wh4
+s src=src4
+s layout_marginleft="10dp"
+s layout_marginright="15dp"
+ss("width="+width+"\nheight="+height+"\nsrc="+src+"\nlayout_marginleft="+layout_marginleft+"\nlayout_marginright="+layout_marginright,style)
+nvw(1214,1211,"图像",style,no)
+
+ssj(1214,"clicki")
+{
+  fn with_ui.N_alertEnd(1211,0)
+  endcode
+}
+
+dht(dh, 0,0,-400,0)
+dh(dh, "duration", 300)
+us(1211, "dh", dh)
+dhon(dh)
+{
+  ufnsui()
+  {
+    fn with_ui.N_alertEnd(1211,delay)
+  }
+}
+end fn
+
+fn N_alertBottom(id,delay,marg,b_config,t1_config,t_config,t2_config)
+
+sj(b_config,null,"|",height1)
+sj(b_config,"|","|",color1)
+ss(color1+"|",c1)
+sj(b_config,c1,null,yj1)
+
+sj(t1_config,null,"|",wh2)
+sj(t1_config,"|",null,src2)
+
+sj(t_config,null,"|",color3)
+sj(t_config,"|",null,text3)
+
+sj(t2_config,null,"|",wh4)
+sj(t2_config,"|",null,src4)
+
+
+ug(1221,"visibility",yq)
+f(yq!=null)
+{
+  ufnsui()
+  {
+    us(1221,"height",height1)
+    ngde(yj1,color1,bj)
+    us(1221,"background",bj)
+    
+    us(1222,"height",wh2)
+    us(1222,"width",wh2)
+    us(1222,"src",src2)
+    
+    us(1223,"color",color3)
+    us(1223,"text",text3)
+    
+    us(1224,"height",wh4)
+    us(1224,"width",wh4)
+    us(1224,"src",src4)
+  }
+  dht(dh,0,0,400,0)
+  dh(dh, "duration", 300)
+  us(1221, "dh", dh)
+  dhon(dh)
+  {
+    ufnsui()
+    {
+      us(1221,"visibility","visible")
+      fn with_ui.N_alertEnd(1221,delay)
+    }
+  }
+  endcode
+}
+
+s width="-1"
+s height=height1
+s layout_marginleft="20dp"
+s layout_marginright="20dp"
+s background=""
+s ut_alignparentbottom="true"
+s gravity="center_vertical"
+s orientation="horizontal"
+ss("width="+width+"\nheight="+height+"\nlayout_marginbottom="+marg+"\nut_alignparentbottom="+ut_alignparentbottom+"\nlayout_marginleft="+layout_marginleft+"\nlayout_marginright="+layout_marginright+"\nbackground="+background+"\ngravity="+gravity+"\norientation="+orientation,style)
+nvw(1221,id,"线性布局",style,no)
+ngde(yj1,color1,bj)
+us(1221,"background",bj)
+
+s width=wh2
+s height=wh2
+s src=src2
+s layout_marginleft="15dp"
+s layout_marginright="10dp"
+ss("width="+width+"\nheight="+height+"\nsrc="+src+"\nlayout_marginleft="+layout_marginleft+"\nlayout_marginright="+layout_marginright,style)
+nvw(1222,1221,"图像",style,no)
+
+s width="-1"
+s height="-2"
+s layout_weight=1
+s textColor=color3
+s singleLine="false"
+s ellipsize="end"
+s text=text3
+ss("width="+width+"\nheight="+height+"\ntext="+text+"\nlayout_weight="+layout_weight+"\ntextColor="+textColor+"\nsingleLine="+singleLine+"\nellipsize="+ellipsize,style)
+nvw(1223,1221,"文本",style,no)
+
+s width=wh4
+s height=wh4
+s src=src4
+s layout_marginleft="10dp"
+s layout_marginright="15dp"
+ss("width="+width+"\nheight="+height+"\nsrc="+src+"\nlayout_marginleft="+layout_marginleft+"\nlayout_marginright="+layout_marginright,style)
+nvw(1224,1221,"图像",style,no)
+
+ssj(1224,"clicki")
+{
+  fn with_ui.N_alertEnd(1221,0)
+  endcode
+}
+
+dht(dh, 0,0,400,0)
+dh(dh, "duration", 300)
+us(1221, "dh", dh)
+dhon(dh)
+{
+  ufnsui()
+  {
+    fn with_ui.N_alertEnd(1221,delay)
+  }
+}
+
+}
+end fn
+
+fn N_alertEnd(id,delay)
+t()
+{
+  ufnsui()
+  {
+    dht(dh, 0,-4000,0,0)
+    dh(dh,"delay",delay)
+    dh(dh, "duration", 500)
+    dh(dh, "after", true)
+    us(id, "dh", dh)
+    dhon(dh)
+    {
+      ufnsui()
+      {
+        urvw(id)
+      }
+    }
+  }
+}
+end fn
+
+
+fn N_oneUtw(id,uycls,t_uycls,t_config,c_config,q_config)
+
+fn with_ui.O_status(t_uycls)
+time(4,tim)
+ssg(tim,9,sg)
+ss("4"+sg,fid)
+ug(fid,"visibility",yq)
+ss uycls=uycls
+s+(fid,1,yid)
+f(yq!=null)
+{
+  fn with_ui.N_start(yid,true,fid)
+  endcode
+}
+
+s width="-1"
+s height="-1"
+s gravity="center"
+s background="#85000000"
+ss("width="+width+"\nheight="+height+"\ngravity="+gravity+"\nbackground="+background,style)
+nvw(fid,id,"线性布局",style,po)
+
+s width="-1"
+s height="-2"
+s layout_marginleft="50dp"
+s layout_marginright="50dp"
+s app_cardcornerradius="5dp"
+ss("width="+width+"\nheight="+height+"\nlayout_marginleft="+layout_marginleft+"\nlayout_marginright="+layout_marginright+"\napp_cardcornerradius="+app_cardcornerradius,style)
+nvw(yid,fid,"卡片",style,po)
+
+s width="-1"
+s height="-1"
+s orientation="vertical"
+ss("width="+width+"\nheight="+height+"\norientation="+orientation,style)
+s+(fid,2,eid)
+nvw(eid,yid,"线性布局",style,po)
+
+s width="-1"
+s height="45dp"
+s gravity="center"
+ss("width="+width+"\nheight="+height+"\ngravity="+gravity,style)
+s+(fid,3,sid)
+nvw(sid,eid,"线性布局",style,po)
+
+sj(t_config,null,"|",t)
+sj(t_config,"|","|",c)
+ss(c+"|",cc)
+sj(t_config,cc,null,s)
+s width="-2"
+s height="-2"
+s text=t
+s textsize=s
+s textcolor=c
+ss("width="+width+"\nheight="+height+"\ntext="+text+"\ntextsize="+textsize+"\ntextcolor="+textcolor,style)
+s+(fid,4,xid)
+nvw(xid,sid,"文本",style,po)
+
+s width="-1"
+s height="1"
+s background="#E0E0E0"
+ss("width="+width+"\nheight="+height+"\nbackground="+background,style)
+s+(fid,5,wid)
+nvw(wid,eid,"文本",style,po)
+
+s width="-1"
+s height="-2"
+s orientation="vertical"
+s padding="15dp"
+ss("width="+width+"\nheight="+height+"\norientation="+orientation+"\npadding="+padding,style)
+s+(fid,6,lid)
+nvw(lid,eid,"线性布局",style,po)
+
+sj(c_config,null,"|",t)
+sj(c_config,"|","|",c)
+ss(c+"|",cc)
+sj(c_config,cc,null,s)
+s width="-1"
+s height="-2"
+s text=t
+s textsize=s
+s textcolor=c
+s layout_margintop="10dp"
+s layout_marginbottom="10dp"
+s gravity="center"
+ss("width="+width+"\nheight="+height+"\ntext="+text+"\ntextsize="+textsize+"\ntextcolor="+textcolor+"\nlayout_margintop="+layout_margintop+"\nlayout_marginbottom="+layout_marginbottom+"\ngravity="+gravity,style)
+s+(fid,7,qid)
+nvw(qid,lid,"文本",style,po)
+
+s width="-1"
+s height="1"
+s background="#E0E0E0"
+ss("width="+width+"\nheight="+height+"\nbackground="+background,style)
+s+(fid,8,bid)
+nvw(bid,eid,"文本",style,po)
+
+s width="-1"
+s height="45dp"
+s gravity="center"
+s background="through"
+ss("width="+width+"\nheight="+height+"\ngravity="+gravity+"\nbackground="+background,style)
+s+(fid,9,jid)
+nvw(jid,eid,"相对布局",style,po)
+
+sj(q_config,null,"|",t)
+sj(q_config,"|","|",c)
+ss(c+"|",cc)
+sj(q_config,cc,null,s)
+s width="-1"
+s height="-1"
+s text=t
+s textsize=s
+s textcolor=c
+s gravity="center"
+s ut_centerInParent="true"
+s BackgroundRipple="#EEEEEE"
+ss("width="+width+"\nheight="+height+"\ntext="+text+"\ntextsize="+textsize+"\ntextcolor="+textcolor+"\nut_centerInParent="+ut_centerInParent+"\ngravity="+gravity+"\nBackgroundRipple="+BackgroundRipple,style)
+s+(fid,10,slid)
+nvw(slid,jid,"文本",style,po)
+
+fn with_ui.N_start(yid,false,fid)
+ss fid=fid
+ss yid=yid
+ssj(slid,"clicki")
+{
+  fn with_jsj.A_oneUtw(ss.fid,ss.yid,ss.uycls)
+}
+
+ssj(yid,"clicki")
+{
+  //
+}
+ssj(fid,"clicki")
+{
+  fn with_ui.N_ender(ss.fid,ss.yid,ss.uycls)
+}
+end fn
+
+
+//两个按钮
+fn N_twoUtw(id,uycls,t_uycls,t_config,c_config,q_config,x_config)
+fn with_ui.O_status(t_uycls)
+time(4,tim)
+ssg(tim,9,sg)
+ss("4"+sg,fid)
+ug(fid,"visibility",yq)
+ss uycls=uycls
+s+(fid,1,yid)
+/.
+f(yq!=null)
+{
+fn with_ui.N_start(yid,true,fid)
+endcode
+}
+./
+fn with_ui.N_start(yid,true,fid)
+
+s width="-1"
+s height="-1"
+s gravity="center"
+s background="#85000000"
+ss("width="+width+"\nheight="+height+"\ngravity="+gravity+"\nbackground="+background,style)
+nvw(fid,id,"线性布局",style,po)
+
+s width="-1"
+s height="-2"
+s layout_marginleft="50dp"
+s layout_marginright="50dp"
+s app_cardcornerradius="5dp"
+ss("width="+width+"\nheight="+height+"\nlayout_marginleft="+layout_marginleft+"\nlayout_marginright="+layout_marginright+"\napp_cardcornerradius="+app_cardcornerradius,style)
+nvw(yid,fid,"卡片",style,po)
+
+s width="-1"
+s height="-1"
+s orientation="vertical"
+ss("width="+width+"\nheight="+height+"\norientation="+orientation,style)
+s+(fid,2,eid)
+nvw(eid,yid,"线性布局",style,po)
+
+s width="-1"
+s height="45dp"
+s gravity="center"
+ss("width="+width+"\nheight="+height+"\ngravity="+gravity,style)
+s+(fid,3,sid)
+nvw(sid,eid,"线性布局",style,po)
+
+sj(t_config,null,"|",t)
+sj(t_config,"|","|",c)
+ss(c+"|",cc)
+sj(t_config,cc,null,s)
+s width="-2"
+s height="-2"
+s text=t
+s textsize=s
+s textcolor=c
+ss("width="+width+"\nheight="+height+"\ntext="+text+"\ntextsize="+textsize+"\ntextcolor="+textcolor,style)
+s+(fid,4,xid)
+nvw(xid,sid,"文本",style,po)
+
+s width="-1"
+s height="1"
+s background="#E0E0E0"
+ss("width="+width+"\nheight="+height+"\nbackground="+background,style)
+s+(fid,5,wid)
+nvw(wid,eid,"文本",style,po)
+
+s width="-1"
+s height="-2"
+s orientation="vertical"
+s padding="15dp"
+ss("width="+width+"\nheight="+height+"\norientation="+orientation+"\npadding="+padding,style)
+s+(fid,6,lid)
+nvw(lid,eid,"线性布局",style,po)
+
+sj(c_config,null,"|",t)
+sj(c_config,"|","|",c)
+ss(c+"|",cc)
+sj(c_config,cc,null,s)
+s width="-1"
+s height="-2"
+s text=t
+s textsize=s
+s textcolor=c
+s layout_margintop="10dp"
+s layout_marginbottom="10dp"
+s gravity="center"
+ss("width="+width+"\nheight="+height+"\ntext="+text+"\ntextsize="+textsize+"\ntextcolor="+textcolor+"\nlayout_margintop="+layout_margintop+"\nlayout_marginbottom="+layout_marginbottom+"\ngravity="+gravity,style)
+s+(fid,7,qid)
+nvw(qid,lid,"文本",style,po)
+
+s width="-1"
+s height="1"
+s background="#E0E0E0"
+ss("width="+width+"\nheight="+height+"\nbackground="+background,style)
+s+(fid,8,bid)
+nvw(bid,eid,"文本",style,po)
+
+s width="-1"
+s height="45dp"
+s gravity="center"
+s background="through"
+ss("width="+width+"\nheight="+height+"\ngravity="+gravity+"\nbackground="+background,style)
+s+(fid,9,jid)
+nvw(jid,eid,"线性布局",style,po)
+
+sj(x_config,null,"|",t)
+sj(x_config,"|","|",c)
+ss(c+"|",cc)
+sj(x_config,cc,null,s)
+s width="-1"
+s height="-1"
+s text=t
+s textsize=s
+s textcolor=c
+s gravity="center"
+s ut_centerInParent="true"
+s layout_weight="1"
+s BackgroundRipple="#EEEEEE"
+ss("width="+width+"\nheight="+height+"\ntext="+text+"\ntextsize="+textsize+"\ntextcolor="+textcolor+"\nut_centerInParent="+ut_centerInParent+"\ngravity="+gravity+"\nlayout_weight="+layout_weight+"\nBackgroundRipple="+BackgroundRipple,style)
+s+(fid,10,slid)
+nvw(slid,jid,"文本",style,po)
+
+s width="1"
+s height="-1"
+s text=""
+s background="#E0E0E0"
+ss("width="+width+"\nheight="+height+"\ntext="+text+"\nbackground="+background,style)
+s+(fid,12,seid)
+nvw(seid,jid,"文本",style,po)
+
+sj(q_config,null,"|",t)
+sj(q_config,"|","|",c)
+ss(c+"|",cc)
+sj(q_config,cc,null,s)
+s width="-1"
+s height="-1"
+s text=t
+s textsize=s
+s textcolor=c
+s gravity="center"
+s ut_centerInParent="true"
+s layout_weight="1"
+s BackgroundRipple="#EEEEEE"
+ss("width="+width+"\nheight="+height+"\ntext="+text+"\ntextsize="+textsize+"\ntextcolor="+textcolor+"\nut_centerInParent="+ut_centerInParent+"\ngravity="+gravity+"\nlayout_weight="+layout_weight+"\nBackgroundRipple="+BackgroundRipple,style)
+s+(fid,11,syid)
+nvw(syid,jid,"文本",style,po)
+
+fn with_ui.N_start(yid,false,fid)
+
+ss fid=fid
+ss yid=yid
+ssj(slid,"clicki")
+{
+  fn with_jsj.A_twoUtw(ss.fid,ss.yid,ss.uycls,1)
+}
+
+
+ssj(syid,"clicki")
+{
+  fn with_jsj.A_twoUtw(ss.fid,ss.yid,ss.uycls,2)
+}
+
+ssj(yid,"clicki")
+{
+  //
+}
+ssj(fid,"clicki")
+{
+  fn with_ui.N_ender(ss.fid,ss.yid,ss.uycls)
+}
+
+end fn
+
+
+
+fn N_start(id,l,tc)
+t()
+{
+  dhs(dh,0,1.15,0,1.15,1,0.5,1,0.5)
+  dh(dh,"after",true)
+  dh(dh,"duration",300)
+  ufnsui()
+  {
+    us(id,"dh",dh)
+    f(l==true)
+    {
+      us(tc,"visibility","visible")
+    }
+  }
+  stop(300)
+  dhs(dh,1.15,1,1.15,1,1,0.5,1,0.5)
+  dh(dh,"after",true)
+  dh(dh,"duration",200)
+  ufnsui()
+  {
+    us(id,"dh",dh)
+  }
+}
+
+end fn
+
+fn N_ender(bid,id,uycls)
+t()
+{
+  dha(dh,true,false)
+  dh(dh,"duration",200)
+  ufnsui()
+  {
+    us(id,"dh",dh)
+  }
+  stop(200)
+  ufnsui()
+  {
+    us(bid,"visibility","gone")
+    fn with_ui.O_status(uycls)
+  }
+}
+
+end fn
+
+/.
+Carousel组件C
+如有用到其他组件,请将滑动窗体组件放在最底部,否则会报错
+2000
+./
+
+/.
+参数:
+id=控件id
+delay=滑动延迟时间
+iyu=滑动界面
+./
+fn C_notPoint(id,delay,iyu)
+ug(id,"width",width)
+ug(id,"height",height)
+ss("width="+width+"\nheight="+height,style)
+time(4,tim)
+ssg(tim,9,sg)
+ss("4"+sg,fid)
+nvw(fid,id,"滑动窗体",style,hdx)
+gvs(fid,ca)
+addv(ca,iyu,d)
+sl(iyu,"|",iyu)
+sgszl(iyu,count)
+s(count-1,count)
+s counts=0
+t()
+{
+  w(true)
+  {
+    s(counts+1,counts)
+    stop(delay)
+    us(ca,"currentitem",counts)
+    f(counts==count)
+    {
+      s counts=-1
+    }
+  }
+}
+
+end fn
+
+
+/.
+Navbar组件V
+3000
+./
+
+
+fn V_top(id,b_color,l_config,c_config,r_config)
+s width="-1"
+s height="-1"
+s orientation="horizontal"
+s gravity="center_vertical"
+s backgroundcolor=b_color
+ss("width="+width+"\nheight="+height+"\norientation="+orientation+"\ngravity="+gravity+"\nbackgroundcolor="+backgroundcolor,style)
+ss(3000+id,ids)
+nvw(ids,id,"线性布局",style,na)
+
+sj(l_config,null,"|",i)
+sj(l_config,"|","|",s)
+ss(s+"|",c)
+sj(l_config,c,null,z)
+s visibility=z
+s width=s
+s height=s
+s src=i
+s layout_marginleft="10dp"
+s layout_marginright="0"
+ss("width="+width+"\nheight="+height+"\nvisibility="+visibility+"\nsrc="+src+"\nlayout_marginleft="+layout_marginleft+"\nlayout_marginright="+layout_marginright,style)
+ss(ids+1,ids1)
+nvw(ids1,ids,"图像",style,na)
+
+sj(c_config,null,"|",t)
+sj(c_config,"|","|",z)
+ss(z+"|",c)
+sj(c_config,c,"|",c)
+ss(c+"|",cc)
+sj(c_config,cc,null,f)
+s width="-1"
+s height="-2"
+s gravity=f
+s layout_weight=1
+s text=t
+s textcolor=c
+s textsize=z
+s layout_marginleft="10dp"
+s layout_marginright="10dp"
+ss("width="+width+"\nheight="+height+"\ngravity="+gravity+"\nlayout_weight="+layout_weight+"\ntext="+text+"\ntextcolor="+textcolor+"\ntextsize="+textsize+"\nlayout_marginleft="+layout_marginleft+"\nlayout_marginright="+layout_marginright,style)
+ss(ids1+1,ids2)
+nvw(ids2,ids,"文本",style,na)
+
+sj(r_config,null,"|",i)
+sj(r_config,"|","|",s)
+ss(s+"|",c)
+sj(r_config,c,null,z)
+s visibility=z
+s width=s
+s height=s
+s src=i
+s layout_marginleft="0"
+s layout_marginright="10dp"
+ss("width="+width+"\nheight="+height+"\nvisibility="+visibility+"\nsrc="+src+"\nlayout_marginleft="+layout_marginleft+"\nlayout_marginright="+layout_marginright,style)
+ss(ids2+1,ids3)
+nvw(ids3,ids,"图像",style,na)
+
+
+ssj(ids1,"clicki")
+{
+  uigo("操作台.iyu")
+  end()
+}
+
+ssj(ids3,"clicki")
+{
+  fn with_jsj.V_top(2)
+}
+end fn
+
+/.
+Form组件F
+4000
+./
+
+fn F_stroke(id,m_size,y_size,b_color,m_color,t_color,text,hint)
+ngde(m_size,y_size,b_color,m_color,b)
+us(id,"background",b)
+us(id,"padding","13dp")
+us(id,"textsize","14sp")
+us(id,"text",text)
+us(id,"hint",hint)
+us(id,"textcolor",t_color)
+end fn
+
+fn F_radio(id,w_color,x_color)
+us(id,"textcolor",w_color)
+us(id,"paddingright","10dp")
+ngde(5,10,x_color,w_color,bj)
+us(id,"background",bj)
+gvs(id,id)
+java(color,null,"android.graphics.Color.parseColor","String",w_color)
+java(csl,null,"android.content.res.ColorStateList.valueOf","int",color)
+java(null,id,"android.widget.CompoundButton.setButtonTintList","android.content.res.ColorStateList",csl)
+end fn
+
+fn F_notradio(id,color)
+us(id,"textcolor",color)
+gvs(id,id)
+java(color,null,"android.graphics.Color.parseColor","String",color)
+java(csl,null,"android.content.res.ColorStateList.valueOf","int",color)
+java(null,id,"android.widget.CompoundButton.setButtonTintList","android.content.res.ColorStateList",csl)
+end fn
+
+
+/.
+Progress组件P
+5000
+./
+
+fn P_tran(id,progress,round,b_config,j_color)
+sj(b_config,null,"|",bc)
+sj(b_config,"|",null,by)
+ngde(round,bc,bj)
+us(id,"background",bj)
+us(id,"elevation",by)
+
+sj(j_config,null,"|",jc)
+s width="-2"
+s height="-1"
+s text=""
+s backgroundcolor=j_color
+ss("width="+width+"\nheight="+height+"\ntext="+text+"\nbackgroundcolor="+backgroundcolor,style)
+ss("50"+id,jid)
+nvw(jid,id,"文本",style,pr)
+
+ngde(round,j_color,bj)
+us(jid,"background",bj)
+
+gvs(id,p)
+gvs(jid,d)
+java(pw,p,"android.view.View.getWidth")
+f(progress&lt;=100)
+{
+  sn(progress/100,h)
+  sn(pw*h,aw)
+  us(d,"width",aw)
+}
+end fn
+
+fn P_round(pu,progress,bgg,bgt,bgr,bgj,rdz)
+gvs(pu,pu)
+java(width,pu,"android.view.View.getWidth")
+java(height,pu,"android.view.View.getHeight")
+s gu=0
+s gut=0
+f(width&gt;=height)
+{
+  s gut=height
+  s gu=width
+}
+else
+{
+  s gut=width
+  s gu=height
+}
+s(gu/2,ctu)
+s(gut/2,ctt)
+javags(BC888,null,"android.graphics.Bitmap$Config","ARGB_8888")
+java(bitmap,activity,"android.graphics.Bitmap.createBitmap","int",width,"int",height,"android.graphics.Bitmap$Config",BC888)
+java(cbgg,activity,"android.graphics.Color.parseColor","String",bgg)
+java(null,bitmap,"android.graphics.Bitmap.eraseColor","int",cbgg)
+javanew(canvas,"android.graphics.Canvas","android.graphics.Bitmap",bitmap)
+javanew(bgPaint,"android.graphics.Paint")
+java(null,bgPaint,"android.graphics.Paint.setDither","boolean",true)
+java(null,bgPaint,"android.graphics.Paint.setFilterBitmap","boolean",true)
+javanew(rta,"android.graphics.Rect","int",0,"int",0,"int",width,"int",height)
+javanew(rtb,"android.graphics.Rect","int",0,"int",0,"int",width,"int",height)
+java(null,canvas,"android.graphics.Canvas.drawBitmap","android.graphics.Bitmap",bitmap,"android.graphics.Rect",rta,"android.graphics.Rect",rtb,"android.graphics.Paint",bgPaint)
+javags(fll,null,"android.graphics.Paint$Style","FILL")
+javags(stroke,null,"android.graphics.Paint$Style","STROKE")
+javags(rda,null,"android.graphics.Paint$Cap","ROUND")
+
+javanew(rouPaint,"android.graphics.Paint")
+java(null,rouPaint,"android.graphics.Paint.setAntiAlias","boolean",true)
+java(cbgt,activity,"android.graphics.Color.parseColor","String",bgt)
+java(null,rouPaint,"android.graphics.Paint.setColor","int",cbgt)
+java(null,rouPaint,"android.graphics.Paint.setStyle","android.graphics.Paint$Style",fll)
+
+//圆环宽度
+s(gut/15,stw)
+javanew(bgPaint,"android.graphics.Paint")
+java(null,bgPaint,"android.graphics.Paint.setAntiAlias","boolean",true)
+java(cbgr,activity,"android.graphics.Color.parseColor","String",bgr)
+java(null,bgPaint,"android.graphics.Paint.setColor","int",cbgr)
+java(null,bgPaint,"android.graphics.Paint.setStyle","android.graphics.Paint$Style",stroke)
+java(null,bgPaint,"android.graphics.Paint.setStrokeWidth","float",stw)
+
+javanew(runPaint,"android.graphics.Paint")
+java(null,runPaint,"android.graphics.Paint.setAntiAlias","boolean",true)
+java(cbgj,activity,"android.graphics.Color.parseColor","String",bgj)
+java(null,runPaint,"android.graphics.Paint.setColor","int",cbgj)
+java(null,runPaint,"android.graphics.Paint.setStyle","android.graphics.Paint$Style",stroke)
+java(null,runPaint,"android.graphics.Paint.setStrokeWidth","float",stw)
+f(rdz==true)
+{
+  java(null,runPaint,"android.graphics.Paint.setStrokeCap","android.graphics.Paint$Cap",rda)
+}
+s(width/2,wc)
+s(height/2,wh)
+s(gut/2.5,yg)
+java(null,canvas,"android.graphics.Canvas.drawCircle","float",wc,"float",wh,"float",yg,"android.graphics.Paint",rouPaint)
+
+javanew(ovala,"android.graphics.RectF")
+s(width/2-gut/2.5,lefta)
+s(height/2-gut/2.5,topa)
+s(gut/2.5*2+(width/2-gut/2.5),righta)
+s(gut/2.5*2+(height/2-gut/2.5),bottoma)
+javass(null,ovala,"android.graphics.RectF","left",lefta)
+javass(null,ovala,"android.graphics.RectF","top",topa)
+javass(null,ovala,"android.graphics.RectF","right",righta)
+javass(null,ovala,"android.graphics.RectF","bottom",bottoma)
+java(null,canvas,"android.graphics.Canvas.drawArc","android.graphics.RectF",ovala,"float",0,"float",360,"boolean",false,"android.graphics.Paint",bgPaint)
+
+s(progress/100*360,pgw)
+javanew(ovalb,"android.graphics.RectF")
+javass(null,ovalb,"android.graphics.RectF","left",lefta)
+javass(null,ovalb,"android.graphics.RectF","top",topa)
+javass(null,ovalb,"android.graphics.RectF","right",righta)
+javass(null,ovalb,"android.graphics.RectF","bottom",bottoma)
+java(null,canvas,"android.graphics.Canvas.drawArc","android.graphics.RectF",ovalb,"float",-90,"float",pgw,"boolean",false,"android.graphics.Paint",runPaint)
+
+javags(ASF,null,"android.graphics.Canvas","ALL_SAVE_FLAG")
+java(null,canvas,"android.graphics.Canvas.save","int",ASF)
+java(null,canvas,"android.graphics.Canvas.restore")
+us(pu,"background",bitmap)
+
+end fn
+
+
+/.
+Button组件B
+./
+
+//描边
+fn B_stroke(id,line,radius,b_color,l_color,text,t_color)
+ngde(line,radius,b_color,l_color,bu)
+us(id,"background",bu)
+us(id,"text",text)
+us(id,"textcolor",t_color)
+end fn
+
+//实心
+fn B_solid(id,radius,b_color,text,t_color)
+ngde(radius,b_color,bu)
+us(id,"background",bu)
+us(id,"text",text)
+us(id,"textcolor",t_color)
+end fn
+
+//渐变
+fn B_become(id,line,radius,b_color,l_color,direction,text,t_color)
+ngde(line,radius,b_color,l_color,direction,bu)
+us(id,"background",bu)
+us(id,"text",text)
+us(id,"textcolor",t_color)
+end fn
+
+
+/.
+O
+./
+
+fn O_status(color)
+uycl(color,true)
+f(color=="#ffffff")
+{
+  s c="8192"
+}
+else
+{
+  s c="81920"
+}
+java(cs,activity,"android.app.Activity.getWindow")
+java(cs2,cs,"android.view.Window.getDecorView")
+java(null,cs2,"android.view.View.setSystemUiVisibility","int",c)
+end fn
+
+
+fn T_progree(id,color)
+gvs(id,id)
+java(color,null,"android.graphics.Color.parseColor","String",color)
+java(drawable,id,"android.widget.ProgressBar.getIndeterminateDrawable")
+javags(atop,null,"android.graphics.PorterDuff$Mode","SRC_ATOP")
+javanew(pdcf,"android.graphics.PorterDuffColorFilter","int",color,"android.graphics.PorterDuff$Mode",atop)
+java(null,drawable,"android.graphics.drawable.Drawable.setColorFilter","android.graphics.ColorFilter",pdcf)
+end fn
+
+fn pull(a,b,d,c,bj_color,sx_color,sk_color)
+gvs(a,a)
+gvs(b,b)
+gvs(d,d)
+loadjar("refresh.de",dex)
+cls(dex,"com.mus.refresh.add",clas)
+cls(dex,"com.Mus.layout.SmartRefreshLayout",ss.class)
+javax(ss.sxkj,null,clas,"add","Context",activity,"String",bj_color,"String",sx_color,"String",sk_color,"int",c,"android.widget.TextView",d)
+urvw(b)
+nvw(b,ss.sxkj)
+nvw(ss.sxkj,a)
+end fn
+
+fn pull_end()
+javax(null,ss.sxkj,ss.class,"finishRefresh")
+end fn
+
+fn section(id,b,c,d)
+time(4,tim)
+ssg(tim,9,sg)
+sran(10000,11000,sra)
+s+(sg,sra,fid)
+f(d=="round")
+{
+  s yj=70
+  s width="7dp"
+  s height="7dp"
+}
+else f(d=="square")
+{
+  s yj=0
+  s width="6dp"
+  s height="6dp"
+}
+else
+{
+  s yj=15
+  s width="5dp"
+  s height="-1"
+}
+
+s orientation="horizontal"
+s gravity="center_vertical"
+ss("width=-1\nheight=20dp\norientation="+orientation+"\ngravity="+gravity,vn)
+nvw(fid,id,"线性布局",vn)
+
+s background="#454545"
+s layout_margintop="4dp"
+s layout_marginbottom="4dp"
+ss("width="+width+"\nheight="+height+"\ntext=\nbackground="+background+"\nlayout_margintop="+layout_margintop+"\nlayout_marginbottom="+layout_marginbottom,vn)
+s+(fid,1,yid)
+nvw(yid,fid,"文本",vn)
+
+sj(c,null,"|",wz)
+sj(c,"|",null,ys)
+s layout_marginLeft="10dp"
+ss("width=-2\nheight=-2\ntext="+wz+"\ntextcolor="+ys+"\nlayout_marginLeft="+layout_marginLeft,nv)
+s+(fid,2,eid)
+nvw(eid,fid,"文本",nv)
+
+ngde(yj,b,ng)
+us(yid,"background",ng)
+end fn
+
+fn tag(id,berder,bcolor,bgc,tex)
+time(4,tim)
+ssg(tim,9,sg)
+sran(11000,12000,sra)
+s+(sra,sg,fid)
+s+(fid,1,yid)
+nvw(fid,id,"线性布局","width=-1\nheight=-1\ngravity=center")
+
+sj(tex,null,"|",t1)
+sj(tex,"|","|",t2)
+ss(t2+"|",tj)
+sj(tex,tj,null,t3)
+s text=t1
+s textcolor=t2
+s textsize=t3
+ss("width=-2\nheight=-2\ntext="+text+"\ntextcolor="+textcolor+"\ntextsize="+textsize,style)
+s+(fid,2,eid)
+nvw(yid,fid,"文本",style)
+ngde(3,berder,bgc,bcolor,mb)
+us(fid,"background",mb)
+end fn
+
+fn prb_upd(id,status_one,status_two,qzgx,xz_config,bt_config,nr_config,an_config)
+fn with_ui.O_status(status_two)
+ss status_one=status_one
+ss status_two=status_two
+time(4,tim)
+ssg(time,9,sg)
+sran(13000,14000,sra)
+s(sg+sra,fid)
+ss("width=-1\nheight=-1\norientation=vertical\ngravity=center\nbackground=#85000000",style)
+nvw(fid,id,"线性布局",style)
+ss xz_qz=qzgx
+ss xz_fid=fid
+ssj(fid,"clicki")
+{
+  f(ss.xz_qz==false)
+  {
+    fn with_ui.prb_end(ss.xz_fid)
+    fn with_ui.O_status(ss.status_one)
+  }
+}
+
+ss("width=-1\nheight=-2\nlayout_marginleft=40dp\nlayout_marginright=40dp\norientation=vertical\nbackground=#ffffff",style)
+s(fid+1,yid)
+nvw(yid,fid,"线性布局",style)
+ngde(25,"#ffffff",ybj)
+us(yid,"background",ybj)
+ssj(yid,"clicki")
+{
+  //
+}
+fn with_ui.N_start(yid,true,fid)
+
+ss("width=-1\nheight=60dp\ngravity=center\norientation=vertical",style)
+s(fid+2,eid)
+nvw(eid,yid,"线性布局",style)
+
+sj(bt_config,null,"|",btwz)
+ss(btwz+"|",let)
+sj(bt_config,let,"|",btdx)
+ss(btdx+"|",let)
+sj(bt_config,let,"|",btys)
+ss(btys+"|",let)
+sj(bt_config,let,null,btzx)
+
+s text=btwz
+s textcolor=btys
+s textsize=btdx
+s textstyle=btzx
+ss("width=-2\nheight=-2\ntext="+text+"\ntextcolor="+textcolor+"\ntextsize="+textsize+"\ntextstyle="+textstyle,style)
+s(fid+3,sid)
+nvw(sid,eid,"文本",style)
+
+s(fid+4,xid)
+nvw(xid,yid,"线性布局","width=-1\nheight=-2\norientation=vertical\nlayout_marginleft=20dp\nlayout_marginright=20dp\nlayout_marginbottom=10dp")
+
+s(fid+5,wid)
+nvw(wid,xid,"线性布局","width=-1\nheight=-2\norientation=vertical\nlayout_marginbottom=20dp\nvisibility=gone")
+
+s text="下载速度:"
+s textcolor="#000000"
+s textsize="13sp"
+ss("width=-2\nheight=-2\ntext="+text+"\ntextcolor="+textcolor+"\ntextsize="+textsize,style)
+s(fid+6,lid)
+nvw(lid,wid,"文本",style)
+
+s text="已下载大小:"
+s textcolor="#000000"
+s textsize="13sp"
+ss("width=-2\nheight=-2\ntext="+text+"\ntextcolor="+textcolor+"\ntextsize="+textsize,style)
+s(fid+7,qid)
+nvw(qid,wid,"文本",style)
+
+s text="更新包大小:"
+s textcolor="#000000"
+s textsize="13sp"
+ss("width=-2\nheight=-2\ntext="+text+"\ntextcolor="+textcolor+"\ntextsize="+textsize,style)
+s(fid+8,bid)
+nvw(bid,wid,"文本",style)
+
+s(fid+9,jid)
+nvw(jid,xid,"线性布局","width=-1\nheight=-2\norientation=vertical\nlayout_marginbottom=20dp")
+
+sj(nr_config,null,"|",nrwz)
+ss(nrwz+"|",let)
+sj(nr_config,let,"|",nrdx)
+ss(nrdx+"|",let)
+sj(nr_config,let,"|",nrys)
+ss(nrys+"|",let)
+sj(nr_config,let,null,nrzx)
+
+s text=nrwz
+s textcolor=nrys
+s textsize=nrdx
+s textstyle=nrzx
+ss("width=-2\nheight=-2\ntextstyle="+textstyle+"\ntext="+text+"\ntextcolor="+textcolor+"\ntextsize="+textsize,style)
+s(fid+10,slid)
+nvw(slid,jid,"文本",style)
+
+s(fid+11,syid)
+nvw(syid,xid,"线性布局","width=-1\nheight=35dp\norientation=vertical\nlayout_marginbottom=10dp")
+
+sj(an_config,null,"|",anwz)
+ss(anwz+"|",let)
+sj(an_config,let,"|",anwzys)
+ss(anwzys+"|",let)
+sj(an_config,let,null,anbjys)
+s background=anbjys
+ss("width=-1\nheight=-1\norientation=vertical\ngravity=center\nbackground="+background,style)
+s(fid+12,seid)
+nvw(seid,syid,"线性布局",style)
+ngde(15,background,xzbj)
+us(seid,"background",xzbj)
+
+s text=anwz
+s textcolor=anwzys
+s textsize="13sp"
+ss("width=-2\nheight=-2\ntext="+text+"\ntextcolor="+textcolor+"\ntextsize="+textsize,style)
+s(fid+13,ssid)
+nvw(ssid,seid,"文本",style)
+
+s background="#EEEEEE"
+ss("width=-1\nheight=-1\nvisibility=gone\nbackground="+background,style)
+s(fid+14,sxid)
+nvw(sxid,syid,"相对布局",style)
+ngde(15,background,xzbj)
+us(sxid,"background",xzbj)
+
+s background=anbjys
+ss("width=0\nheight=-1\norientation=vertical\ngravity=right|center_vertical\nbackground="+background,style)
+s(fid+15,swid)
+nvw(swid,sxid,"线性布局",style)
+ngde(15,background,xzbj)
+us(swid,"background",xzbj)
+
+s text=""
+s textcolor="#ffffff"
+s textsize="13sp"
+ss("width=-2\nheight=-2\nlayout_marginleft=5dp\nlayout_marginright=5dp\nellipsize=end\nsingleLine=true\ntext="+text+"\ntextcolor="+textcolor+"\ntextsize="+textsize,style)
+s(fid+16,slid)
+nvw(slid,swid,"文本",style)
+
+s text="下载中"
+s textcolor=anwzys
+s textsize="13sp"
+ss("width=-2\nheight=-2\nut_centerInParent=true\ntext="+text+"\ntextcolor="+textcolor+"\ntextsize="+textsize,style)
+s(fid+21,eyid)
+nvw(eyid,sxid,"文本",style)
+
+sj(xz_config,null,"|",ss.xzlj)
+ss(ss.xzlj+"|",lef)
+sj(xz_config,lef,"|",ss.gml)
+ss(ss.gml+"|",lef)
+sj(xz_config,lef,null,ss.wjmc)
+
+s background=anbjys
+ss("width=-1\nheight=-1\norientation=vertical\nvisibility=gone\ngravity=center\nbackground="+background,style)
+s(fid+17,sqid)
+nvw(sqid,syid,"线性布局",style)
+ngde(15,background,xzbj)
+us(sqid,"background",xzbj)
+
+s text="立即安装"
+s textcolor=anwzys
+s textsize="13sp"
+ss("width=-2\nheight=-2\ntext="+text+"\ntextcolor="+textcolor+"\ntextsize="+textsize,style)
+s(fid+18,sbid)
+nvw(sbid,sqid,"文本",style)
+ssj(sqid,"clicki")
+{
+  ss(ss.gml+"/"+ss.wjmc,wjaz)
+  fuzs(wjaz,"$sdk/",kl)
+  s sc="$sdk/sdk.zip"
+  fd(sc,sc2)
+  ufnsui()
+  {
+  tw("安装成功请重启软件")
+  end()
+  }
+}
+
+s visibility="visible"
+f(ss.xz_qz==true)
+{
+  s visibility="gone"
+}
+s background="#eeeeee"
+s(fid+19,sjid)
+ss("width=-1\nheight=35dp\norientation=vertical\ngravity=center\nlayout_marginbottom=10dp\nvisibility="+visibility,style)
+nvw(sjid,xid,"线性布局",style)
+ngde(3,15,"#ffffff",background,xzbj)
+us(sjid,"background",xzbj)
+
+s text="以后再说"
+s textcolor="#9E9E9E"
+s textsize="13sp"
+ss("width=-2\nheight=-2\ntext="+text+"\ntextcolor="+textcolor+"\ntextsize="+textsize,style)
+s(fid+20,elid)
+nvw(elid,sjid,"文本",style)
+ssj(sjid,"clicki")
+{
+  tw("不下载组件则无法正常运行")
+  fn with_ui.prb_end(ss.xz_fid)
+  fn with_ui.O_status(ss.status_one)
+  end()
+}
+
+ss wid=wid
+ss lid=lid
+ss qid=qid
+ss bid=bid
+ss seid=seid
+ss sxid=sxid
+ss swid=swid
+ss slid=slid
+ss sqid=sqid
+ss eyid=eyid
+ss sjid=sjid
+ss ssid=ssid
+ssj(seid,"clicki")
+{
+  ss(ss.gml+"/"+ss.wjmc,wjlj)
+  fd(wjlj,scwj)
+  hdd("%withui/won",ss.gml,3,3,2,25000,false)
+  s url=ss.xzlj
+  hdda(url,ss.wjmc,null,v)
+  t()
+  {
+    w(true)
+    {
+      hddg(v,"contentlength",total_size)
+      s2(total_size/1024,tskb)
+      f(tskb&gt;1024)
+      {
+        s2(total_size/1024/1024,tsmb)
+        ss(tsmb+"MB",total_size)
+      }
+      else
+      {
+        ss(tskb+"KB",total_size)
+      }
+      hddg(v,"equivalent",spe_size)
+      s2(spe_size/1024,szkb)
+      f(szkb&gt;1024)
+      {
+        s2(spe_size/1024/1024,szmb)
+        ss(szmb+"MB",spe_size)
+      }
+      else
+      {
+        ss(szkb+"KB",spe_size)
+      }
+      hddg(v,"downloadspeed",spe_bat)
+      s2(spe_bat/1024,sbkb)
+      f(sbkb&gt;1024)
+      {
+        s2(spe_bat/1024/1024,sbmb)
+        ss(sbmb+"MB",spe_bat)
+      }
+      else
+      {
+        ss(sbkb+"KB",spe_bat)
+      }
+      hddg(v,"downloadpercentage",spe)
+      hddg(v,"status",stas)
+      f(stas==-1||status==3)
+      {
+        ufnsui()
+        {
+          fn with_ui.prb_bre(ss.ssid,ss.sxid,ss.sqid,ss.seid)
+        }
+        break
+      }
+      f(stas==2&&spe&lt;100)
+      {
+        ufnsui()
+        {
+          fn with_ui.prb_bre(ss.ssid,ss.sxid,ss.sqid,ss.seid)
+        }
+        break
+      }
+      f(spe==100)
+      {
+        ufnsui()
+        {
+          fn with_ui.prb_to(ss.seid,ss.sxid,ss.sqid)
+        }
+        break
+      }
+      ufnsui()
+      {
+        fn with_ui.prb_won(ss.xz_fid,ss.sjid,ss.wid,ss.lid,ss.qid,ss.bid,ss.seid,ss.sxid,ss.swid,ss.slid,ss.sqid,ss.eyid,spe_bat,spe_size,total_size,spe)
+      }
+      stop(50)
+    }
+  }
+}
+end fn
+
+fn prb_bre(ssid,sxid,sqid,seid)
+us(seid,"visibility","visible")
+us(sxid,"visibility","gone")
+us(sqid,"visibility","gone")
+us(ssid,"text","重新尝试")
+end fn
+
+fn prb_end(id)
+urvw(id)
+end fn
+
+fn prb_to(seid,sxid,sqid)
+us(sqid,"visibility","visible")
+us(sxid,"visibility","gone")
+us(seid,"visibility","gone")
+end fn
+
+fn prb_won(fid,sjid,wid,lid,qid,bid,seid,sxid,swid,slid,sqid,esid,spe_bat,spe_size,total_size,spe)
+ssj(fid,"clicki")
+{
+  //
+}
+us(sjid,"visibility","gone")
+us(wid,"visibility","visible")
+ss("下载速度:"+spe_bat,spe_bat)
+us(lid,"text",spe_bat)
+ss("已下载大小:"+spe_size,spe_size)
+us(qid,"text",spe_size)
+ss("更新包大小:"+total_size,total_size)
+us(bid,"text",total_size)
+us(seid,"visibility","gone")
+us(sxid,"visibility","visible")
+us(sqid,"visibility","gone")
+f(spe&lt;100)
+{
+  gvs(sxid,sxdx)
+  gvs(swid,swdx)
+  ufnsui()
+  {
+    java(pw,sxdx,"android.view.View.getWidth")
+    sn(spe/100,h)
+    sn(pw*h,aw)
+    us(swdx,"width",aw)
+    ss(spe+"%",spe)
+    us(esid,"text",spe)
+  }
+}
+end fn
+
+fn prd_upds(prd_upds_id,round,text_size,xzds,xz_config,q_text,h_text,btn_config)
+time(4,tim)
+ssg(tim,9,sg)
+sran(13000,14000,sra)
+s(sg+sra,prd_upds_fid)
+nvw(prd_upds_fid,prd_upds_id,"相对布局","width=-1\nheight=-1")
+
+sj(btn_config,null,"|",q_background)
+sj(btn_config,"|",null,h_background)
+s background=q_background
+ss("width=-1\nheight=-1\ngravity=center\nvisibility=visible\nbackground="+background,style)
+s(prd_upds_fid+1,prd_upds_yid)
+nvw(prd_upds_yid,prd_upds_fid,"线性布局",style)
+ngde(round,q_background,kx)
+us(prd_upds_yid,"background",kx)
+
+sj(q_text,null,"|",q_tex)
+sj(q_text,"|",null,q_color)
+s text=q_tex
+s textcolor=q_color
+s textsize=text_size
+ss("width=-2\nheight=-2\ntext="+text+"\ntextcolor="+textcolor+"\ntextsize="+textsize,style)
+s(prd_upds_fid+2,prd_upds_eid)
+nvw(prd_upds_eid,prd_upds_yid,"文本",style)
+
+ss("width=-1\nheight=-1\nvisibility=gone",style)
+s(prd_upds_fid+3,prd_upds_sid)
+nvw(prd_upds_sid,prd_upds_fid,"相对布局",style)
+ngde(3,round,xzds,q_background,kx)
+us(prd_upds_sid,"background",kx)
+
+ss("width=0\nheight=-1\ngravity=center\nbackground="+q_background,style)
+s(prd_upds_fid+4,prd_upds_xid)
+nvw(prd_upds_xid,prd_upds_sid,"线性布局",style)
+ngde(15,q_background,kx)
+us(prd_upds_xid,"background",kx)
+
+s text="0%"
+s textcolor=q_background
+s textsize=text_size
+ss("width=-2\nheight=-2\nut_centerInParent=true\ntext="+text+"\ntextcolor="+textcolor+"\ntextsize="+textsize,style)
+s(prd_upds_fid+5,prd_upds_wid)
+nvw(prd_upds_wid,prd_upds_sid,"文本",style)
+
+ss("width=-1\nheight=-1\ngravity=center\nvisibility=gone\nbackground="+h_background,style)
+s(prd_upds_fid+6,prd_upds_lid)
+nvw(prd_upds_lid,prd_upds_fid,"线性布局",style)
+
+sj(xz_config,null,"|",ss.url)
+ss(ss.url+"|",let)
+sj(xz_config,let,"|",ss.gml)
+ss(ss.gml+"|",let)
+sj(xz_config,let,null,ss.wjmc)
+
+ss(ss.gml+"/"+ss.wjmc,ss.wjurl)
+ngde(round,h_background,kx)
+us(prd_upds_lid,"background",kx)
+ssj(prd_upds_lid,"clicki")
+{
+  fn with_jsj.prb_jsj_upds(ss.wjurl)
+}
+
+sj(h_text,null,"|",h_tex)
+sj(h_text,"|",null,h_color)
+s text=h_tex
+s textcolor=h_color
+s textsize=text_size
+ss("width=-2\nheight=-2\ntext="+text+"\ntextcolor="+textcolor+"\ntextsize="+textsize,style)
+s(prd_upds_fid+7,prd_upds_qid)
+nvw(prd_upds_qid,prd_upds_lid,"文本",style)
+
+ss prd_upds_sid=prd_upds_sid
+ss prd_upds_xid=prd_upds_xid
+ss prd_upds_wid=prd_upds_wid
+ss prd_upds_yid=prd_upds_yid
+ss prd_upds_lid=prd_upds_lid
+ss prd_upds_eid=prd_upds_eid
+ssj(prd_upds_yid,"clicki")
+{
+  fd(ss.wjurl,scwj)
+  hdd("%withui/won",ss.gml,10,3,2,25000,false)
+  s url=ss.url
+  hdda(url,ss.wjmc,null,v)
+  t()
+  {
+    w(true)
+    {
+      hddg(v,"contentlength",total_size)
+      s2(total_size/1024,tskb)
+      f(tskb&gt;1024)
+      {
+        s2(total_size/1024/1024,tsmb)
+        ss(tsmb+"MB",total_size)
+      }
+      else
+      {
+        ss(tskb+"KB",total_size)
+      }
+      hddg(v,"equivalent",spe_size)
+      s2(spe_size/1024,szkb)
+      f(szkb&gt;1024)
+      {
+        s2(spe_size/1024/1024,szmb)
+        ss(szmb+"MB",spe_size)
+      }
+      else
+      {
+        ss(szkb+"KB",spe_size)
+      }
+      hddg(v,"downloadspeed",spe_bat)
+      s2(spe_bat/1024,sbkb)
+      f(sbkb&gt;1024)
+      {
+        s2(spe_bat/1024/1024,sbmb)
+        ss(sbmb+"MB",spe_bat)
+      }
+      else
+      {
+        ss(sbkb+"KB",spe_bat)
+      }
+      hddg(v,"status",status)
+      hddg(v,"downloadpercentage",prd_upds_spe)
+      f(status==-1||status==3)
+      {
+        ufnsui()
+        {
+          fn with_ui.prb_bres(ss.prd_upds_yid,ss.prd_upds_eid,ss.prd_upds_sid,ss.prd_upds_lid)
+        }
+        break
+      }
+      f(status==2&&prd_upds_spe&lt;100)
+      {
+        ufnsui()
+        {
+          fn with_ui.prb_bres(ss.prd_upds_yid,ss.prd_upds_eid,ss.prd_upds_sid,ss.prd_upds_lid)
+        }
+        break
+      }
+      f(prd_upds_spe==100)
+      {
+        ufnsui()
+        {
+          fn with_ui.prb_tos(ss.prd_upds_yid,ss.prd_upds_sid,ss.prd_upds_lid)
+        }
+        break
+      }
+      ufnsui()
+      {
+        fn with_ui.prb_wons(v,prd_upds_spe,ss.prd_upds_yid,ss.prd_upds_sid,ss.prd_upds_xid,ss.prd_upds_wid)
+      }
+      stop(50)
+    }
+  }
+}
+end fn
+
+fn prb_bres(prd_upds_yid,prd_upds_eid,prd_upds_sid,prd_upds_lid)
+us(prd_upds_yid,"visibility","visible")
+us(prd_upds_lid,"visibility","gone")
+us(prd_upds_sid,"visibility","gone")
+us(prd_upds_eid,"text","重新尝试")
+end fn
+
+fn prb_wons(v,prd_upds_spe,prd_upds_yid,prd_upds_sid,prd_upds_xid,prd_upds_wid)
+us(prd_upds_yid,"visibility","gone")
+us(prd_upds_sid,"visibility","visible")
+f(prd_upds_spe&lt;100)
+{
+  gvs(prd_upds_sid,prd_upds_sdx)
+  gvs(prd_upds_xid,prd_upds_xdx)
+  ufnsui()
+  {
+    java(pw,prd_upds_sdx,"android.view.View.getWidth")
+    sn(prd_upds_spe/100,h)
+    sn(pw*h,aw)
+    us(prd_upds_xdx,"width",aw)
+    ss(prd_upds_spe+"%",prd_upds_spe)
+    us(prd_upds_wid,"text",prd_upds_spe)
+  }
+}
+f(prd_upds_spe&gt;=50)
+{
+  us(prd_upds_wid,"textcolor","#ffffff")
+}
+end fn
+
+fn _tos(prd_upds_yid,prd_upds_sid,prd_upds_lid)
+us(prd_upds_lid,"visibility","visible")
+us(prd_upds_yid,"visibility","gone")
+us(prd_upds_sid,"visibility","gone")
+end fn
+
+fn over_loa(over_loa_id,over_loa_center,over_loa_bj,over_loa_jdt,over_loa_wz)
+time(4,tim)
+ssg(tim,9,sg)
+sran(15000,16000,sra)
+s(sra+sg,over_loa_fid)
+s background=over_loa_bj
+
+f(over_loa_center=="center")
+{
+  s gravity="center"
+  s layout_margintop=0
+}
+else
+{
+  s gravity="center_horizontal"
+  s layout_margintop=over_loa_center
+}
+ss("width=-1\nheight=-1\norientation=vertical\nbackground="+background+"\ngravity="+gravity,style)
+nvw(over_loa_fid,over_loa_id,"线性布局",style)
+ssj(over_loa_fid,"clicki")
+{
+  //
+}
+
+sj(over_loa_jdt,null,"|",over_loa_jdt_dx)
+sj(over_loa_jdt,"|",null,over_loa_jdt_ys)
+s width=over_loa_jdt_dx
+s height=over_loa_jdt_dx
+s layout_margintop=layout_margintop
+ss("width="+width+"\nheight="+height+"\nlayout_margintop="+layout_margintop+"\nstyle=16842871",style)
+s(over_loa_fid+1,over_loa_yid)
+nvw(over_loa_yid,over_loa_fid,"进度条",style)
+fn with_ui.T_progree(over_loa_yid,over_loa_jdt_ys)
+
+sj(over_loa_wz,null,"|",over_loa_wz_wz)
+ss(over_loa_wz_wz+"|",let)
+sj(over_loa_wz,let,"|",over_loa_wz_dx)
+ss(over_loa_wz_dx+"|",let)
+sj(over_loa_wz,let,null,over_loa_wz_ys)
+s(over_loa_fid+2,over_loa_eid)
+s text=over_loa_wz_wz
+s textcolor=over_loa_wz_ys
+s textsize=over_loa_wz_dx
+ss("width-2\nheight=-2\nlayout_margintop=5dp\ntext="+text+"\ntextcolor="+textcolor+"\ntextsize="+textsize,style)
+nvw(over_loa_eid,over_loa_fid,"文本",style)
+ss over_loa_fid=over_loa_fid
+end fn
+
+fn over_loa_end()
+s over_loa_fid=ss.over_loa_fid
+f(over_loa_fid!=""&&over_loa_fid!=null)
+{
+  ufnsui()
+  {
+    urvw(over_loa_fid)
+  }
+}
+end fn
+
+fn over_nil(over_nil_id,over_nil_center,over_nil_bj,over_nil_tp,over_nil_wz)
+time(4,tim)
+ssg(tim,9,sg)
+sran(16000,17000,sra)
+s(sra+sg,over_nil_fid)
+s background=over_nil_bj
+f(over_nil_center=="center")
+{
+  s gravity="center"
+  s layout_margintop=0
+}
+else
+{
+  s gravity="center_horizontal"
+  s layout_margintop=over_nil_center
+}
+ss("width=-1\nheight=-1\norientation=vertical\ngravity="+gravity+"\nbackground="+background,style)
+nvw(over_nil_fid,over_nil_id,"线性布局",style)
+ssj(over_nil_fid,"clicki")
+{
+  //
+}
+sj(over_nil_tp,"|",null,over_nil_tp_dx)
+sj(over_nil_tp,null,"|",over_nil_tp_lj)
+s width=over_nil_tp_dx
+s height=over_nil_tp_dx
+s src=over_nil_tp_lj
+ss("width="+width+"\nheight="+height+"\nsrc="+src+"\nlayout_margintop="+layout_margintop,style)
+s(over_nil_fid+1,over_nil_yid)
+nvw(over_nil_yid,over_nil_fid,"图像",style)
+
+sj(over_nil_wz,null,"|",over_nil_wz_wz)
+ss(over_nil_wz_wz+"|",let)
+sj(over_nil_wz,let,"|",over_nil_wz_dx)
+ss(over_nil_wz_dx+"|",let)
+sj(over_nil_wz,let,null,over_nil_wz_ys)
+s(over_nil_fid+2,over_nil_eid)
+s text=over_nil_wz_wz
+s textcolor=over_nil_wz_ys
+s textsize=over_nil_wz_dx
+ss("width-2\nheight=-2\nlayout_margintop=5dp\ntext="+text+"\ntextcolor="+textcolor+"\ntextsize="+textsize,style)
+nvw(over_nil_eid,over_nil_fid,"文本",style)
+ss over_nil_fid=over_nil_fid
+end fn
+
+fn over_nil_end()
+s over_nil_fid=ss.over_nil_fid
+f(over_nil_fid!=""&&over_nil_fid!=null)
+{
+  ufnsui()
+  {
+    urvw(over_nil_fid)
+  }
+}
+end fn
+
+fn side(id,zct_color,chjm)
+cls("android.support.v4.widget.SlidingPaneLayout",sss.类)
+javanew(sss.侧滑栏,sss.类,"Context",activity)
+addv(sss.侧滑栏,chjm)
+nvw(sss.侧滑栏,id)
+java(颜色,null,"android.graphics.Color.parseColor","String",zct_color)
+javax(null,sss.侧滑栏,sss.类,"setSliderFadeColor","int",颜色)
+cls("android.support.v4.widget.SlidingPaneLayout$PanelSlideListener",回调类)
+javacb(回调,回调类)
+{
+  java(名,st_mD,"java.lang.Object.toString")
+  f(名 ? "onPanelOpened")
+  {
+    fn with_jsj.side_open()
+  }
+  else f(名 ? "onPanelClosed")
+  {
+    fn with_jsj.side_end()
+  }
+  else f(名 ? "onPanelSlide")
+  {
+  }
+}
+javax(null,sss.侧滑栏,sss.类,"setPanelSlideListener",回调类,回调)
+end fn
+
+fn side_open()
+javax(null,sss.侧滑栏,sss.类,"openPane")
+end fn

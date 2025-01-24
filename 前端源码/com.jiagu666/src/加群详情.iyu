@@ -1,0 +1,643 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>
+width=-1
+height=-1
+background=white
+</ppt>
+<event></event>
+</View>
+<View id="14" did="1" type="LinearLayout">
+<ppt>
+width=-1
+height=-2
+orientation=vertical
+</ppt>
+<event></event>
+</View>
+<View id="15" did="14" type="LinearLayout">
+<ppt>
+width=-1
+height=65dp
+orientation=horizontal
+gravity=center
+</ppt>
+<event></event>
+</View>
+<View id="24" did="15" type="LinearLayout">
+<ppt>
+width=-2
+height=-1
+orientation=vertical
+gravity=center_vertical
+</ppt>
+<event></event>
+</View>
+<View id="17" did="24" type="TextView">
+<ppt>width=-2
+height=-2
+text=加群详细
+textColor=#000000
+textStyle=bold
+textSize=15.5sp
+typeface=@fonts/Ex_GameFont.ttf
+</ppt>
+<event></event>
+</View>
+<View id="16" did="14" type="LinearLayout">
+<ppt>
+width=-1
+height=0.5dp
+orientation=vertical
+background=#f2f2f2
+</ppt>
+<event></event>
+</View>
+<View id="13" did="1" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+ut_below=14
+</ppt>
+<event></event>
+</View>
+<View id="189" did="13" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+</ppt>
+<event></event>
+</View>
+<View id="266" did="189" type="CardView">
+<ppt>
+width=-1
+height=-2
+app_CardcornerRadius=12dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#f7f7f7
+layout_marginLeft=20dp
+layout_marginRight=20dp
+layout_marginTop=20dp
+</ppt>
+<event></event>
+</View>
+<View id="267" did="266" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=horizontal
+gravity=center_vertical
+</ppt>
+<event></event>
+</View>
+<View id="318" did="267" type="CardView">
+<ppt>
+width=50dp
+height=50dp
+app_CardcornerRadius=8dp
+app_CardElevation=0dp
+layout_marginLeft=15dp
+layout_marginTop=15dp
+layout_marginBottom=15dp
+</ppt>
+<event></event>
+</View>
+<View id="341" did="318" type="ImageView">
+<ppt>width=-1
+height=-1
+src=@icon (1).png
+scaleType=centercrop</ppt>
+<event></event>
+</View>
+<View id="269" did="267" type="TextView">
+<ppt>
+width=-2
+height=-2
+text=
+layout_marginLeft=10dp
+textColor=#000000
+typeface=@fonts/Ex_GameFont.ttf
+textSize=13sp
+layout_marginTop=1dp
+</ppt>
+<event></event>
+</View>
+<View id="312" did="267" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+gravity=center_vertical
+</ppt>
+<event></event>
+</View>
+<View id="313" did="312" type="TextView">
+<ppt>width=-2
+height=-2
+text=技术交流群
+layout_marginRight=10dp
+textSize=13sp
+textStyle=bold
+textColor=#000000
+typeface=@fonts/Ex_GameFont.ttf
+</ppt>
+<event></event>
+</View>
+<View id="319" did="312" type="LinearLayout">
+<ppt>
+width=-2
+height=-2
+orientation=horizontal
+layout_marginTop=5dp
+</ppt>
+<event></event>
+</View>
+<View id="320" did="319" type="CardView">
+<ppt>
+width=-2
+height=20dp
+app_CardcornerRadius=999dp
+app_CardElevation=0dp
+</ppt>
+<event></event>
+</View>
+<View id="321" did="320" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+</ppt>
+<event></event>
+</View>
+<View id="322" did="321" type="TextView">
+<ppt>width=-2
+height=-2
+text=技术分享
+layout_marginTop=0dp
+textColor=#000000
+textSize=9sp
+layout_marginBottom=0dp
+layout_marginLeft=0dp
+layout_marginRight=0dp
+textStyle=bold
+layout_marginLeft=10dp
+layout_marginRight=10dp
+</ppt>
+<event></event>
+</View>
+<View id="273" did="189" type="CardView">
+<ppt>
+width=-1
+height=-2
+app_CardcornerRadius=8dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#f7f7f7
+layout_marginLeft=20dp
+layout_marginRight=20dp
+layout_marginTop=20dp
+</ppt>
+<event></event>
+</View>
+<View id="326" did="273" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+</ppt>
+<event></event>
+</View>
+<View id="274" did="326" type="LinearLayout">
+<ppt>
+width=-1
+height=-2
+orientation=horizontal
+gravity=center_vertical
+layout_marginTop=15dp
+</ppt>
+<event></event>
+</View>
+<View id="276" did="274" type="TextView">
+<ppt>width=-2
+height=-2
+text=文件截图
+layout_marginLeft=10dp
+textColor=#000000
+textSize=12sp
+layout_marginTop=1dp
+typeface=@fonts/Ex_GameFont.ttf
+</ppt>
+<event></event>
+</View>
+<View id="278" did="274" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+gravity=center_vertical|right
+</ppt>
+<event></event>
+</View>
+<View id="327" did="326" type="LinearLayout">
+<ppt>
+width=-1
+height=180dp
+orientation=horizontal
+padding=5dp
+layout_marginTop=5dp
+</ppt>
+<event></event>
+</View>
+<View id="348" did="327" type="CardView">
+<ppt>
+width=-1
+height=-1
+app_CardcornerRadius=8dp
+app_CardElevation=0dp
+layout_margin=5dp
+layout_weight=1
+</ppt>
+<event></event>
+</View>
+<View id="352" did="348" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+</ppt>
+<event></event>
+</View>
+<View id="350" did="352" type="GifView">
+<ppt>
+width=-1
+height=-1
+src=@Fg7PS0IesulBHFZwCvfx9-pj6fgs.gif
+scaleType=centercrop
+</ppt>
+<event></event>
+</View>
+<View id="349" did="348" type="ImageView">
+<ppt>width=-1
+height=-1
+src=0
+</ppt>
+<event></event>
+</View>
+<View id="328" did="189" type="CardView">
+<ppt>
+width=-1
+height=-2
+app_CardcornerRadius=8dp
+app_CardElevation=0dp
+app_CardBackgroundColor=#f7f7f7
+layout_marginLeft=20dp
+layout_marginRight=20dp
+layout_marginTop=20dp
+</ppt>
+<event></event>
+</View>
+<View id="329" did="328" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+</ppt>
+<event></event>
+</View>
+<View id="330" did="329" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal
+gravity=center_vertical
+layout_marginTop=15dp
+</ppt>
+<event></event>
+</View>
+<View id="332" did="330" type="TextView">
+<ppt>width=-2
+height=-2
+text=应用介绍：
+layout_marginLeft=10dp
+textColor=#000000
+typeface=@fonts/Ex_GameFont.ttf
+textSize=12sp
+layout_marginTop=1dp
+</ppt>
+<event></event>
+</View>
+<View id="333" did="330" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+gravity=center_vertical|right
+</ppt>
+<event></event>
+</View>
+<View id="334" did="329" type="LinearLayout">
+<ppt>
+width=-1
+height=-2
+orientation=vertical
+</ppt>
+<event></event>
+</View>
+<View id="339" did="334" type="TextView">
+<ppt>width=-2
+height=-2
+text=里面超多好玩的源码,软件,欢迎大家来玩 [里面有逆向杀手各版本和使用教程]
+layout_margin=10dp
+textSize=12sp
+typeface=@fonts/Ex_GameFont.ttf
+textColor=#666666
+</ppt>
+<event></event>
+</View>
+<View id="280" did="1" type="LinearLayout">
+<ppt>
+width=-1
+height=65dp
+orientation=horizontal
+gravity=center_vertical
+</ppt>
+<event></event>
+</View>
+<View id="282" did="280" type="CardView">
+<ppt>
+width=35dp
+height=35dp
+app_CardcornerRadius=6dp
+app_CardElevation=0dp
+layout_marginLeft=20dp
+app_CardBackgroundColor=#f7f7f7
+</ppt>
+<event></event>
+</View>
+<View id="283" did="282" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundRipple=#d1d1d1
+</ppt>
+<event><eventItme type="clicki">uigo("mian2.iyu")
+end()</eventItme></event>
+</View>
+<View id="281" did="283" type="ImageView">
+<ppt>
+width=30dp
+height=30dp
+src=@feda72eaa8f.png
+layout_marginLeft=0dp
+scaleType=centercrop
+</ppt>
+<event><eventItme type="clicki">end()</eventItme></event>
+</View>
+<View id="290" did="280" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+gravity=right|center_vertical
+</ppt>
+<event></event>
+</View>
+<View id="291" did="290" type="CardView">
+<ppt>
+width=35dp
+height=35dp
+app_CardcornerRadius=6dp
+app_CardElevation=0dp
+layout_marginLeft=0dp
+app_CardBackgroundColor=#f7f7f7
+layout_marginRight=20dp
+</ppt>
+<event></event>
+</View>
+<View id="292" did="291" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundRipple=#d1d1d1
+</ppt>
+<event><eventItme type="clicki">tw("人家只是装饰")</eventItme></event>
+</View>
+<View id="293" did="292" type="ImageView">
+<ppt>
+width=25dp
+height=25dp
+src=@a35f862a367.png
+layout_marginLeft=0dp
+scaleType=centercrop
+</ppt>
+<event></event>
+</View>
+<View id="315" did="1" type="CardView">
+<ppt>
+width=-1
+height=45dp
+app_CardcornerRadius=12dp
+app_CardBackgroundColor=#333333
+app_CardElevation=0dp
+layout_marginLeft=20dp
+layout_marginRight=20dp
+layout_marginBottom=20dp
+ut_alignParentBottom=true
+</ppt>
+<event></event>
+</View>
+<View id="316" did="315" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundRipple=#ffffff
+</ppt>
+<event><eventItme type="clicki">s qun=658010503
+ss("mqqapi://card/show_pslcard?src_type=internal&version=1&uin="+qun+"&card_type=group&source=qrcode",joinqq)
+sit(a,"action", "android.intent.action.VIEW")
+sit(a,"data",joinqq)
+uit(a, "chooser", "QQ群窗口")</eventItme></event>
+</View>
+<View id="317" did="316" type="TextView">
+<ppt>width=-2
+height=-2
+text=点击加群
+textColor=#ffffff
+typeface=@fonts/Ex_GameFont.ttf
+textSize=13sp
+</ppt>
+<event></event>
+</View>
+<View id="353" did="1" type="TextView">
+<ppt>
+width=-2
+height=-2
+text=文本353
+visibility=gone
+</ppt>
+<event></event>
+</View>
+<View id="354" did="1" type="RelativeLayout">
+<ppt>
+width=-1
+height=-1
+gravity=bottom
+visibility=gone
+BackgroundColor=#60000000
+</ppt>
+<event><eventItme type="clicki">uycl("#ffffff",true,0)
+java(cs, activity, "android.app.Activity.getWindow")
+java(cs2, cs, "android.view.Window.getDecorView")
+java(null, cs2, "android.view.View.setSystemUiVisibility", "int", "8192")
+us(354,"visibility","gone")</eventItme></event>
+</View>
+<View id="355" did="354" type="CardView">
+<ppt>
+width=-1
+height=100dp
+app_CardcornerRadius=15dp
+app_CardElevation=30dp
+layout_marginTop=80dp
+</ppt>
+<event></event>
+</View>
+<View id="356" did="355" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+background=through
+</ppt>
+<event></event>
+</View>
+<View id="357" did="356" type="LinearLayout">
+<ppt>
+width=-1
+height=45dp
+orientation=horizontal
+layout_marginTop=30dp
+gravity=center_horizontal
+</ppt>
+<event></event>
+</View>
+<View id="358" did="357" type="CardView">
+<ppt>
+width=120dp
+height=-1
+app_CardcornerRadius=10dp
+app_CardBackgroundColor=#333333
+app_CardElevation=0dp
+</ppt>
+<event></event>
+</View>
+<View id="360" did="358" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundRipple=#333333
+</ppt>
+<event><eventItme type="clicki">uycl("#ffffff",true,0)
+java(cs, activity, "android.app.Activity.getWindow")
+java(cs2, cs, "android.view.Window.getDecorView")
+java(null, cs2, "android.view.View.setSystemUiVisibility", "int", "8192")
+us(354,"visibility","gone")
+us(364,"url",sss.jurl)</eventItme></event>
+</View>
+<View id="362" did="360" type="TextView">
+<ppt>
+width=-2
+height=-2
+text=本地下载
+textColor=#ffffff
+typeface=@fonts/Ex_GameFont.ttf
+textSize=13sp
+</ppt>
+<event></event>
+</View>
+<View id="359" did="357" type="CardView">
+<ppt>
+width=120dp
+height=-1
+app_CardcornerRadius=10dp
+app_CardBackgroundColor=#333333
+app_CardElevation=0dp
+layout_marginLeft=55dp
+</ppt>
+<event></event>
+</View>
+<View id="361" did="359" type="LinearLayout">
+<ppt>
+width=-1
+height=-1
+orientation=vertical
+gravity=center
+BackgroundRipple=#333333
+</ppt>
+<event><eventItme type="clicki">uycl("#ffffff",true,0)
+java(cs, activity, "android.app.Activity.getWindow")
+java(cs2, cs, "android.view.Window.getDecorView")
+java(null, cs2, "android.view.View.setSystemUiVisibility", "int", "8192")
+us(354,"visibility","gone")
+hws(sss.jurl)</eventItme></event>
+</View>
+<View id="363" did="361" type="TextView">
+<ppt>
+width=-2
+height=-2
+text=浏览器下载
+textColor=#ffffff
+typeface=@fonts/Ex_GameFont.ttf
+textSize=13sp
+</ppt>
+<event></event>
+</View>
+<View id="364" did="1" type="WebView">
+<ppt>
+width=-2
+height=-2
+visibility=gone
+</ppt>
+<event><eventItme type="ondownloadstart">fn   down.a()
+fn   down.c("正在下载中")
+t()
+{
+ss("微盒/软件下载/"+sss.name,file)
+hd(st_url,file, c)
+ufnsui()
+{
+f(c==0||c==1)
+{
+fn down.b()
+tw("下载完成")
+fdir(file,now)
+ss("文件下载完成，文件已保存到"+now,msg)
+utw("","温馨提示",msg,"点我去安装",false,v)
+{
+fo(now)
+endutw()
+}
+}
+else
+{
+tw("下载失败")
+fn down.b()
+}
+}
+}</eventItme></event>
+</View>
+<UIEventset><eventItme type="loading">uycl("#ffffff",true,0)
+java(cs, activity, "android.app.Activity.getWindow")
+java(cs2, cs, "android.view.Window.getDecorView")
+java(null, cs2, "android.view.View.setSystemUiVisibility", "int", "8192")
+java(window,activity,"android.app.Activity.getWindow")
+java(d,window,"android.view.Window.getDecorView")
+java(null,d,"android.view.View.setSystemUiVisibility","int",4098)</eventItme></UIEventset>

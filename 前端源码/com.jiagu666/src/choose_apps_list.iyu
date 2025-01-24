@@ -1,0 +1,68 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=68dp
+orientation=horizontal
+gravity=center_vertical
+paddingLeft=10dp
+BackgroundColor=#ffffffff
+BackgroundRipple=#ffd1d1d1</ppt>
+<event><eventItme type="clicki">ulag(st_vW,1,sss.path)
+ulag(st_vW,4,sss.name)
+ss("你已选择应用："+sss.name+"，是否确定?",text)
+utw("@rj.png","选择",text,"确定","重选",false,v)
+{
+  endutw()
+  //加载弹窗
+  utw("","","loading_utw.iyu","",false,v)
+  {
+  }
+  gvs(v,2,id2)
+  fn 着色.控件着色(id2,sss.ztys)
+  gvs(v,10,id10)
+  us(id10,"text","正在提取APK...")
+  t()
+  {
+    ss("/storage/emulated/0/逆向杀手/"+sss.name+".apk",sss.filepath)
+    fc(sss.path,sss.filepath,b)
+    f(b)
+    {
+      end()
+    }
+  }
+
+}else
+{
+}</eventItme></event>
+</View>
+<View id="2" did="1" type="ImageView">
+<ppt>width=45dp
+height=45dp
+src=@81cf2c6d8.png</ppt>
+<event></event>
+</View>
+<View id="3" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center_vertical
+paddingLeft=10dp</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="TextView">
+<ppt>width=-2
+height=-2
+text=App Name
+textColor=#424242
+textSize=14.5dp</ppt>
+<event></event>
+</View>
+<View id="5" did="3" type="TextView">
+<ppt>width=-2
+height=-2
+text=Package_name
+layout_marginTop=3dp
+textColor=#757575
+textSize=13sp</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

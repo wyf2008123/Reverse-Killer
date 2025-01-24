@@ -1,0 +1,110 @@
+<View id="1" did="0" type="EditText">
+<ppt>width=-1
+height=-2
+text=输入卡密数量
+digits=1234567890</ppt>
+<event></event>
+</View>
+<View id="2" did="0" type="EditText">
+<ppt>width=-1
+height=-2
+text=卡密的有效时间 单位为秒 例如:1天=1*60*60*24=86400秒
+digits=1234567890
+maxLength=100000
+layout_marginTop=3dp</ppt>
+<event></event>
+</View>
+<View id="4" did="0" type="Button">
+<ppt>width=-1
+height=-2
+text=GO
+textColor=#ff000000
+background=white
+layout_marginTop=3dp</ppt>
+<event><eventItme type="clicki">gvs(sss.卡密时间,1,bjk)
+gvs(sss.卡密时间,2,bjk1)
+s a=5
+ug(bjk,"text",km)
+ug(bjk1,"text",km2)
+fr("$nx",appkey)
+fr("/storage/emulated/0/逆向杀手/卡密验证/cookie",admin)
+fr("/storage/emulated/0/逆向杀手/卡密验证/cookie2",pass)
+t()
+{
+  hs("http://81.71.140.161/api/addKey.php?user="+admin+"&pass="+pass+"&num="+km+"&second="+km2+"&app="+appkey,cjsj)
+  sr(cjsj,"&lt;br&gt;","\n",cjsj)
+  ss(cjsj+"卡密有效时间:"+km2+"秒",cjsj2)
+  ss("当前管理应用包名:"+appkey+"\n",bm)
+  syso(cjsj)
+  ufnsui()
+  {
+    f(cjsj=="不能留空")
+    {
+      tw("输入不能为空")
+    }
+    else f(cjsj=="账号不存在")
+    {
+      tw("检测数据被更改或删除，请重新登录")
+      ufnsui()
+      {
+        stop(1000)
+        uigo("卡密用户登录.iyu")
+        end()
+      }
+    }
+    else f(cjsj="应用不存在")
+    {
+      tw("数据异常")
+    }
+    else
+    {
+      tw("生成成功")
+      utw(null,"卡密生成成功",cjsj,"复制","退出",true,v)
+      {
+        sxb(cjsj)
+        fr("$卡密.txt",km)
+        ss(bm+km+cjsj2,cjsj2)
+        fw("$卡密.txt",cjsj2)
+      }
+      else
+      {
+        fr("$卡密.txt",km)
+        ss(bm+"\n"+km+cjsj2,cjsj2)
+        fw("$卡密.txt",cjsj2)
+      }
+    }
+  }
+}</eventItme></event>
+</View>
+<UIEventset><eventItme type="downkey">t()
+{
+   ss("rm -r "+"/storage/emulated/0/逆向杀手/xml",sss.cm)
+   call(null,"mlua","sc.m","sss.cm")
+}
+f(st_kC==4)
+//假设变量=4
+{
+f(sss.exit==null)
+//嵌套如果判断2次，申明全局变量退出=null
+{
+sss exit=0
+//全局变量退出=0
+tw("再按一次返回上一步",0)
+//提示
+t()
+//启用新线程
+{
+stop(2000)
+sss exit=null
+//退出应用
+//停止代码2000全局变量退出=Null
+}
+}
+else
+//否则
+{
+end()
+uigo("卡密管理.iyu")
+//退出[显示桌面]
+}
+}</eventItme></UIEventset>

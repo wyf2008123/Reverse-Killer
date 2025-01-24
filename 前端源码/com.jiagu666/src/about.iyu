@@ -1,0 +1,115 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=#fdfdfd</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="20" did="3" type="TextView">
+<ppt>width=-2
+height=-2
+text=逆向杀手(介绍)
+textColor=#ff000000
+typeface=@fonts/Ex_GameFont.ttf
+layout_gravity=center
+textSize=25sp
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="4" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="LinearLayout">
+<ppt>width=-1
+height=150dp
+orientation=vertical
+background=#ffffff
+gravity=center</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="ImageView">
+<ppt>width=50dp
+height=50dp
+src=@81cf2c6d8.png</ppt>
+<event></event>
+</View>
+<View id="7" did="5" type="TextView">
+<ppt>width=-2
+height=-2
+text=版本:null
+textColor=#424242
+typeface=@fonts/Ex_GameFont.ttf</ppt>
+<event></event>
+</View>
+<View id="8" did="4" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+background=#ffffff</ppt>
+<event><eventItme type="clicki">//</eventItme></event>
+</View>
+<View id="12" did="8" type="TextView">
+<ppt>width=-1
+height=1
+text=
+background=#eeeeee</ppt>
+<event></event>
+</View>
+<View id="11" did="8" type="TextView">
+<ppt>width=-1
+height=1
+text=
+background=#eeeeee</ppt>
+<event></event>
+</View>
+<View id="13" did="8" type="TextView">
+<ppt>width=-1
+height=1
+text=
+background=#eeeeee</ppt>
+<event></event>
+</View>
+<View id="19" did="4" type="TextView">
+<ppt>width=-2
+height=-2
+text=使用需知
+layout_marginLeft=20dp
+layout_marginRight=20dp
+layout_marginTop=20dp
+textSize=18sp
+textColor=#424242
+typeface=@fonts/Ex_GameFont.ttf</ppt>
+<event></event>
+</View>
+<View id="18" did="4" type="TextView">
+<ppt>width=-2
+height=-2
+text=当前为正式版1.5\n所有加固完的路径都为:/storage/emulated/0/逆向杀手/apk/\n其它都为提取apk或缓存文件!
+textColor=#424242
+layout_marginLeft=20dp
+layout_marginRight=20dp
+layout_marginTop=10dp
+typeface=@fonts/Ex_GameFont.ttf</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">ss("版本:"+sss.version,versin)
+us(7,"text",versin)
+
+
+
+//状态栏
+fn with_ui.O_status("#ffffff")</eventItme></UIEventset>

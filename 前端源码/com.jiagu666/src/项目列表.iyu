@@ -1,0 +1,51 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-2</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="CardView">
+<ppt>width=-1
+height=45dp
+layout_margin=5dp
+app_CardcornerRadius=5dp
+app_CardElevation=5dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+padding=5dp</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="RoundImageView">
+<ppt>width=35dp
+height=35dp
+src=@icon_iapp.png</ppt>
+<event></event>
+</View>
+<View id="5" did="3" type="TextView">
+<ppt>width=-2
+height=-2
+text=文本5
+ut_toRightOf=4
+ut_centerVertical=true
+layout_marginLeft=10dp
+textColor=#000000
+typeface=@fonts/Ex_GameFont.ttf</ppt>
+<event></event>
+</View>
+<View id="6" did="3" type="TextView">
+<ppt>width=-2
+height=-2
+text=注入
+ut_alignParentRight=true
+ut_centerVertical=true
+layout_marginRight=10dp
+textColor=#000000
+typeface=@fonts/Ex_GameFont.ttf</ppt>
+<event><eventItme type="clicki">ulag(st_vW,5,sss.sjsj)
+utw(null,"","注入弹窗.iyu",false,sss.注入弹窗窗口)
+{
+}</eventItme></event>
+</View>
+<UIEventset></UIEventset>

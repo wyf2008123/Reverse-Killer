@@ -1,0 +1,33 @@
+fn pull()
+t()
+{
+    f(sss.shanchu==false)
+    {
+    s dq10="$dat2"
+    fr(dq10,dq0)
+    s aa = "%逆向杀手/"
+    ss(aa+dq0+=.apk",aaa)
+    s bb = "AndroidManifest.xml"
+    s cc = "%逆向杀手/xml/AndroidManifest.xml"
+    fuz(aaa,bb,cc,dd)
+    ufnsui()
+    {
+    cls(sss.a_dex,"com.xml.原罪.iApp",b)
+    s path="/storage/emulated/0/逆向杀手/xml/AndroidManifest.xml/AndroidManifest.xml"
+    javax(AXML,null,b,"反编译","String",path)
+    sj(AXML,"android:versionCode=\"","\"",版本号)
+    s dq="$dat2"
+    fr(dq,应用名)
+    sj(AXML,"package=\"","\"",包名)
+    ula(ula,7=版本号, 8="@81cf2c6d8.png",11=应用名, 12=包名,15=sss.number+"秒")
+    fw("$列表/cookie",true)
+    }
+    ufnsui()
+    {
+    s c = "项目表.iyu"
+    s d = -1
+    s e = -2
+    uls(home.11,ula, c, d, e)
+    }
+    }
+}

@@ -1,0 +1,40 @@
+fn pull()
+t()
+{
+  fl("/storage/emulated/0/逆向杀手/卡密验证/lib/",true,iyu)
+  for(iyu;iyu)
+  {
+    syso(iyu)
+    s fiyu=true
+    fr("/storage/emulated/0/逆向杀手/卡密验证/lib/"+iyu+"/1.json",bb)
+    ula(ula,11=bb,8="/storage/emulated/0/iApp/ProjectApp/"+iyu+"/icon.png",12=iyu,15=sss.number+"秒")
+    ufnsui()
+    {
+      s c = "项目表2.iyu"
+      s d = -1
+      s e = -2
+      uls(index.18,ula, c, d, e)
+    }
+  }
+  
+  
+  f(fiyu==null)
+  {
+    ufnsui()
+    {
+      syso("no")
+      //id(需要遮罩加载的布局id)
+      s id="index.19"
+      //图片位置(center=居中,50dp=图片顶部的高度)
+      s a="80dp"
+      //遮罩层背景颜色
+      s b="#ffffff"
+      //图片设置(图片路径|图片大小)
+      ss("@w.png|80dp",c)
+      //提示文字(文字|大小|颜色)
+      ss("当前无内容|14sp|#9E9E9E",d)
+      fn with_ui.over_nil(id,a,b,c,d)
+    }
+  }
+}
+end fn

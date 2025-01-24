@@ -1,0 +1,7 @@
+import android.content.Context;
+
+public static boolean load(Context context) {
+  String dir = context.getApplicationInfo().nativeLibraryDir;
+  System.load(dir+"/libgoun_protect.so");
+  return true;
+}

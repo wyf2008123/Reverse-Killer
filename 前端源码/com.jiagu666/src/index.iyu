@@ -1,0 +1,73 @@
+<View id="4" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="1" did="4" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=55dp
+orientation=horizontal
+gravity=center_vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="17" did="3" type="TextView">
+<ppt>width=-2
+height=-2
+text=应用注入管理
+textColor=#ff000000
+typeface=@fonts/Ex_GameFont.ttf
+layout_gravity=center_vertical
+layout_marginLeft=10dp</ppt>
+<event></event>
+</View>
+<View id="19" did="2" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+background=white</ppt>
+<event></event>
+</View>
+<View id="18" did="19" type="ListView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="13" did="1" type="CardView">
+<ppt>width=60dp
+height=60dp
+app_CardcornerRadius=30dp
+ut_alignParentRight=true
+ut_alignParentBottom=true
+layout_marginRight=20dp
+layout_marginBottom=50dp
+app_CardBackgroundColor=#03A9F4</ppt>
+<event></event>
+</View>
+<View id="14" did="13" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center
+</ppt>
+<event><eventItme type="clicki">end()
+uigo("mian2.iyu")</eventItme></event>
+</View>
+<View id="16" did="14" type="ImageView">
+<ppt>width=30dp
+height=30dp
+src=@a35f862a367.png</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

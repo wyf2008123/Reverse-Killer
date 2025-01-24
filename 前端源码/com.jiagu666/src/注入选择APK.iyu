@@ -1,0 +1,85 @@
+<View id="1" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="RelativeLayout">
+<ppt>width=-1
+height=40dp
+background=#ff071733</ppt>
+<event></event>
+</View>
+<View id="5" did="2" type="TextView">
+<ppt>width=-2
+height=-2
+text=逆向杀手-注入选择
+textColor=#ffffff
+layout_marginLeft=10dp
+ut_centerVertical=true
+typeface=@fonts/Ex_GameFont.ttf</ppt>
+<event></event>
+</View>
+<View id="3" did="1" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+ut_below=2</ppt>
+<event></event>
+</View>
+<View id="4" did="3" type="RecyclerView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">s path="/storage/emulated/0/iApp/ProjectApp"
+fl(path,true,file)
+for(file;file)
+{
+  ss("/storage/emulated/0/iApp/ProjectApp/"+file+"/icon.png",icon)
+  ula(l,1=null,5=file,4=icon)
+}
+uls(4,l,"项目列表.iyu")
+
+
+t()
+{
+  fn 环境检测.a()
+  fn 环境检测.b()
+  fn 环境检测.root()
+  fn 环境检测.c()
+  fn 环境检测.d()
+  fn 环境检测.e()
+  fn 环境检测.gj()
+  fn 环境检测.g()
+  fn 环境检测.j()
+}</eventItme><eventItme type="downkey">t()
+{
+   ss("rm -r "+"/storage/emulated/0/逆向杀手/xml",sss.cm)
+   call(null,"mlua","sc.m","sss.cm")
+}
+f(st_kC==4)
+//假设变量=4
+{
+f(sss.exit==null)
+//嵌套如果判断2次，申明全局变量退出=null
+{
+sss exit=0
+//全局变量退出=0
+tw("再按一次返回上一步",0)
+//提示
+t()
+//启用新线程
+{
+stop(2000)
+sss exit=null
+//退出应用
+//停止代码2000全局变量退出=Null
+}
+}
+else
+//否则
+{
+end()
+uigo("操作台.iyu")
+//退出[显示桌面]
+}
+}</eventItme></UIEventset>

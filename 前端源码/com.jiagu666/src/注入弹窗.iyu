@@ -1,0 +1,505 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="5" did="3" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center|left</ppt>
+<event><eventItme type="clicki">fr("/storage/emulated/0/逆向杀手/卡密验证/cookie",admin)
+fr("/storage/emulated/0/逆向杀手/卡密验证/cookie2",pass)
+f(admin==null||pass==null)
+{
+  tw("检测到数据已被更改，请重新登录")
+  uigo("卡密用户注册.iyu")
+  end()
+}
+else
+{
+  s key=sss.sjsj
+  syso(sss.sjsj)
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/mian.iyu",sjsj2)
+  ss(nr+"$逆向杀手$",nr)
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/res/.appkey",appkey1)
+  t()
+  {
+    hs("http://81.71.140.161/api/addApp.php?user="+admin+"&pass="+pass+"&app="+sss.sjsj,key)
+    fn 环境检测.a()
+    fn 环境检测.b()
+    fn 环境检测.root()
+    fn 环境检测.c()
+    fn 环境检测.d()
+    fn 环境检测.e()
+    fn 环境检测.gj()
+    fn 环境检测.g()
+    fn 环境检测.j()
+  }
+  fw("$appkey",key)
+  call(result,"mjava","AecEncry.AESEncode",key,key)
+  syso(result)
+  call(results,"mjava","AecEncry.AESDecode",result,key)
+  syso(results)
+  fw(appkey1,result)
+  fn with_ui.N_loadingTwo(id,a,b)
+  s fc1="/storage/emulated/0/逆向杀手/卡密验证/原mian界面.iyu"
+  fc(sjsj2,fc1,fc2)
+  s yz="@cookie.Odex"
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/mian.iyu",yz3)
+  fc(yz,yz3,yz2)
+  s jm="@着色.myu"
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/着色.myu",jm1)
+  fc(jm,jm1,jm3)
+  s ft1="/storage/emulated/0/逆向杀手/卡密验证/原mian界面.iyu"
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/原mian界面.iyu",ft2)
+  ft(ft1,ft2,ft3)
+  s res1="@res.zip"
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/res",res2)
+  fuzs(res1,res2,res3)
+  s yz5="@cookie环境.Odex"
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/环境检测.myu",yz6)
+  fc(yz5,yz6,yz7)
+  ss("@"+sss.文件夹混淆+"∰",src9989)
+  s hjjc=src9989
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/apk",hjjc1)
+  fuzs(hjjc,hjjc1,hjjc2)
+  tw("处理完成")
+  uigo("卡密管理.iyu")
+  fr("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/AndroidManifest.xml",sss.bm)
+  sj(sss.bm,"&lt;versionName&gt;","&lt;/versionName&gt;",sss.bbh)
+  syso(sss.bbh)
+  fw("/storage/emulated/0/逆向杀手/卡密验证/lib/"+sss.sjsj+"/1.json",sss.bbh)
+  endutw()
+  end()
+}</eventItme></event>
+</View>
+<View id="7" did="5" type="TextView">
+<ppt>width=-2
+height=-2
+text=全屏卡密模板1
+layout_marginLeft=10dp
+textColor=#ff010101</ppt>
+<event></event>
+</View>
+<View id="8" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="10" did="9" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="11" did="10" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center|left</ppt>
+<event><eventItme type="clicki">fr("/storage/emulated/0/逆向杀手/卡密验证/cookie",admin)
+fr("/storage/emulated/0/逆向杀手/卡密验证/cookie2",pass)
+f(admin==null||pass==null)
+{
+  tw("检测到数据已被更改，请重新登录")
+  uigo("卡密用户注册.iyu")
+  end()
+}
+else
+{
+  s key=sss.sjsj
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/mian.iyu",sjsj2)
+  ss(nr+"$逆向杀手$",nr)
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/res/.appkey",appkey1)
+  t()
+  {
+    hs("http://81.71.140.161/api/addApp.php?user="+admin+"&pass="+pass+"&app="+sss.sjsj,key)
+    fn 环境检测.a()
+    fn 环境检测.b()
+    fn 环境检测.root()
+    fn 环境检测.c()
+    fn 环境检测.d()
+    fn 环境检测.e()
+    fn 环境检测.gj()
+    fn 环境检测.g()
+    fn 环境检测.j()
+  }
+  call(result,"mjava","AecEncry.AESEncode",key,key)
+  syso(result)
+  call(results,"mjava","AecEncry.AESDecode",result,key)
+  syso(results)
+  fw(appkey1,result)
+  s fc1="/storage/emulated/0/逆向杀手/卡密验证/原mian界面.iyu"
+  fc(sjsj2,fc1,fc2)
+  s yz="@login_bg.png"
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/res/login_bg.png",yz3)
+  fc(yz,yz3,yz2)
+  ss("@"+sss.文件夹混淆+"え",src999)
+  s src=src999
+  s ft1="/storage/emulated/0/逆向杀手/卡密验证/原mian界面.iyu"
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/原mian界面.iyu",ft2)
+  ft(ft1,ft2,ft3)
+  s yz="@cookie2.Odex"
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/mian.iyu",yz3)
+  fc(yz,yz3,yz2)
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src",src2)
+  fuzs(src,src2,src3)
+  s yz5="@cookie环境.Odex"
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/环境检测.myu",yz6)
+  fc(yz5,yz6,yz7)
+  ss("@"+sss.文件夹混淆+"∰",knm)
+  s hjjc=knm
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/apk",hjjc1)
+  fuzs(hjjc,hjjc1,hjjc2)
+  uigo("卡密管理.iyu")
+  tw("处理完成")
+  fr("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/AndroidManifest.xml",sss.bm)
+  sj(sss.bm,"&lt;versionName&gt;","&lt;/versionName&gt;",sss.bbh)
+  syso(sss.bbh)
+  fw("/storage/emulated/0/逆向杀手/卡密验证/lib/"+sss.sjsj+"/1.json",sss.bbh)
+  end()
+}</eventItme></event>
+</View>
+<View id="12" did="11" type="TextView">
+<ppt>width=-2
+height=-2
+text=全屏卡密模板2
+layout_marginLeft=10dp
+textColor=#ff010101</ppt>
+<event></event>
+</View>
+<View id="13" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="14" did="13" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="15" did="14" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="16" did="15" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center|left</ppt>
+<event><eventItme type="clicki">fr("/storage/emulated/0/逆向杀手/卡密验证/cookie",admin)
+fr("/storage/emulated/0/逆向杀手/卡密验证/cookie2",pass)
+f(admin==null||pass==null)
+{
+  tw("检测到数据已被更改，请重新登录")
+  uigo("卡密用户注册.iyu")
+  end()
+}
+else
+{
+  s key=sss.sjs
+  syso(sss.sjsj)
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/mian.iyu",sjsj2)
+  ss(nr+"$逆向杀手$",nr)
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/res/.appkey",appkey1)
+  t()
+  {
+    hs("http://81.71.140.161/api/addApp.php?user="+admin+"&pass="+pass+"&app="+sss.sjsj,key)
+    fn 环境检测.a()
+    fn 环境检测.b()
+    fn 环境检测.root()
+    fn 环境检测.c()
+    fn 环境检测.d()
+    fn 环境检测.e()
+    fn 环境检测.gj()
+    fn 环境检测.g()
+    fn 环境检测.j()
+  }
+  call(result,"mjava","AecEncry.AESEncode",key,key)
+  syso(result)
+  call(results,"mjava","AecEncry.AESDecode",result,key)
+  syso(results)
+  fw(appkey1,result)
+  s id=9
+  s fc1="/storage/emulated/0/逆向杀手/卡密验证/原mian界面.iyu"
+  fc(sjsj2,fc1,fc2)
+  s src="@卡密模板三.zip"
+  s ft1="/storage/emulated/0/逆向杀手/卡密验证/原mian界面.iyu"
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/原mian界面.iyu",ft2)
+  ft(ft1,ft2,ft3)
+  s yz="@cookie3.Odex"
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/mian.iyu",yz3)
+  fc(yz,yz3,yz2)
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/res",src2)
+  fuzs(src,src2,src3)
+  s yz5="@cookie环境.Odex"
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/环境检测.myu",yz6)
+  fc(yz5,yz6,yz7)
+  ss("@"+sss.文件夹混淆+"∰",src999)
+  s hjjc=src999
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/apk",hjjc1)
+  fuzs(hjjc,hjjc1,hjjc2)
+  tw("处理完成")
+  uigo("卡密管理.iyu")
+  fr("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/AndroidManifest.xml",sss.bm)
+  sj(sss.bm,"&lt;versionName&gt;","&lt;/versionName&gt;",sss.bbh)
+  syso(sss.bbh)
+  fw("/storage/emulated/0/逆向杀手/卡密验证/lib/"+sss.sjsj+"/1.json",sss.bbh)
+  end()
+}</eventItme></event>
+</View>
+<View id="17" did="16" type="TextView">
+<ppt>width=-2
+height=-2
+text=全屏卡密模板3
+layout_marginLeft=10dp
+textColor=#ff010101</ppt>
+<event></event>
+</View>
+<View id="18" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="19" did="18" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="20" did="19" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="21" did="20" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center|left</ppt>
+<event><eventItme type="clicki">fr("/storage/emulated/0/逆向杀手/卡密验证/cookie",admin)
+fr("/storage/emulated/0/逆向杀手/卡密验证/cookie2",pass)
+f(admin==null||pass==null)
+{
+  tw("检测到数据已被更改，请重新登录")
+  uigo("卡密用户注册.iyu")
+  end()
+}
+else
+{
+  s key=sss.sjsj
+  syso(sss.sjsj)
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/mian.iyu",sjsj2)
+  ss(nr+"$逆向杀手$",nr)
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/res/.appkey",appkey1)
+  t()
+  {
+    hs("http://81.71.140.161/api/addApp.php?user="+admin+"&pass="+pass+"&app="+sss.sjsj,key)
+    syso(key)
+    ufnsui()
+    {
+      fn 环境检测.a()
+      fn 环境检测.b()
+      fn 环境检测.root()
+      fn 环境检测.c()
+      fn 环境检测.d()
+      fn 环境检测.e()
+      fn 环境检测.gj()
+      fn 环境检测.g()
+      fn 环境检测.j()
+    }
+  }
+  call(result,"mjava","AecEncry.AESEncode",key,key)
+  syso(result)
+  call(results,"mjava","AecEncry.AESDecode",result,key)
+  syso(results)
+  fw(appkey1,result)
+  s id=1
+  s fc1="/storage/emulated/0/逆向杀手/卡密验证/原mian界面.iyu"
+  fc(sjsj2,fc1,fc2)
+  s yz="@cookie4.Odex"
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/mian.iyu",yz3)
+  fc(yz,yz3,yz2)
+  s jm="@着色.myu"
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/着色.myu",jm1)
+  fc(jm,jm1,jm3)
+  s ft1="/storage/emulated/0/逆向杀手/卡密验证/原mian界面.iyu"
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/原mian界面.iyu",ft2)
+  ft(ft1,ft2,ft3)
+  s res1="@res2.zip"
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/res",res2)
+  fuzs(res1,res2,res3)
+  s yz5="@cookie环境.Odex"
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/环境检测.myu",yz6)
+  fc(yz5,yz6,yz7)
+  ss("@"+sss.文件夹混淆+"∰",hjjc)
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/apk",hjjc1)
+  syso(hjjc1)
+  fuzs(hjjc,hjjc1,hjjc2)
+  tw("处理完成")
+  uigo("卡密管理.iyu")
+  fr("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/AndroidManifest.xml",sss.bm)
+  sj(sss.bm,"&lt;versionName&gt;","&lt;/versionName&gt;",sss.bbh)
+  syso(sss.bbh)
+  fw("/storage/emulated/0/逆向杀手/卡密验证/lib/"+sss.sjsj+"/1.json",sss.bbh)
+  end()
+}</eventItme></event>
+</View>
+<View id="22" did="21" type="TextView">
+<ppt>width=-2
+height=-2
+text=全屏卡密模板4
+layout_marginLeft=10dp
+textColor=#ff010101</ppt>
+<event></event>
+</View>
+<View id="23" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="24" did="23" type="LinearLayout">
+<ppt>width=-1
+height=40dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="25" did="24" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="26" did="25" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+layout_weight=1
+gravity=center|left</ppt>
+<event><eventItme type="clicki">fr("/storage/emulated/0/逆向杀手/卡密验证/cookie",admin)
+fr("/storage/emulated/0/逆向杀手/卡密验证/cookie2",pass)
+f(admin==null||pass==null)
+{
+  tw("检测到数据已被更改，请重新登录")
+  uigo("卡密用户注册.iyu")
+  end()
+}
+else
+{
+  s key=sss.sjsj
+  syso(sss.sjsj)
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/mian.iyu",sjsj2)
+  ss(nr+"$逆向杀手$",nr)
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/res/.appkey",appkey1)
+  t()
+  {
+    hs("http://81.71.140.161/api/addApp.php?user="+admin+"&pass="+pass+"&app="+sss.sjsj,key)
+    syso(key)
+    ufnsui()
+    {
+      fn 环境检测.a()
+      fn 环境检测.b()
+      fn 环境检测.root()
+      fn 环境检测.c()
+      fn 环境检测.d()
+      fn 环境检测.e()
+      fn 环境检测.gj()
+      fn 环境检测.g()
+      fn 环境检测.j()
+    }
+  }
+  call(result,"mjava","AecEncry.AESEncode",key,key)
+  syso(result)
+  call(results,"mjava","AecEncry.AESDecode",result,key)
+  syso(results)
+  fw(appkey1,result)
+  s id=1
+  s fc1="/storage/emulated/0/逆向杀手/卡密验证/mian.iyu"
+  ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/mian.iyu",mian)
+  fc(mian,fc1,mian2)
+  fr("/storage/emulated/0/逆向杀手/卡密验证/mian.iyu",dq)
+  s dq2="&lt;UIEventset&gt;&lt;eventItme type="loading"&gt;"
+  sj(dq,dq2,"&lt;/eventItme&gt;&lt;/UIEventset&gt;",we)
+  ss(we+"\n"+"\n"+"utw(null,\"\",\"卡密.iyu\",true,sss.卡密窗口)\n{\n}\ngvs(sss.卡密窗口,4,bjk)\ngvs(sss.卡密窗口,14,bjk1)\ngvs(sss.卡密窗口,17,bjk2)\nuycl(\"#ff495168\",true)\nngde(5,12,0,\"#ff495168\",bj)\nus(bjk,\"background\",bj)\nngde(5,12,0,\"#ff495168\",bj)\nus(bjk1,\"background\",bj)\nngde(5,12,0,\"#ff495168\",bj)\nus(bjk2,\"background\",bj)\nt()\n{\n     fn 环境检测.a()\n     fn 环境检测.b()\n     fn 环境检测.root()\n     fn 环境检测.c()\n     fn 环境检测.d()\n     fn 环境检测.e()\n     fn 环境检测.gj()\n     fn 环境检测.g()\n     fn 环境检测.j()\n}",jc)
+  fd("/storage/emulated/0/逆向杀手/卡密验证/mian.iyu",sc)
+  fd("/storage/emulated/0/逆向杀手/卡密验证/mian2.iyu",sc2)
+  f(we==null)
+  {
+    tw("当前源码不支持注入")
+  }
+  else
+  {
+    sr(dq,we,jc,gv)
+    fw("/storage/emulated/0/逆向杀手/卡密验证/mian2.iyu",gv)
+    s ft1="/storage/emulated/0/逆向杀手/卡密验证/mian2.iyu"
+    ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/mian.iyu",ft2)
+    ft(ft1,ft2,ft3)
+    fc(sjsj2,fc1,fc2)
+    ss("@"+sss.文件夹混淆+"刴",yz)
+    ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src",yz3)
+    fuzs(yz,yz3,yz2)
+    s yz5="@cookie环境.Odex"
+    ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/src/环境检测.myu",yz6)
+    fc(yz5,yz6,yz7)
+    ss("@"+sss.文件夹混淆+"∰",hjjc)
+    ss("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/apk",hjjc1)
+    syso(hjjc1)
+    fuzs(hjjc,hjjc1,hjjc2)
+    tw("处理完成")
+    fd("/storage/emulated/0/逆向杀手/卡密验证/mian.iyu",sc)
+    fd("/storage/emulated/0/逆向杀手/卡密验证/mian.iyu",sc2)
+    uigo("卡密管理.iyu")
+    fr("/storage/emulated/0/iApp/ProjectApp/"+sss.sjsj+"/AndroidManifest.xml",sss.bm)
+    sj(sss.bm,"&lt;versionName&gt;","&lt;/versionName&gt;",sss.bbh)
+    syso(sss.bbh)
+    fw("/storage/emulated/0/逆向杀手/卡密验证/lib/"+sss.sjsj+"/1.json",sss.bbh)
+    end()
+  }
+}</eventItme></event>
+</View>
+<View id="27" did="26" type="TextView">
+<ppt>width=-2
+height=-2
+text=单例模式卡密模板1
+layout_marginLeft=10dp
+textColor=#ff010101</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

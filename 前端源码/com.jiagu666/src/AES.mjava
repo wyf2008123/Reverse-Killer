@@ -1,0 +1,94 @@
+import android.util.Base64;
+import java.io.UnsupportedEncodingException;
+import java.security.InvalidAlgorithmParameterException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import javax.crypto.BadPaddingException;
+import javax.crypto.Cipher;
+import javax.crypto.IllegalBlockSizeException;
+import javax.crypto.NoSuchPaddingException;
+import javax.crypto.spec.IvParameterSpec;
+import javax.crypto.spec.SecretKeySpec;
+
+public static final String a = "bce66dfaa484d6d5";
+
+String 加密(String 内容,String key) {
+  return new String(encodeBase64(a(内容,key)));
+}
+
+String 解密(String 内容,String key) {
+  return new String(a(decodeBase64(内容),key));
+}
+
+public static byte[] a(String str, String str2, String str3, String str4) {
+  SecretKeySpec secretKeySpec = new SecretKeySpec(b(str2), "AES");
+  Cipher instance = Cipher.getInstance(str4);
+  byte[] bytes = str.getBytes("utf-8");
+  if (str3 == null) {
+    instance.init(1, secretKeySpec);
+  } else {
+    instance.init(1, secretKeySpec, new IvParameterSpec(str3.getBytes()));
+  }
+  return instance.doFinal(bytes);
+}
+
+public static byte[] a(String str, String str2) {
+  return a(str, str2, (String) null, "AES");
+}
+
+public static byte[] a(byte[] bArr, String str) {
+  return a(bArr, str, (String) null, "AES");
+}
+
+public static byte[] a(byte[] bArr, String str, String str2, String str3) {
+  Cipher instance = Cipher.getInstance(str3);
+  SecretKeySpec secretKeySpec = new SecretKeySpec(b(str), "AES");
+  if (str2 == null) {
+    instance.init(2, secretKeySpec);
+  } else {
+    instance.init(2, secretKeySpec, new IvParameterSpec(str2.getBytes()));
+  }
+  return instance.doFinal(bArr);
+}
+
+private static byte[] b(String str) throws UnsupportedEncodingException {
+  return str.getBytes("utf-8");
+}
+
+public static String a(byte[] bArr) {
+  StringBuffer stringBuffer = new StringBuffer();
+  for (byte b : bArr) {
+    String hexString = Integer.toHexString(b & 255);
+    if (hexString.length() == 1) {
+      hexString = '0' + hexString;
+    }
+    stringBuffer.append(hexString.toUpperCase());
+  }
+  return stringBuffer.toString();
+}
+
+public static byte[] a(String str) {
+  if (str.length() < 1) {
+    return null;
+  }
+  byte[] bArr = new byte[(str.length() / 2)];
+  for (int i = 0; i < str.length() / 2; i++) {
+    int i2 = i * 2;
+    int i3 = i2 + 1;
+    bArr[i] = (byte) ((Integer.parseInt(str.substring(i2, i3), 16) * 16) + Integer.parseInt(str.substring(i3, i2 + 2), 16));
+  }
+  return bArr;
+}
+
+public static void a() {
+  System.out.println(new String(a(a("dc8090560bec370712955e896639fd2b"), "ebcb06802bb66cd9e0ef8ebf11c22d93")));
+  System.out.println(a(a("AES", "ebcb06802bb66cd9e0ef8ebf11c22d93")));
+}
+
+public static byte[] decodeBase64(String input) throws Exception {
+  return Base64.decode(input,2);
+}
+
+public static byte[] encodeBase64(byte[] input) throws Exception {
+  return Base64.encode(input,2);
+}

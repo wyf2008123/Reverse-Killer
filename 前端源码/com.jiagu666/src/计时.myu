@@ -1,0 +1,28 @@
+fn 秒()
+fn 计时.秒2()
+t()
+{
+  s number=0
+  w(true)
+  {
+    stop(10)
+    ufnsui()
+    {
+      s2(sss.number+0.01,sss.number)
+    }
+  }
+}
+
+end fn
+
+fn 秒2()
+t()
+{
+  w(1==1)
+  {
+    stop(5000)
+    fn 列表.pull()
+  }
+}
+
+end fn

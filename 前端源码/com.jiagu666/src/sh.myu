@@ -1,0 +1,72 @@
+fn 生成()
+s b="%/storage/emulated/0/逆向杀手/缓存文件"
+sran(0,0,ss)
+ss(b+ss,b)
+sran(0,999999,sss.sjs)
+fj(b,"%/storage/emulated/0/逆向杀手/apk/加固"+sss.sjs+".apk",l)
+fw("$签名获取.txt",sss.sjs)
+us(55,"text","逆向杀手-&gt;软件路径"+sss.dqnr2)
+us(56,"text","逆向杀手-&gt;插入控制流混淆DEX...")
+//调用模块开始删除(模块会自动判断路径的正确性以及是否是文件夹)
+us(57,"text","逆向杀手-&gt;插入图片混淆...")
+us(58,"text","逆向杀手-&gt;资源文件混淆中...")
+ufnsui()
+{
+  ss("rm -r "+"/storage/emulated/0/逆向杀手/缓存文件0/",sss.cm)
+  call(null,"mlua","sc.m","sss.cm")
+  us(59,"text","逆向杀手-&gt;回填DEX...")
+  ug(4,"text",cm)
+  ss("rm -r "+"/storage/emulated/0/逆向杀手/DEX",sss.cm)
+  call(null,"mlua","sc.m","sss.cm")
+  us(60,"text","逆向杀手-&gt;回填完毕!")
+  us(61,"text","逆向杀手-&gt;文件路径:/storage/emulated/0/逆向杀手/apk/"+sss.sjs)
+  fn 列表.pull()
+  fn 计时.秒()
+}
+ufnsui()
+{
+  //id(必须是相对布局,建议最外层用相对布局)
+  s id=1
+  //延迟关闭时间
+  s a=2000
+  //提示位置(top,center,bottom)
+  s b="top"
+  //外边距(自动识别顶部或底部)
+  s c="70dp"
+  //提示弹窗背景(高度|背景颜色|圆角大小)
+  s d="40dp|#82000000|30"
+  //文字前面图标(图标大小|图标地址)
+  s e="25dp|@go.png"
+  //提示文字(字体颜色|提示内容)
+  s ff="#ffffff|混淆成功!"
+  //文字后面图标(图标大小|图标地址)
+  s g="25dp|@actionbar_icon_light_close.png"
+  fn with_ui.N_alert(id,a,b,c,d,e,ff,g)
+  stop(1000)
+  us(17,"visibility","visible")
+  us(40,"visibility","gone")
+  us(51,"visibility","gone")
+  us(52,"visibility","gone")
+  us(53,"visibility","gone")
+  us(54,"visibility","gone")
+  us(55,"visibility","gone")
+  us(56,"visibility","gone")
+  us(57,"visibility","gone")
+  us(58,"visibility","gone")
+  us(59,"visibility","gone")
+  us(60,"visibility","gone")
+  us(61,"visibility","gone")
+  us(66,"visibility","gone")
+  us(55,"text","加载中...")
+  us(56,"text","加载中...")
+  us(57,"text","加载中...")
+  us(58,"text","加载中...")
+  us(59,"text","加载中...")
+  us(60,"text","加载中...")
+  us(61,"text","加载中...")
+  //关闭加载后状态栏颜色
+  s ea="#ffffff"
+  //关闭进度条加载
+  fn with_ui.N_loadingEnd(two,ea)
+}
+end fn

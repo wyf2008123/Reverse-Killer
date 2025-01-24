@@ -1,0 +1,95 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=500dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=混淆配置
+textColor=#ff000000
+typeface=@fonts/Ex_GameFont.ttf
+textSize=30dp
+layout_marginTop=10dp
+layout_marginLeft=20dp</ppt>
+<event></event>
+</View>
+<View id="3" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=注意:混淆规则一定要确保无误 不然可能不兼容
+textColor=#ffff0000
+textSize=13sp
+layout_marginLeft=5dp
+layout_marginTop=3dp</ppt>
+<event></event>
+</View>
+<View id="5" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=混淆字典路径填写
+textColor=#ff000000
+layout_marginLeft=5dp
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="4" did="1" type="EditText">
+<ppt>width=-1
+height=40dp
+text=
+hint=不填则默认系统字典
+textColor=#ff000000
+typeface=@fonts/Ex_GameFont.ttf
+textColorHint=#ff000000
+textSize=13sp
+layout_marginLeft=5dp
+layout_marginTop=10dp</ppt>
+<event></event>
+</View>
+<View id="6" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=jar路径(不能为空)
+textColor=#ff000000
+layout_marginTop=5dp
+layout_marginLeft=5dp</ppt>
+<event></event>
+</View>
+<View id="7" did="1" type="EditText">
+<ppt>width=-1
+height=54dp
+text=
+hint=要加密的jar路径(本软件自动dex转jar会报错)\n所以只能你们自己手动转
+textColor=#ff000000
+typeface=@fonts/Ex_GameFont.ttf
+textColorHint=#ff000000
+textSize=13sp
+layout_marginLeft=5dp
+layout_marginTop=10dp</ppt>
+<event></event>
+</View>
+<View id="8" did="1" type="TextView">
+<ppt>width=-2
+height=-2
+text=混淆规则(不能为空)
+textColor=#ff000000
+layout_marginTop=5dp
+layout_marginLeft=5dp</ppt>
+<event></event>
+</View>
+<View id="10" did="1" type="EditText">
+<ppt>width=-1
+height=185dp
+text=
+hint=DEX的规则代码,如:# view AndroidManifest. xml #generated: 12\n-keep class com.example.application.App { &lt;init&gt;(...); }\n\n# view AndroidManifest. xml #gener ated: 20\n-keep class com.example.application.MainActivity { &lt;init&gt;(.... ); }
+textColor=#ff000000
+typeface=@fonts/Ex_GameFont.ttf
+textColorHint=#ff000000
+textSize=13sp
+layout_marginLeft=5dp
+layout_marginTop=10dp
+gravity=top</ppt>
+<event></event>
+</View>
+<UIEventset></UIEventset>

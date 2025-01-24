@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<title>逆向杀手1.5</title>
+<icon>icon.png</icon>
+<packageName>com.jiagu666</packageName>
+<versionName>1.5</versionName>
+<versionint>1</versionint>
+<sdk>15</sdk>
+<yuv>3</yuv>
+<remark></remark>
+<Permissions>android.permission.READ_EXTERNAL_STORAGE
+android.permission.REQUEST_INSTALL_PACKAGES
+android.permission.READ_EXTERNAL_STORAGE
+android.permission.INTERNET
+android.permission.WRITE_EXTERNAL_STORAGE
+android.permission.READ_PHONE_STATE</Permissions>
+<createTime>2021-08-09 13:30:36</createTime>
+<upTime>2021-08-09 13:30:36</upTime>

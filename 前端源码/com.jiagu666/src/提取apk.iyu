@@ -1,0 +1,531 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=56dp
+orientation=horizontal
+gravity=center_vertical
+BackgroundColor=#ffffffff
+elevation=2dp</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="ImageView">
+<ppt>width=56dp
+height=-1
+padding=15dp
+src=@back.png
+BackgroundRipple=#ffd7d7d7</ppt>
+<event><eventItme type="clicki">uigo("mian2.iyu")
+end()</eventItme></event>
+</View>
+<View id="4" did="2" type="TextView">
+<ppt>width=-2
+height=-2
+text=逆向杀手-APK选择
+textSize=17sp
+textColor=#424242</ppt>
+<event></event>
+</View>
+<View id="5" did="2" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=center_vertical|right</ppt>
+<event></event>
+</View>
+<View id="6" did="5" type="ImageView">
+<ppt>width=50dp
+height=-1
+src=@
+padding=15dp
+backgroundripple=#e3e3e3e3</ppt>
+<event></event>
+</View>
+<View id="25" did="1" type="RelativeLayout">
+<ppt>width=-1
+height=130dp</ppt>
+<event></event>
+</View>
+<View id="26" did="25" type="LinearLayout">
+<ppt>width=-1
+height=150dp
+orientation=vertical
+</ppt>
+<event></event>
+</View>
+<View id="7" did="26" type="LinearLayout">
+<ppt>width=-1
+height=105dp
+orientation=vertical
+layout_marginLeft=10dp
+layout_marginRight=10dp
+elevation=1dp
+layout_marginTop=15dp
+BackgroundColor=#ffffffff
+</ppt>
+<event></event>
+</View>
+<View id="8" did="7" type="LinearLayout">
+<ppt>width=-1
+height=65dp
+orientation=horizontal
+gravity=center_vertical</ppt>
+<event></event>
+</View>
+<View id="9" did="8" type="ImageView">
+<ppt>width=50dp
+height=50dp
+src=@rj.png
+layout_marginLeft=10dp</ppt>
+<event></event>
+</View>
+<View id="10" did="8" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center_vertical
+paddingLeft=10dp</ppt>
+<event></event>
+</View>
+<View id="11" did="10" type="TextView">
+<ppt>width=-2
+height=-2
+text=App  Name
+textColor=#424242
+textSize=15sp</ppt>
+<event></event>
+</View>
+<View id="12" did="10" type="TextView">
+<ppt>width=-2
+height=-2
+text=处理APK
+layout_marginTop=3dp
+textSize=13sp</ppt>
+<event></event>
+</View>
+<View id="13" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="15" did="13" type="TextView">
+<ppt>width=-1
+height=-1
+text=文件选择
+gravity=center
+textColor=#ff007cff
+BackgroundColor=#ffffffff
+BackgroundRipple=#ffd1d1d1
+layout_weight=1</ppt>
+<event><eventItme type="clicki">uigo("File_seletion.iyu")</eventItme></event>
+</View>
+<View id="43" did="13" type="TextView">
+<ppt>width=-1
+height=-1
+text=应用选择
+gravity=center
+textColor=#ff007cff
+BackgroundColor=#ffffffff
+BackgroundRipple=#ffd1d1d1
+layout_weight=1</ppt>
+<event><eventItme type="clicki">uigo("choose_apps.iyu")</eventItme></event>
+</View>
+<View id="27" did="25" type="LinearLayout">
+<ppt>width=-1
+height=150dp
+orientation=vertical
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="16" did="27" type="LinearLayout">
+<ppt>width=-1
+height=105dp
+orientation=vertical
+layout_marginLeft=10dp
+layout_marginRight=10dp
+elevation=1dp
+layout_marginTop=15dp
+BackgroundColor=#ffffffff
+</ppt>
+<event></event>
+</View>
+<View id="17" did="16" type="LinearLayout">
+<ppt>width=-1
+height=65dp
+orientation=horizontal
+gravity=center_vertical</ppt>
+<event></event>
+</View>
+<View id="18" did="17" type="ImageView">
+<ppt>width=50dp
+height=50dp
+src=@rj.png
+layout_marginLeft=10dp</ppt>
+<event></event>
+</View>
+<View id="19" did="17" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=center_vertical
+paddingLeft=10dp</ppt>
+<event></event>
+</View>
+<View id="20" did="19" type="TextView">
+<ppt>width=-2
+height=-2
+text=App  Name
+textColor=#424242
+textSize=15sp</ppt>
+<event></event>
+</View>
+<View id="21" did="19" type="TextView">
+<ppt>width=-2
+height=-2
+text=package
+layout_marginTop=3dp
+textSize=13sp</ppt>
+<event></event>
+</View>
+<View id="22" did="16" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="23" did="22" type="TextView">
+<ppt>width=-1
+height=-1
+text=重新选择
+gravity=center
+textColor=#ff007cff
+BackgroundColor=#ffffffff
+BackgroundRipple=#ffd1d1d1
+layout_weight=1</ppt>
+<event><eventItme type="clicki">tws(v,"正在提取...",0)
+us(37,"visibility","gone")
+us(26,"visibility","visible")
+swh("w",w)
+zdp(w,w)
+ss("-"+w,fw)
+dht(dh1,0,fw,0,0)
+dh(dh1, "duration", 400)
+us(16, "dh", dh1)
+
+dht(dh2, w,0,0,0)
+dh(dh2, "duration", 400)
+us(7, "dh", dh2)
+
+dhon(dh2)
+{
+  us(27,"visibility","gone")
+  
+}</eventItme></event>
+</View>
+<View id="24" did="22" type="TextView">
+<ppt>width=-1
+height=-1
+text=开始分析
+gravity=center
+textColor=#ff007cff
+BackgroundColor=#ffffffff
+BackgroundRipple=#ffd1d1d1
+layout_weight=1</ppt>
+<event><eventItme type="clicki">tws(v,"正在提取...",0)
+us(37,"visibility","gone")
+us(36,"visibility","visible")
+dht(dh, -150, 0, 0, 0)
+dh(dh, "duration", 300)
+us(29, "dh", dh)
+
+dhas(dh, 28, "alpha", 0.1,1)
+dh(dh, "duration", 300)
+dh(dh, "start")
+
+dht(dh, -150, 0, 0, 0)
+dh(dh, "duration", 300)
+us(35, "dh", dh)
+
+dht(dh, -150, 0, 0, 0)
+dh(dh, "duration", 300)
+us(33, "dh", dh)
+
+
+gvs(34,id34)
+fn 着色.控件着色(id34,sss.ztys)
+
+t()
+{
+  syso(sss.path)
+  syso(sss.name)
+  fc(sss.path,"/storage/emulated/0/逆向杀手/"+sss.name+".apk",fc)
+  s wjj="$读取.txt"
+  s wjj2="$dat"
+  s wjj3="$dat2"
+  fw(wjj,"/storage/emulated/0/逆向杀手/"+sss.name+".apk")
+  fw(wjj2,"%"+sss.name+".apk")
+  fw(wjj3,sss.name+".apk")
+  ufnsui()
+  {
+    us(32,"text","10%")
+    stop(10)
+  }
+  ufnsui()
+  {
+    us(32,"text","20%")
+    stop(10)
+  }
+  ufnsui()
+  {
+    us(32,"text","30%")
+    stop(10)
+  }
+  ufnsui()
+  {
+    us(32,"text","40%")
+    stop(10)
+  }
+  ufnsui()
+  {
+    us(32,"text","50%")
+    stop(10)
+  }
+  ufnsui()
+  {
+    us(32,"text","60%")
+    stop(10)
+  }
+  ufnsui()
+  {
+    us(32,"text","70%")
+    stop(10)
+  }
+  ufnsui()
+  {
+    us(32,"text","80%")
+    stop(10)
+  }
+  ufnsui()
+  {
+    us(32,"text","90%")
+    stop(10)
+  }
+  ufnsui()
+  {
+    us(32,"text","100%")
+    stop(10)
+  }
+  ufnsui()
+  {
+    stop(10)
+    uigo("操作台.iyu")
+    end()
+  }
+}</eventItme></event>
+</View>
+<View id="36" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="28" did="36" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+layout_marginLeft=10dp
+layout_marginRight=10dp
+BackgroundColor=#ffffffff
+elevation=1dp
+padding=10dp
+layout_marginBottom=5dp</ppt>
+<event></event>
+</View>
+<View id="29" did="28" type="TextView">
+<ppt>width=-2
+height=-2
+text=提取进度
+textColor=#424242</ppt>
+<event></event>
+</View>
+<View id="34" did="28" type="ProgressBar">
+<ppt>width=45dp
+height=45dp
+style=16842871
+layout_gravity=center</ppt>
+<event></event>
+</View>
+<View id="32" did="28" type="TextView">
+<ppt>width=-1
+height=-2
+text=0%
+gravity=center
+layout_marginTop=5dp
+textColor=#424242</ppt>
+<event></event>
+</View>
+<View id="35" did="28" type="TextView">
+<ppt>width=-2
+height=-2
+text=提取文件
+textColor=#424242
+layout_marginTop=10dp</ppt>
+<event></event>
+</View>
+<View id="33" did="28" type="TextView">
+<ppt>width=-1
+height=-2
+text=File 遇见©
+textColor=#424242
+layout_marginTop=5dp</ppt>
+<event></event>
+</View>
+<View id="37" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=vertical
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="38" did="37" type="LinearLayout">
+<ppt>width=-1
+height=60dp
+orientation=horizontal
+gravity=center_vertical
+layout_marginBottom=5dp
+BackgroundColor=#ffffffff
+elevation=1dp
+layout_marginLeft=10dp
+layout_marginRight=10dp</ppt>
+<event></event>
+</View>
+<View id="41" did="38" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=horizontal
+gravity=center_vertical</ppt>
+<event></event>
+</View>
+<View id="39" did="41" type="ImageView">
+<ppt>width=34dp
+height=34dp
+src=@ok.png
+BackgroundColor=#ffffffff
+layout_marginLeft=10dp</ppt>
+<event></event>
+</View>
+<View id="40" did="41" type="TextView">
+<ppt>width=-1
+height=-2
+text=Path
+layout_marginLeft=10dp
+layout_marginRight=5dp
+textColor=#424242</ppt>
+<event></event>
+</View>
+<View id="42" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+gravity=bottom|center_horizontal</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">//主题颜色
+sss ztys = "#009688"
+
+uycl("#E0E0E0",true,0)
+us(23,"textcolor",sss.ztys)
+us(24,"textcolor",sss.ztys)
+us(14,"textcolor",sss.ztys)
+us(15,"textcolor",sss.ztys)
+gvs(39,id39)
+/.</eventItme><eventItme type="restart">f(sss.filepath!=null)
+{
+  syso(sss.filepath)
+  f(sss.filepath*?".apk")
+  {
+    //加载弹窗
+    utw("","","loading_utw.iyu","",false,v)
+    {
+    }
+    gvs(v,2,id2)
+    fn 着色.控件着色(id2,sss.ztys)
+    gvs(v,10,id10)
+    us(id10,"text","AP解析中...")
+    fdir(sss.filepath,path)
+    syso(path)
+    //解析apk
+    call(array, "mlua", "function.Getapp", path)
+    f(array==null)
+    {
+      endutw()
+      tw("apk不可解析！",0)
+    }
+    else
+    {
+      endutw()
+      sgsz(array,0,icon)
+      sgsz(array,1,ss.name)
+      sgsz(array,2,package)
+      sgsz(array,3,ss.version)
+      us(18,"src",icon)
+      us(20,"text",ss.name)
+      us(21,"text",package)
+      //动画
+      us(27,"visibility","visible")
+      swh("w",w)
+      zdp(w,w)
+      ss("-"+w,fw)
+      dht(dh1,fw,0,0,0)
+      dh(dh1, "duration", 400)
+      us(16, "dh", dh1)
+      dht(dh2,0,w,0,0)
+      dh(dh2, "duration", 400)
+      us(7, "dh", dh2)
+      dhon(dh2)
+      {
+        us(26,"visibility","gone")
+      }
+      ss apkpath=path
+    }
+  }
+  else
+  {
+    tw("请选择apk文件!",0)
+  }
+//清除变量
+sss filepath
+}</eventItme><eventItme type="downkey">
+f(st_kC==4)
+//假设变量=4
+{
+f(sss.exit==null)
+//嵌套如果判断2次，申明全局变量退出=null
+{
+sss exit=0
+//全局变量退出=0
+tw("再按一次返回上一步",0)
+//提示
+t()
+//启用新线程
+{
+stop(2000)
+sss exit=null
+//退出应用
+//停止代码2000全局变量退出=Null
+}
+}
+else
+//否则
+{
+end()
+uigo("mian2.iyu")
+//退出[显示桌面]
+}
+}</eventItme></UIEventset>

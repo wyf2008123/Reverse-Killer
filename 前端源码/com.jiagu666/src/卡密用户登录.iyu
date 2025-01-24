@@ -1,0 +1,330 @@
+<View id="1" did="0" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=white</ppt>
+<event></event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>width=-1
+height=55dp
+orientation=horizontal
+gravity=center_vertical</ppt>
+<event></event>
+</View>
+<View id="3" did="2" type="ImageView">
+<ppt>width=55dp
+height=-1
+src=@hai66.png
+padding=14dp
+backgroundripple=#ff9bd7ff</ppt>
+<event><eventItme type="clicki">
+end()</eventItme></event>
+</View>
+<View id="4" did="1" type="LinearLayout">
+<ppt>width=-1
+height=120dp
+orientation=vertical
+gravity=center_vertical</ppt>
+<event></event>
+</View>
+<View id="5" did="4" type="TextView">
+<ppt>width=-2
+height=-2
+text=卡密弹窗后台-用户登陆
+textsize=20dp
+textcolor=#fe000000
+textstyle=bold
+layout_marginleft=31dp</ppt>
+<event></event>
+</View>
+<View id="6" did="1" type="LinearLayout">
+<ppt>width=-1
+height=10dp
+orientation=vertical</ppt>
+<event></event>
+</View>
+<View id="27" did="1" type="RelativeLayout">
+<ppt>width=-1
+height=55dp
+layout_marginleft=21dp
+layout_marginright=21dp
+layout_margintop=12dp</ppt>
+<event></event>
+</View>
+<View id="28" did="27" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+background=
+singleline=true
+hint=请输入用户名
+textsize=15dp
+textcolor=#5f000000
+textcolorhint=#5f000000
+inputtype=textvisiblepassword</ppt>
+<event></event>
+</View>
+<View id="29" did="27" type="TextView">
+<ppt>width=-1
+height=1
+text=
+ut_alignparentbottom=true
+background=#e0e0e0</ppt>
+<event></event>
+</View>
+<View id="11" did="1" type="RelativeLayout">
+<ppt>width=-1
+height=55dp
+layout_marginleft=21dp
+layout_marginright=21dp
+layout_margintop=12dp</ppt>
+<event></event>
+</View>
+<View id="12" did="11" type="EditText">
+<ppt>width=-1
+height=-1
+text=
+background=
+singleline=true
+hint=请输入密码
+textsize=15dp
+textcolor=#5f000000
+textcolorhint=#5f000000
+inputtype=textvisiblepassword
+layout_marginright=55dp
+</ppt>
+<event></event>
+</View>
+<View id="13" did="11" type="TextView">
+<ppt>width=-1
+height=1
+text=
+ut_alignparentbottom=true
+background=#e0e0e0</ppt>
+<event></event>
+</View>
+<View id="14" did="11" type="ImageView">
+<ppt>width=55dp
+height=-1
+src=@design_ic_visibility.png
+padding=18dp
+ut_alignparentright=true</ppt>
+<event><eventItme type="clicki">ug(15,"text",ss6)
+f(ss6=="中")
+  {
+    us(12,"inputtype","textpassword")
+    us(14,"src","@design_ic_visibility_off.png")
+    us(15,"text","英")
+  }
+else f(ss6=="英")
+  {
+    us(12,"inputtype","textvisiblepassword")
+    us(14,"src","@design_ic_visibility.png")
+    us(15,"text","中")
+  }</eventItme></event>
+</View>
+<View id="15" did="11" type="TextView">
+<ppt>width=-2
+height=-2
+text=中
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="17" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-2
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="26" did="17" type="TextView">
+<ppt>width=-2
+height=-2
+text=
+textcolor=#ff00b2ff
+typeface=serif
+textsize=13dp
+layout_margintop=5dp
+layout_marginleft=21dp
+layout_weight=1</ppt>
+<event></event>
+</View>
+<View id="18" did="17" type="TextView">
+<ppt>width=-2
+height=-2
+text=注册新用户
+textcolor=#ff00b2ff
+typeface=serif
+textsize=13dp
+layout_margintop=5dp
+layout_marginright=21dp</ppt>
+<event><eventItme type="clicki">uigo("卡密用户注册.iyu")
+end()</eventItme></event>
+</View>
+<View id="19" did="1" type="Button">
+<ppt>width=-1
+height=38dp
+text=登陆
+background=#ff00b2ff
+typeface=serif
+textsize=13dp
+layout_marginleft=21dp
+layout_marginright=21dp
+textcolor=#ffffff
+layout_margintop=15dp</ppt>
+<event><eventItme type="clicki">t()
+{
+  ug(28,"text",admin)
+  ug(12,"text",pass)
+  f(admin=="")
+  {
+    ufnsui()
+    {
+      tw("用户名不能为空!")
+    }
+  }
+  else f(pass=="")
+  {
+    ufnsui()
+    {
+      tw("密码不能为空!")
+    }
+  }
+  else
+  {
+    ufnsui()
+    {
+      t()
+      {
+      hs("http://81.71.140.161/api/login.php?user="+admin+"&pass="+pass,sj)
+      syso(sj)
+      f(sj==null)
+      {
+        ufnsui()
+        {
+          tw("服务器连接异常,请检查网络是否连接")
+        }
+      }
+      else
+      {
+      ufnsui()
+      {
+        f(sj=="登录成功")
+        {
+           s wb="/storage/emulated/0/逆向杀手/卡密验证/cookie"
+           s wb2="/storage/emulated/0/逆向杀手/卡密验证/cookie2"
+           fw(wb,admin)
+           fw(wb2,pass)
+           tw("登录成功!")
+           uigo("注入选择APK.iyu")
+           end()
+        }
+        else f(sj=="密码错误"&&sss.mm==0)
+        {
+          tw("账号或密码错误,您还有二次机会!")
+          sss mm=2
+        }
+        else f(sss.mm==2)
+        {
+          tw("账号或密码错误，您还有一次机会!")
+          sss mm=3
+        }
+        else f(sss.mm==3)
+        {
+          tw("请60秒钟后重试")
+          fn 密码.检测()
+          sss mm=false
+        }
+        else f(sss.mm==false)
+        {
+          tw("请60秒钟后再尝试!")
+        }
+        else f
+        {
+          tw("账号不存在")
+        }
+      }
+      }
+      }
+    }
+  }
+}</eventItme></event>
+</View>
+<View id="20" did="1" type="LinearLayout">
+<ppt>width=-1
+height=-1
+gravity=bottom
+orientation=horizontal</ppt>
+<event></event>
+</View>
+<View id="22" did="20" type="LinearLayout">
+<ppt>width=-1
+height=50dp
+gravity=center
+orientation=horizontal
+visibility=gone</ppt>
+<event></event>
+</View>
+<View id="21" did="22" type="TextView">
+<ppt>width=-2
+height=-2
+text=登入即代表
+textsize=13sp
+textcolor=#000000</ppt>
+<event></event>
+</View>
+<View id="23" did="22" type="TextView">
+<ppt>width=-2
+height=-2
+text=《Learn Bx+》
+textsize=13sp
+textcolor=#000000
+textcolor=#ff00a5ff</ppt>
+<event></event>
+</View>
+<View id="24" did="22" type="TextView">
+<ppt>width=-2
+height=-2
+text=使用与安装协议
+textsize=13sp
+textcolor=#000000</ppt>
+<event></event>
+</View>
+<View id="25" did="1" type="NestedScrollView">
+<ppt>width=-1
+height=-1</ppt>
+<event></event>
+</View>
+<UIEventset><eventItme type="loading">uycl("#ffffff",true)
+ngde(10,"#ff00b2ff",ss6)
+us(19,"background",ss6)
+ushsp(false)</eventItme>
+
+<eventItme type="downkey">
+f(st_kC==4)
+//假设变量=4
+{
+f(sss.exit==null)
+//嵌套如果判断2次，申明全局变量退出=null
+{
+sss exit=0
+//全局变量退出=0
+tw("再按一次返回上一步",0)
+//提示
+t()
+//启用新线程
+{
+stop(2000)
+sss exit=null
+//退出应用
+//停止代码2000全局变量退出=Null
+}
+}
+else
+//否则
+{
+end()
+uigo("操作台.iyu")
+//退出[显示桌面]
+}
+}</eventItme></UIEventset>

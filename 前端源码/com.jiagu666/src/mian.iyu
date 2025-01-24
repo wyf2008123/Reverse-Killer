@@ -1,0 +1,160 @@
+<View id="7" did="0" type="RelativeLayout">
+<ppt>width=-1
+height=-1
+</ppt>
+<event>
+</event>
+</View>
+<View id="1" did="7" type="LinearLayout">
+<ppt>width=-1
+height=-1
+orientation=vertical
+background=white
+gravity=center_horizontal</ppt>
+<event>
+</event>
+</View>
+<View id="2" did="1" type="LinearLayout">
+<ppt>
+width=-2
+height=-2
+orientation=vertical
+layout_marginTop=150dp
+gravity=center
+</ppt>
+<event>
+</event>
+</View>
+<View id="5" did="2" type="CardView">
+<ppt>
+width=-2
+height=-2
+app_CardElevation=1
+layout_marginLeft=15dp
+layout_marginRight=15dp
+app_CardcornerRadius=30dp
+</ppt>
+<event>
+</event>
+</View>
+<View id="6" did="5" type="LinearLayout">
+<ppt>
+width=-2
+height=-2
+orientation=vertical
+</ppt>
+<event>
+</event>
+</View>
+<View id="3" did="6" type="RoundImageView">
+<ppt>width=55dp
+height=55dp
+src=@icon (1).png
+scaleType=centercrop
+</ppt>
+<event>
+</event>
+</View>
+<View id="4" did="2" type="TextView">
+<ppt>
+width=-2
+height=-2
+text=逆向杀手
+layout_marginTop=15dp
+textStyle=bold
+textSize=18sp
+textColor=#424242
+</ppt>
+<event>
+</event>
+</View>
+<View id="8" did="1" type="TextView">
+<ppt>
+width=-2
+height=-2
+text=听说软件制作者是个小白
+layout_marginTop=10dp
+textSize=12sp
+</ppt>
+<event>
+</event>
+</View>
+<UIEventset>
+<eventItme type="loading">call(null,"mjava","anp.load",activity)
+
+f(!(sss.isXPOS)){
+  t(){
+    loadjar("light.dex",true,dex)
+    cls(dex,"xiue.java.api.LightSensorManager",lsm)
+    javax(ls,null,lsm,"getInstance")
+    javax(null,ls,lsm,"start","Context",activity)
+    s num = 0
+    w(true){
+      javax(light,ls,lsm,"getLux")
+      s+(1,num)
+      stop(200)
+      //刷新率
+      //值为-1表示:start初始化 / 设备没有光线传感器
+      f(num &gt; 5){
+        f(light != null) {
+          f(light &lt; 0) {
+            ufnsui() {
+              tw("当前环境为模拟器，请在真机上运行！")
+            }
+            sss hook=true
+            break
+            endcode
+          }
+        }
+      }
+    }
+    javax(null,ls,lsm,"stop")
+    //停止光感器检测
+  }
+}
+
+
+simsi(msi)
+f(msi == "310260000000000") {
+  ufnsui() {
+    tw("当前环境为模拟器，请在真机上运行！")
+    break
+    sss hook=true
+    endcode
+  }
+}
+
+
+
+fn 傻逼逆出来.怎么是myu()
+
+
+/.</eventItme>
+
+<eventItme type="downkey">
+f(st_kC==4)
+//假设变量=4
+{
+f(sss.exit==null)
+//嵌套如果判断2次，申明全局变量退出=null
+{
+sss exit=0
+//全局变量退出=0
+tw("再按一次返回上一步",0)
+//提示
+t()
+//启用新线程
+{
+stop(2000)
+sss exit=null
+//退出应用
+//停止代码2000全局变量退出=Null
+}
+}
+else
+//否则
+{
+end()
+//退出[显示桌面]
+}
+}</eventItme></UIEventset>
